@@ -1,0 +1,62 @@
+/**
+ * Responsive navbar
+ * On the front-page of a WordPress blog this will be transparent until scrolling past the hero.
+ * 
+ * 
+ */
+
+.navbar {
+  @extend .navbar-default;
+}
+
+// If the admin bar is present and the page is home, padding is added to offset the bar. Should be JS to dynamically get the height of the admin bar.
+// This only applies to .navbar-fixed-top 
+ body.home.admin-bar nav.navbar {
+  top: 28px !important;
+}
+// if the class "compact" is added (by JS presumably) then scale this down.
+// This only applies to .navbar-fixed-top
+// @todo use variables for width. Make it cleaner.
+nav.navbar.navbar-fixed-top.compact {
+  margin: auto;
+  background: #333;
+  transition: width 1s, background 200ms;
+  @media (min-width: $screen-md-min) {
+    width: $container-md;
+  }
+  .container {
+    @media (min-width: $screen-md-min) {
+      width: $container-md;
+    }
+  }
+  .navbar-collapse {
+    a {
+      padding: 15px 5px;
+    }
+  }
+  #site-title { // I haven't tried it with .navbar-right...
+    margin-left: 15px;
+  }
+  .navbar-right:last-child { // I haven't tried it with .navbar-right...
+    margin-right: 15px;
+  }
+  .icon-bar {
+    background: #fff;
+  }
+
+}
+.home .navbar {
+  @include alpha-bg();
+  @extend .navbar-fixed-top;
+  .navbar-brand,
+  .navbar-nav > li > a {
+    color: #eee;
+  }
+
+ }
+.navbar-nav > li > a:hover {
+  @include tint();
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  @include tint();
+}

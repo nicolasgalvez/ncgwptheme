@@ -1,0 +1,339 @@
+
+ 
+
+html,body{
+	height:100%;
+	font-family: "Arial";	
+}
+h1 {
+	font-family: Chango;
+}
+footer h1 {
+	color: #FFDF05;
+	font-family: "Architects Daughter";	
+}
+
+a#site-title {
+font-family: Playball;
+font-size: 25px;
+color: #FC613D;
+}
+
+
+
+iframe {
+	pointer-events: none;
+}
+.input-group-btn select {
+	border-color: #ccc;
+margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 5px;
+}
+
+.tile {
+	text-align: center;
+	p {
+		@extend .lead;
+	}
+	img {
+		margin: auto;
+	}
+}
+
+.carousel-inner {
+	background: #333;
+	.item {
+		height: 500px;
+		.carousel-caption {
+			width: 400px;
+			top: 5%;
+			right: 10%;
+			left: initial;
+		}
+		h1 {
+			color: $highlight;
+		}
+		p {
+			@extend .lead;
+		}
+		img {
+			opacity: .5;
+			width: 100%;
+		}
+		.btn {
+			margin-bottom: 20px;
+		}
+	}
+}
+footer#colophon {
+	background-color: #222;
+	color: #eee;
+}
+
+.full:nth-child(even) {
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0.17) 0%, rgba(0,0,0,0.09) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.17)), color-stop(100%,rgba(0,0,0,0.09)));
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0.17) 0%,rgba(0,0,0,0.09) 100%);
+	background: -o-linear-gradient(top,  rgba(255,255,255,0.17) 0%,rgba(0,0,0,0.09) 100%);
+	background: -ms-linear-gradient(top,  rgba(255,255,255,0.17) 0%,rgba(0,0,0,0.09) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,0.17) 0%,rgba(0,0,0,0.09) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2bffffff', endColorstr='#17000000',GradientType=0 );
+	article div {
+		@extend .col-sm-6;
+		&:first-child {
+			@extend .pull-right;
+		}
+	}
+}
+section.full {
+	border-bottom: 1px solid #efefef;
+	border-top: solid 1px #ddd;
+	padding: 20px;
+	text-align: center;
+	article {
+		@extend .col-xs-12;
+	}
+	.post-title {
+		
+	}
+	article div {
+		@extend .col-sm-6;
+		margin-bottom: 40px;
+		margin-top: 20px;
+	}
+	ul {
+		text-align: left;
+		padding-left: 30px;
+	}
+}
+.home-widgets {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  ul {
+    padding:0;
+  }
+  .widget {
+    border-bottom: 1px solid #ddd;
+    padding: 40px 10%;
+  }
+  .widget:nth-child(even) {
+    background-color:#fefefe;
+  }
+}
+
+
+section#map {
+  text-align: center;
+	background: #333;
+	width: 100%;
+	margin-top: 20px;
+	padding-bottom: 40px; // cause there's supposed to be text on top which makes it all spacey up there.
+	color: #efefef;
+	text-shadow: -1px -1px 0 #111;
+	.embed-responsive {
+		width: 80%;
+		margin: auto;
+	}
+	a {
+		color: #efefef;
+	}
+}
+
+
+
+/**
+ * Widgets
+ */
+
+.home-widgets {
+}
+
+.footer-widgets {
+  .widget {
+    text-align: center;
+    @extend .col-md-3;
+    ul {
+      padding: 0;
+    }
+  }
+}
+
+/**
+ *   Sidebar
+ * Styles for widgets on the default pages.
+ */
+#sidebar {
+  ul {
+    padding: 0;
+  }
+  .widget {
+    padding-bottom: 10px;
+    @extend .panel, .panel-default;
+    .widgettitle {
+      @extend .panel-heading;
+      margin-top: 0px;
+    }
+    >select {
+      width: 90%;
+      margin: auto;
+    }
+    ul {
+      padding: 0px;
+      @extend .list-group;
+      li {
+        @extend .list-group-item;
+      }
+    }
+  }
+}
+/**
+ *   Footer Widgets
+ * Styles for widgets on the footer.
+ */
+.footer-widgets {
+  padding:0px;
+  .widget {
+    .widgettitle {
+    }
+    >select {
+      width: 90%;
+      margin: auto;
+    }
+    ul {
+      padding: 0px;
+      @extend .list-group;
+      li {
+        @extend .list-group-item;
+        background-color: #333;
+        border-color: #4d4d4d;
+      }
+    }
+  }
+}
+
+/**
+ * Action items
+ * These are on the home page
+ */
+
+article.action {
+  padding: 40px 0;
+  text-align: center;
+  padding: 10px;
+  @extend .col-sm-4;
+}
+
+/**
+ * Single Post
+ */
+.single article {
+  padding: 20px;
+  background: #fafafa;
+  header {
+    @extend .well;
+  }
+  .post-content {
+    padding: 20px 0px;
+  }
+  img {
+    @extend .img-responsive;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/**
+ *   Sticky Post
+ * Only if :not a slider .item
+ */
+.sticky:not(.item) {
+  @extend .panel, .panel-info;
+  header {
+    @extend .panel-heading;
+    h1 {
+      margin-top: 0px;
+    }
+  }
+  .post-content {
+    @extend .panel-body;
+  }
+}
+
+#comments {
+  @extend .panel, .panel-default;
+  .comments-title {
+    margin-top: 0px;
+    @extend .panel-heading;
+  }
+  .comment-list {
+    border-bottom: 2px solid #eee;
+    
+    @extend .panel-body, .list-group;
+    .comment-awaiting-moderation {
+      @extend .alert, .alert-warning;
+    }
+    .reply a{
+      @extend .btn, .btn-primary;
+    }
+    .odd {
+      background: #efefef;
+    }
+    .even {
+      background: #fefefe;
+    }
+    li {
+      list-style: none;
+      padding: 10px;
+      @extend .row;
+      .comment-heading {
+        @extend .col-md-2;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .comment-body {
+        @extend .col-md-10;
+        @extend .well;
+        padding: 10px;
+      }
+      footer {
+        @extend .col-md-12;
+      }
+    }
+  }
+  .comment-respond {
+    @extend .panel-footer;
+    .logged-in-as {
+      @extend .well;
+    }
+  }
+  .children {
+    padding: 20px;
+    border-left: 1px solid #E2B77E;
+    @extend .col-sm-12;
+  }
+}
+
+/** Implimentation **/
+@media (max-width: $screen-xs-max) {
+
+}
+@media (min-width: $screen-sm-min) {
+
+}
+@media (max-width: $screen-sm-max) {
+
+}
+@media (min-width: $screen-md-min) {
+
+}
+@media (max-width: $screen-md-max) {
+
+}
+@media (min-width: $screen-lg-min) {
+
+}

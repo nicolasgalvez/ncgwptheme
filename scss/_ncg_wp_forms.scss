@@ -1,0 +1,13 @@
+form {
+  @extend .form-horizontal;
+}
+input:not([type = "submit"]), input[type = "email"], textarea, select {
+  @extend .form-control;
+}
+input[type = "submit"] {
+  @extend .btn, .btn-primary;
+  margin: 10px 0;
+}
+label {
+  @extend .control-label, .label, .label-default;
+}

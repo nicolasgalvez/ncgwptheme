@@ -1,0 +1,26 @@
+@import url(http://fonts.googleapis.com/css?family=Chango:400,700|Architects+Daughter|Playball);
+/**
+ * Highlight: #FFDF05
+ */
+ $highlight: #FFDF05;
+ $highlight-transparent: rgba(255, 223, 5, 0.84);
+
+ @mixin alpha-bg() {
+ 	background-color: rgba(0, 0, 0, 0.32);
+	border-color: rgba(103, 103, 103, 0.43);
+	box-shadow: 0 0 33px rgba(0, 0, 0, 0.33) inset;
+ }
+ @mixin tint() {
+ 	color: #FFF;
+	background-color: $highlight-transparent;
+ }
+
+ @mixin gradient-bg () {
+   background: -moz-linear-gradient(top,  rgba(255,255,255,0.17) 0%, rgba(0,0,0,0.09) 100%);
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.17)), color-stop(100%,rgba(0,0,0,0.09)));
+   background: -webkit-linear-gradient(top,  rgba(255,255,255,0.17) 0%,rgba(0,0,0,0.09) 100%);
+   background: -o-linear-gradient(top,  rgba(255,255,255,0.17) 0%,rgba(0,0,0,0.09) 100%);
+   background: -ms-linear-gradient(top,  rgba(255,255,255,0.17) 0%,rgba(0,0,0,0.09) 100%);
+   background: linear-gradient(to bottom,  rgba(255,255,255,0.17) 0%,rgba(0,0,0,0.09) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2bffffff', endColorstr='#17000000',GradientType=0 );
+ }

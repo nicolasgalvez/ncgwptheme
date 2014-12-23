@@ -1,0 +1,98 @@
+/* --------------------------------------------------------------
+
+   Basic WordPress Blog Styles
+   Got this from:  http://your-wordpress-theme.googlecode.com/svn/trunk/styles/wp.css
+-------------------------------------------------------------- */
+
+
+/* Images
+-------------------------------------------------------------- */
+
+.entry-content img {
+  margin: 0 0 1.5em 0;
+}
+.alignleft,
+img.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+.alignright,
+img.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+.aligncenter,
+img.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wp-caption {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+.wp-caption img {
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+}
+.wp-caption p.wp-caption-text {
+  margin: 0;
+}
+.wp-smiley {
+  max-height: 1em;
+  margin:0 !important;
+}
+.gallery dl {
+  margin: 0;
+}
+.gallery-caption {
+  margin:-1.5em 0 0 0;
+}
+
+
+/* Pullquotes
+-------------------------------------------------------------- */
+
+blockquote.left {
+  float: left;
+  margin-left: 0;
+  margin-right: 20px;
+  text-align: right;
+  width: 33%;
+}
+blockquote.right {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+  text-align: left;
+  width: 33%;
+}
+
+// get that dot outta thurr.
+li.widget, .widget ol, .widget ul, .widget li {
+  list-style: none;
+}
+/* Nick's Custom shiz
+-------------------------------------------------------------- */
+
+/**
+Tag cloud
+*/
+.tagcloud {
+  a {
+    @extend .btn-default, .btn;
+  }
+}
+
+.wp-caption {
+  @extend .thumbnail;
+  max-width: 100%;
+  img {
+    @extend .img-responsive;
+  }
+}
+
