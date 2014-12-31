@@ -1,10 +1,10 @@
 <?php
 /**
- * mhc template for displaying Search-Results-Pages
+ * ncgbase template for displaying Search-Results-Pages
  *
  * @package WordPress
- * @subpackage mhc
- * @since mhc 1.0
+ * @subpackage ncgbase
+ * @since ncgbase 1.0
  */
 
 get_header(); ?>
@@ -14,11 +14,11 @@ get_header(); ?>
 		if ( have_posts() ) : ?>
 
 			<div class="search-title">
-				<h1 ><?php printf( __( 'Search Results for: %s', 'mhc' ), get_search_query() ); ?></h1>
+				<h1 ><?php printf( __( 'Search Results for: %s', 'ncgbase' ), get_search_query() ); ?></h1>
 
 				<div class="second-search">
 					<p>
-						<?php _e( 'Not what you searched for? Try again with some different keywords.', 'mhc' ); ?>
+						<?php _e( 'Not what you searched for? Try again with some different keywords.', 'ncgbase' ); ?>
 					</p>
 
 					<?php get_search_form(); ?>
@@ -31,11 +31,11 @@ get_header(); ?>
 
 				wp_link_pages(
 					array(
-						'before'           => '<div class="linked-page-nav"><p>' . sprintf( __( '<em>%s</em> is separated in multiple parts:', 'mhc' ), get_the_title() ) . '<br />',
+						'before'           => '<div class="linked-page-nav"><p>' . sprintf( __( '<em>%s</em> is separated in multiple parts:', 'ncgbase' ), get_the_title() ) . '<br />',
 						'after'            => '</p></div>',
 						'next_or_number'   => 'number',
 						'separator'        => ' ',
-						'pagelink'         => __( '&raquo; Part %', 'mhc' ),
+						'pagelink'         => __( '&raquo; Part %', 'ncgbase' ),
 					)
 				);
 

@@ -29,7 +29,7 @@ module.exports = function(grunt) {
 			},
 			all: [
 				'gruntfile.js',
-				'js/scripts.js'
+				'../js/scripts.js'
 			]
 		},
 
@@ -37,10 +37,8 @@ module.exports = function(grunt) {
 		uglify: {
 			dist: {
 				files: {
-					'js/scripts.min.js': [
-						'bower_components/jquery/dist/jquery.min.js',
-						'bower_components/bootstrap-sass/dist/bootstrap.min.js',
-						'js/scripts.js'
+					'../js/scripts.min.js': [
+						'../js/scripts.js'
 					]
 				}
 			}
@@ -53,33 +51,32 @@ module.exports = function(grunt) {
 					style: 'expanded'
 				},
 				src: [
-					'scss/style.scss'
+					'../scss/style.scss'
 				],
-				dest: 'style.css'
+				dest: '../style.css'
 			},
 			prod: {
 				options: {
 					style: 'compressed'
 				},
 				src: [
-					'bower_components/bootstrap-sass/lib/bootstrap.scss',
-					'scss/style.scss'
+					'../scss/style.scss'
 				],
-				dest: 'style.css'
+				dest: '../style.css'
 			},
 			editorstyles: {
 				options: {
 					style: 'expanded'
 				},
-				src: ['scss/wp-editor-style.scss'],
-				dest: 'wp-editor-style.css'
+				src: ['../scss/wp-editor-style.scss'],
+				dest: '../wp-editor-style.css'
 			}
 		},
 
 		// watch for changes
 		watch: {
 			scss: {
-				files: ['scss/**/*.scss'],
+				files: ['../scss/**/*.scss'],
 				tasks: [
 					'sass:dev',
 					'sass:editorstyles',

@@ -1,112 +1,144 @@
 <?php
 	/**
-	 * mhc functions file
+	 * ncgbase functions file
 	 *
 	 * @package WordPress
-	 * @subpackage mhc
-	 * @since mhc 1.0
+	 * @subpackage ncgbase
+	 * @since ncgbase 1.0
+	 */
+
+	/**
+	 * Include library files like walkers, etc.
+	 * These are reusable utils which should each have their own git. Maybe I should make the dir vendors?
 	 */
 	require_once "lib/templ.class.php";
 	require_once "lib/ncg_walker_comment.php";
 	require_once "lib/wp_bootstrap_navwalker.php";
-	$templ = new \NCG\Templ();
-	/******************************************************************************\
-	 Theme support, standard settings, menus and widgets
-	 \******************************************************************************/
-
-	add_theme_support('post-formats', array('image', 'quote', 'status', 'link'));
-	add_theme_support('post-thumbnails');
-	add_theme_support('automatic-feed-links');
-	$custom_header_args = array('width' => 330, 'height' => 99, 'default-image' => get_template_directory_uri() . '/images/logo.jpg', );
-	add_theme_support('custom-header', $custom_header_args);
 
 	/**
-	 * Support shortcode in custom excerpt
+	 * Initiate a new instance of my template helper. I use the NCG namespace, hopefully that's ok with your version of php.
+	 * All this does is get a post query based on common criteria (like last 5) and display using a custom wrapper (like for a bootstrap slider)
+	 * I will probably be removing this and using the loop like God intended.
+	 */
+	$templ = new \NCG\Templ();
+
+	// Add theme support
+	// I'm not sure if I need theme support for these other post types. Not on the base I think, but I should do it anywayyy.
+	add_theme_support('post-formats', array(
+		'image',
+		'quote',
+		'status',
+		'link'
+	));
+	add_theme_support('post-thumbnails');
+	add_theme_support('automatic-feed-links');
+	// This is the custom header. By default it will use the image found in /images/logo.png, if any.
+	$custom_header_args = array(
+		'width' => 330,
+		'height' => 99,
+		'default-image' => get_template_directory_uri() . '/images/logo.png',
+	);
+	add_theme_support('custom-header', $custom_header_args);
+	/*
+	 * Switch default core markup for search form, comment form, and comments
+	 * to output valid HTML5.
+	 */
+	add_theme_support( 'html5', array(
+		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
+	) );
+	/**
+	 * Support shortcode in custom excerpt (I had to do this for a client.)
 	 * https://wordpress.org/support/topic/shortcodes-dont-work-in-excerpts
 	 */
-
-	function mhc_shortcode($data) {
+	function ncgbase_shortcode($data) {
 		// modify post object here
 		$data = do_shortcode($data);
 		return ($data);
 	}
 
-	add_action('the_excerpt', 'mhc_shortcode');
+	add_action('the_excerpt', 'ncgbase_shortcode');
 
-	function mhc_strip_shortcode($data) {
+	// And just in case, here's a function to strip the shortcode out again. Why? Who knows.
+	function ncgbase_strip_shortcode($data) {
 		// modify post object here
 		$data = strip_shortcodes($data);
 		return $data;
 	}
 
 	/**
-	 * Add bootstrap responsive embed to embed objects.
+	 * Add BootStrap 3 responsive embed to embed objects.
 	 */
-	add_filter('embed_oembed_html', 'my_embed_oembed_html', 99, 4);
-
-	function my_embed_oembed_html($html, $url, $attr, $post_id) {
+	function ncg_embed_html($html, $url, $attr, $post_id) {
 		return '<div class="video-container">' . $html . '</div>';
 	}
 
+	add_filter('embed_oembed_html', 'ncg_embed_html', 99, 4);
+
 	/**
-	 * Print custom header styles
-	 * @return void
+	 * Register main navigation menu
 	 */
-	function mhc_custom_header() {
-		$styles = '';
-		if ($color = get_header_textcolor()) {
-			echo '<style type="text/css"> ' . '.site-header .logo .blog-name, .site-header .logo .blog-description {' . 'color: #' . $color . ';' . '}' . '</style>';
-		}
-	}
+	register_nav_menu('main-menu', __('Your sites main menu', 'ncgbase'));
 
-	add_action('wp_head', 'mhc_custom_header', 11);
-
-	$custom_bg_args = array('default-color' => 'fba919', 'default-image' => '', );
-	add_theme_support('custom-background', $custom_bg_args);
-
-	register_nav_menu('main-menu', __('Your sites main menu', 'mhc'));
-
+	/**
+	 * Register widget areas.
+	 */
 	if (function_exists('register_sidebars')) {
-		register_sidebar(array('id' => 'home-sidebar', 'name' => __('Home widgets', 'mhc'), 'description' => __('Shows on home page', 'mhc')));
+		register_sidebar(array(
+			'id' => 'home-sidebar',
+			'name' => __('Home widgets', 'ncgbase'),
+			'description' => __('Shows on home page', 'ncgbase')
+		));
 
-		register_sidebar(array('id' => 'footer-sidebar', 'name' => __('Footer widgets', 'mhc'), 'description' => __('Shows in the sites footer', 'mhc')));
-		register_sidebar(array('id' => 'sidebar', 'name' => __('Sidebar Widgets', 'mhc'), 'description' => __('Shows on the regular pages', 'mhc')));
+		register_sidebar(array(
+			'id' => 'footer-sidebar',
+			'name' => __('Footer widgets', 'ncgbase'),
+			'description' => __('Shows in the sites footer', 'ncgbase')
+		));
+		register_sidebar(array(
+			'id' => 'sidebar',
+			'name' => __('Sidebar Widgets', 'ncgbase'),
+			'description' => __('Shows on the regular pages', 'ncgbase')
+		));
 	}
 	add_action('widgets_init', 'register_sidebars');
 
-	if (!isset($content_width)) {
-		$content_width = 650;
-	}
-
 	/**
-	 * Include editor stylesheets
-	 * @return void
+	 * This was here when I got here. What is it? I'm taking it out and seeing what happens.
 	 */
-	function mhc_editor_style() {
-		add_editor_style('css/wp-editor-style.css');
+	if (!isset($content_width)) {
+		//$content_width = 650;
 	}
-
-	add_action('init', 'mhc_editor_style');
 
 	/******************************************************************************\
 	 Scripts and Styles
 	 \******************************************************************************/
 
 	/**
-	 * Enqueue mhc scripts
+	 * Enqueue ncgbase scripts
 	 * @return void
 	 */
-	function mhc_enqueue_scripts() {
-		wp_enqueue_style('mhc-styles', get_stylesheet_uri(), array(), '1.0');
+	function ncgbase_enqueue_scripts() {
+		wp_enqueue_style('ncgbase-styles', get_stylesheet_uri(), array(), '1.0');
 		//wp_enqueue_script('jquery');
-		//wp_enqueue_script('bootstrap', get_template_directory_uri() . '/scss/vendor/bootstrap/javascripts/bootstrap.js', array(), '1.0', true);
+		wp_enqueue_script('jquery', get_template_directory_uri() . '/node/bower_components/jquery/dist/jquery.min.js', array(), '1.0', true);
+		wp_enqueue_script('bootstrap', get_template_directory_uri() . '/node/bower_components/bootstrap-sass/dist/js/bootstrap.min.js', array(), '1.0', true);
 		wp_enqueue_script('default-scripts', get_template_directory_uri() . '/js/scripts.min.js', array(), '1.0', true);
 		if (is_singular()) {
 			wp_enqueue_script('comment-reply');
 		}
 	}
 
-	add_action('wp_enqueue_scripts', 'mhc_enqueue_scripts');
+	add_action('wp_enqueue_scripts', 'ncgbase_enqueue_scripts');
+
+	/**
+	 * Include editor stylesheets
+	 * @return void
+	 */
+	function ncgbase_editor_style() {
+		add_editor_style('wp-editor-style.css');
+	}
+
+	add_action('init', 'ncgbase_editor_style');
 
 	/******************************************************************************\
 	 Content functions
@@ -116,15 +148,15 @@
 	 * Displays meta information for a post
 	 * @return void
 	 */
-	function mhc_post_meta() {
+	function ncgbase_post_meta() {
 		if (get_post_type() == 'post') {
-			echo sprintf(__('Posted %s in %s. by %s. %s', 'mhc'), '<i class = "glyphicon glyphicon-time"></i> ' . get_the_time(get_option('date_format')), get_the_category_list(', '), get_the_author_link(), get_the_tag_list('<br><i class = "glyphicon glyphicon-tags"></i> ', ', '));
+			echo sprintf(__('Posted %s in %s. by %s. %s', 'ncgbase'), '<i class = "glyphicon glyphicon-time"></i> ' . get_the_time(get_option('date_format')), get_the_category_list(', '), get_the_author_link(), get_the_tag_list('<br><i class = "glyphicon glyphicon-tags"></i> ', ', '));
 		}
-		edit_post_link(__(' (edit)', 'mhc'), '<br><span class="edit-link"><i class = "glyphicon glyphicon-pencil"></i> ', '</span>');
+		edit_post_link(__(' (edit)', 'ncgbase'), '<br><span class="edit-link"><i class = "glyphicon glyphicon-pencil"></i> ', '</span>');
 	}
 
 	/**
-	 * booty
+	 * For BootStrap. Set .active on first post. Not sure we need that though...
 	 */
 	add_filter('post_class', 'wps_first_post_class');
 	function wps_first_post_class($classes) {
@@ -137,6 +169,7 @@
 
 	/**
 	 * Remove jetpack form stylesheet
+	 * This is for using the contact form for jetpack.
 	 */
 	function remove_grunion_style() {
 		wp_deregister_style('grunion.css');
@@ -178,9 +211,33 @@
 	add_filter('wp_title', 'theme_name_wp_title', 10, 2);
 
 	/**
-	 * Customizer Controls
+	 * Remove cat base from stackoverflow
+	 * I used the plugin wp-no-category-base before, but I like having the links to have no category as well as the url.
+	 *
 	 */
-	function mhc_customize_register($wp_customize) {
+
+	add_filter('user_trailingslashit', 'remcat_function');
+	function remcat_function($link) {
+		return str_replace("/category/", "/", $link);
+	}
+
+	add_action('init', 'remcat_flush_rules');
+	function remcat_flush_rules() {
+		global $wp_rewrite;
+		$wp_rewrite -> flush_rules();
+	}
+
+	add_filter('generate_rewrite_rules', 'remcat_rewrite');
+	function remcat_rewrite($wp_rewrite) {
+		$new_rules = array('(.+)/page/(.+)/?' => 'index.php?category_name=' . $wp_rewrite -> preg_index(1) . '&paged=' . $wp_rewrite -> preg_index(2));
+		$wp_rewrite -> rules = $new_rules + $wp_rewrite -> rules;
+	}
+
+	/**
+	 * Customizer Controls
+	 * Still need to add js refresh.
+	 */
+	function ncgbase_customize_register($wp_customize) {
 		// get list of categories for dropdown
 		$categories = get_categories();
 		$cats = array('' => 'Select');
@@ -190,44 +247,122 @@
 
 		$section = wp_get_theme() . '-section';
 
-		$wp_customize -> add_panel(wp_get_theme() . '-panel', array('priority' => 10, 'capability' => 'edit_theme_options', 'theme_supports' => '', 'title' => __(wp_get_theme() . "'s options"), 'description' => 'Options built for you.', ));
-		$wp_customize -> add_section($section, array('title' => __('Homepage Goodies', 'mhc'), 'priority' => 30, 'panel' => wp_get_theme() . '-panel'));
+		$wp_customize -> add_panel(wp_get_theme() . '-panel', array(
+			'priority' => 10,
+			'capability' => 'edit_theme_options',
+			'theme_supports' => '',
+			'title' => __(wp_get_theme() . "'s options"),
+			'description' => 'Options built for you.',
+		));
+		$wp_customize -> add_section($section, array(
+			'title' => __('Homepage Goodies', 'ncgbase'),
+			'priority' => 30,
+			'panel' => wp_get_theme() . '-panel'
+		));
 
 		// Show map?
-		$wp_customize -> add_setting('ncg_map_active', array('default' => 'false', 'transport' => 'refresh', 'sanitize_callback' => 'mhc_sanitize_layout'));
+		$wp_customize -> add_setting('ncg_map_active', array(
+			'default' => 'false',
+			'transport' => 'refresh',
+			'sanitize_callback' => 'ncgbase_sanitize_layout'
+		));
 
-		$wp_customize -> add_control(new WP_Customize_Control($wp_customize, 'ncg_map_active', array('label' => __('Show map?', 'mhc'), 'section' => $section, 'settings' => 'ncg_map_active', 'type' => 'radio', 'choices' => array('true' => __('Show', 'mhc'), 'false' => __('Hide', 'mhc')))));
+		$wp_customize -> add_control(new WP_Customize_Control($wp_customize, 'ncg_map_active', array(
+			'label' => __('Show map?', 'ncgbase'),
+			'section' => $section,
+			'settings' => 'ncg_map_active',
+			'type' => 'radio',
+			'choices' => array(
+				'true' => __('Show', 'ncgbase'),
+				'false' => __('Hide', 'ncgbase')
+			)
+		)));
 		// The embed code for maps
-		$wp_customize -> add_setting('ncg_map_embed', array('default' => 'false', 'transport' => 'refresh', 'sanitize_callback' => 'mhc_sanitize_layout'));
+		$wp_customize -> add_setting('ncg_map_embed', array(
+			'default' => 'false',
+			'transport' => 'refresh',
+			'sanitize_callback' => 'ncgbase_sanitize_layout'
+		));
 
-		$wp_customize -> add_control(new WP_Customize_Control($wp_customize, 'ncg_map_embed', array('label' => __('Paste the embed code from google', 'mhc'), 'section' => $section, 'settings' => 'ncg_map_embed', 'type' => 'text')));
+		$wp_customize -> add_control(new WP_Customize_Control($wp_customize, 'ncg_map_embed', array(
+			'label' => __('Paste the embed code from google', 'ncgbase'),
+			'section' => $section,
+			'settings' => 'ncg_map_embed',
+			'type' => 'text'
+		)));
 		// Slider
-		$wp_customize -> add_setting('ncg_slider_query', array('default' => '', 'transport' => 'refresh'));
+		$wp_customize -> add_setting('ncg_slider_query', array(
+			'default' => '',
+			'transport' => 'refresh'
+		));
 
-		$wp_customize -> add_control(new WP_Customize_Control($wp_customize, 'ncg_slider_query', array('label' => __('Post category for slider', 'mhc'), 'section' => $section, 'settings' => 'ncg_slider_query', 'type' => 'select', 'choices' => $cats)));
-		// Slider
-		$wp_customize -> add_setting('ncg_action', array('default' => '', 'transport' => 'refresh', 'sanitize_callback' => 'mhc_sanitize_layout'));
+		$wp_customize -> add_control(new WP_Customize_Control($wp_customize, 'ncg_slider_query', array(
+			'label' => __('Post category for slider', 'ncgbase'),
+			'section' => $section,
+			'settings' => 'ncg_slider_query',
+			'type' => 'select',
+			'choices' => $cats
+		)));
+		// Action content types
+		$wp_customize -> add_setting('ncg_action', array(
+			'default' => '',
+			'transport' => 'refresh',
+			'sanitize_callback' => 'ncgbase_sanitize_layout'
+		));
 
-		$wp_customize -> add_control(new WP_Customize_Control($wp_customize, 'ncg_action', array('label' => __('Call to action items', 'mhc'), 'section' => $section, 'settings' => 'ncg_action', 'type' => 'select', 'choices' => $cats)));
+		$wp_customize -> add_control(new WP_Customize_Control($wp_customize, 'ncg_action', array(
+			'label' => __('Call to action items', 'ncgbase'),
+			'section' => $section,
+			'settings' => 'ncg_action',
+			'type' => 'select',
+			'choices' => $cats
+		)));
 	}
 
-	add_action('customize_register', 'mhc_customize_register');
+	add_action('customize_register', 'ncgbase_customize_register');
 
-	function mhc_sanitize_layout($value) {
+	function ncgbase_sanitize_layout($value) {
 		// nothing here yet.
 		return $value;
 	}
 
+	/**
+	 * Print custom header styles
+	 * @return void
+	 */
+	function ncgbase_custom_header() {
+		$styles = '';
+		if ($color = get_header_textcolor()) {
+			echo '<style type="text/css"> ' . '.site-header .logo .blog-name, .site-header .logo .blog-description {' . 'color: #' . $color . ';' . '}' . '</style>';
+		}
+	}
+
+	add_action('wp_head', 'ncgbase_custom_header', 11);
+
+	$custom_bg_args = array(
+		'default-color' => 'fba919',
+		'default-image' => '',
+	);
+	add_theme_support('custom-background', $custom_bg_args);
+
 	/* End Customizer */
 
 	/*
-	 * Woocommerce
+	 * WooCommerce
+	 * Some basic BootStrap support.
 	 */
 	// Customize the WooCommerce breadcrumb
 	if (!function_exists('woocommerce_breadcrumb')) {
 		function woocommerce_breadcrumb($args = array()) {
 
-			$defaults = array('delimiter' => '<span class="divider">Delimiter</span>', 'wrap_before' => '<ol class="breadcrumb">', 'wrap_after' => '</ol>', 'before' => '<li>', 'after' => '</li>', 'home' => null);
+			$defaults = array(
+				'delimiter' => '<span class="divider">Delimiter</span>',
+				'wrap_before' => '<ol class="breadcrumb">',
+				'wrap_after' => '</ol>',
+				'before' => '<li>',
+				'after' => '</li>',
+				'home' => null
+			);
 
 			$args = wp_parse_args($args, $defaults);
 			// Don't display on product single page
@@ -245,15 +380,22 @@
 	}
 
 	/**
-	 * ACF
+	 * ACF slider support. Uses 'get_field' to look for an image.
+	 * returns true if image found, else checks for a thumbnail image to use.
+	 * @return bool
 	 */
 	function get_slider_image() {
 		if (function_exists('get_field')) {
 			$image = get_field('slider_image');
-			if(is_array($image)) {
+			if (is_array($image)) {
 				echo $image['url'];
-		} elseif (has_post_thumbnail()) {
+				return true;
+			}
+		}
+
+		if (has_post_thumbnail()) {
 			ncg_get_thumb('full');
-		}
-		}
+			return true;
+		} else
+			return false;
 	}

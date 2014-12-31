@@ -1,10 +1,10 @@
 <?php
 /**
- * mhc template for displaying the footer
+ * ncgbase template for displaying the footer
  *
  * @package WordPress
- * @subpackage mhc
- * @since mhc 1.0
+ * @subpackage ncgbase
+ * @since ncgbase 1.0
  */
 ?>
 

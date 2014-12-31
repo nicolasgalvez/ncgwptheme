@@ -21,11 +21,11 @@
 //@import "content";
 //@import "post-formats";
 //@import "footer";
-$icon-font-path: "bower_components/bootstrap-sass/dist/fonts/";
-@import 'bower_components/bootstrap-sass/lib/bootstrap.scss';
-@import "ncg_variables";
-@import "ncg_wp-styles";
-@import "ncg_wp_forms";
-@import "ncg_wp_navbar";
-@import "woocommerce";
-@import "styles";
+$icon-font-path: "node/bower_components/bootstrap-sass/dist/fonts/"; // A workaround for the asset pipe bug as of this version of bootstrap-sass
+@import 'bower_components/bootstrap-sass/lib/bootstrap.scss'; // Now the !default $icon-font-path will be replaced.
+//@import "ncg_variables";
+//@import "ncg_wp-styles";
+//@import "ncg_wp_forms";
+//@import "ncg_wp_navbar";
+//@import "woocommerce";
+//@import "styles";

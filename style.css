@@ -10,7 +10,6 @@
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
-@import url(http://fonts.googleapis.com/css?family=Chango:400,700|Architects+Daughter|Playball);
 article,
 aside,
 details,
@@ -293,17 +292,12 @@ table {
     background-color: #fff !important;
   }
 
-  .btn > .caret, .tagcloud a > .caret, input[type="submit"] > .caret, .woocommerce .site .woocommerce-breadcrumb a > .caret, .woocommerce .site #container .product a.button > .caret, #comments .comment-list .reply a > .caret,
-  .dropup > .btn > .caret,
-  .tagcloud .dropup > a > .caret,
-  .dropup > input[type="submit"] > .caret,
-  .woocommerce .site .woocommerce-breadcrumb .dropup > a > .caret,
-  .woocommerce .site #container .product .dropup > a.button > .caret,
-  #comments .comment-list .reply .dropup > a > .caret {
+  .btn > .caret,
+  .dropup > .btn > .caret {
     border-top-color: #000 !important;
   }
 
-  .label, label {
+  .label {
     border: 1px solid #000;
   }
 
@@ -364,7 +358,7 @@ img {
   vertical-align: middle;
 }
 
-.img-responsive, .wp-caption img, .single article img {
+.img-responsive {
   display: block;
   max-width: 100%;
   height: auto;
@@ -374,7 +368,7 @@ img {
   border-radius: 6px;
 }
 
-.img-thumbnail, .thumbnail, .wp-caption {
+.img-thumbnail, .thumbnail {
   padding: 4px;
   line-height: 1.42857;
   background-color: white;
@@ -387,7 +381,7 @@ img {
   height: auto;
 }
 
-.img-circle, .woocommerce .site #container .product .wp-post-image {
+.img-circle {
   border-radius: 50%;
 }
 
@@ -413,14 +407,14 @@ p {
   margin: 0 0 10px;
 }
 
-.lead, .tile p, .carousel-inner .item p {
+.lead {
   margin-bottom: 20px;
   font-size: 16px;
   font-weight: 200;
   line-height: 1.4;
 }
 @media (min-width: 768px) {
-  .lead, .tile p, .carousel-inner .item p {
+  .lead {
     font-size: 21px;
   }
 }
@@ -759,28 +753,28 @@ pre code {
   clear: both;
 }
 
-.row, .woocommerce .site #container .products, #comments .comment-list li {
+.row {
   margin-left: -15px;
   margin-right: -15px;
 }
-.row:before, .woocommerce .site #container .products:before, #comments .comment-list li:before, .row:after, .woocommerce .site #container .products:after, #comments .comment-list li:after {
+.row:before, .row:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
-.row:after, .woocommerce .site #container .products:after, #comments .comment-list li:after {
+.row:after {
   clear: both;
 }
 
-.col-xs-12, section.full article, .col-sm-12, #comments .children, .col-md-12, #comments .comment-list li footer, .col-lg-12, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-10, .col-sm-10, .col-md-10, #comments .comment-list li .comment-body, .col-lg-10, .col-xs-9, .col-sm-9, .col-md-9, .woocommerce .site #container, .col-lg-9, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-6, .col-sm-6, .woocommerce .site #container .woocommerce-ordering .product, .full:nth-child(even) article div, section.full article div, .col-md-6, .col-lg-6, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-4, .col-sm-4, article.action, .col-md-4, .woocommerce .site #container .woocommerce-ordering .product, .col-lg-4, .col-xs-3, .col-sm-3, .col-md-3, .woocommerce .site #sidebar, .footer-widgets .widget, .col-lg-3, .woocommerce .site #container .woocommerce-ordering .product, .col-xs-2, .col-sm-2, .col-md-2, #comments .comment-list li .comment-heading, .col-lg-2, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1 {
+.col-xs-12, .col-sm-12, .col-md-12, .col-lg-12, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.col-xs-12, section.full article, .col-xs-11, .col-xs-10, .col-xs-9, .col-xs-8, .col-xs-7, .col-xs-6, .col-xs-5, .col-xs-4, .col-xs-3, .col-xs-2, .col-xs-1 {
+.col-xs-12, .col-xs-11, .col-xs-10, .col-xs-9, .col-xs-8, .col-xs-7, .col-xs-6, .col-xs-5, .col-xs-4, .col-xs-3, .col-xs-2, .col-xs-1 {
   float: left;
 }
 
@@ -828,7 +822,7 @@ pre code {
   width: 91.66667%;
 }
 
-.col-xs-12, section.full article {
+.col-xs-12 {
   width: 100%;
 }
 
@@ -993,7 +987,7 @@ pre code {
     width: 750px;
   }
 
-  .col-sm-12, #comments .children, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .woocommerce .site #container .woocommerce-ordering .product, .full:nth-child(even) article div, section.full article div, .col-sm-5, .col-sm-4, article.action, .col-sm-3, .col-sm-2, .col-sm-1 {
+  .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1 {
     float: left;
   }
 
@@ -1009,7 +1003,7 @@ pre code {
     width: 25%;
   }
 
-  .col-sm-4, article.action {
+  .col-sm-4 {
     width: 33.33333%;
   }
 
@@ -1017,7 +1011,7 @@ pre code {
     width: 41.66667%;
   }
 
-  .col-sm-6, .woocommerce .site #container .woocommerce-ordering .product, .full:nth-child(even) article div, section.full article div {
+  .col-sm-6 {
     width: 50%;
   }
 
@@ -1041,7 +1035,7 @@ pre code {
     width: 91.66667%;
   }
 
-  .col-sm-12, #comments .children {
+  .col-sm-12 {
     width: 100%;
   }
 
@@ -1206,7 +1200,7 @@ pre code {
     width: 970px;
   }
 
-  .col-md-12, #comments .comment-list li footer, .col-md-11, .col-md-10, #comments .comment-list li .comment-body, .col-md-9, .woocommerce .site #container, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .woocommerce .site #container .woocommerce-ordering .product, .col-md-3, .woocommerce .site #sidebar, .footer-widgets .widget, .col-md-2, #comments .comment-list li .comment-heading, .col-md-1 {
+  .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1 {
     float: left;
   }
 
@@ -1214,15 +1208,15 @@ pre code {
     width: 8.33333%;
   }
 
-  .col-md-2, #comments .comment-list li .comment-heading {
+  .col-md-2 {
     width: 16.66667%;
   }
 
-  .col-md-3, .woocommerce .site #sidebar, .footer-widgets .widget {
+  .col-md-3 {
     width: 25%;
   }
 
-  .col-md-4, .woocommerce .site #container .woocommerce-ordering .product {
+  .col-md-4 {
     width: 33.33333%;
   }
 
@@ -1242,11 +1236,11 @@ pre code {
     width: 66.66667%;
   }
 
-  .col-md-9, .woocommerce .site #container {
+  .col-md-9 {
     width: 75%;
   }
 
-  .col-md-10, #comments .comment-list li .comment-body {
+  .col-md-10 {
     width: 83.33333%;
   }
 
@@ -1254,7 +1248,7 @@ pre code {
     width: 91.66667%;
   }
 
-  .col-md-12, #comments .comment-list li footer {
+  .col-md-12 {
     width: 100%;
   }
 
@@ -1419,7 +1413,7 @@ pre code {
     width: 1170px;
   }
 
-  .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .woocommerce .site #container .woocommerce-ordering .product, .col-lg-2, .col-lg-1 {
+  .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1 {
     float: left;
   }
 
@@ -1431,7 +1425,7 @@ pre code {
     width: 16.66667%;
   }
 
-  .col-lg-3, .woocommerce .site #container .woocommerce-ordering .product {
+  .col-lg-3 {
     width: 25%;
   }
 
@@ -1904,7 +1898,7 @@ output {
   vertical-align: middle;
 }
 
-.form-control, input:not([type="submit"]), input[type="email"], textarea, select {
+.form-control {
   display: block;
   width: 100%;
   height: 34px;
@@ -1922,30 +1916,30 @@ output {
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
-.form-control:focus, input:focus:not([type="submit"]), input[type="email"]:focus, textarea:focus, select:focus {
+.form-control:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
-.form-control:-moz-placeholder, input:-moz-placeholder:not([type="submit"]), input[type="email"]:-moz-placeholder, textarea:-moz-placeholder, select:-moz-placeholder {
+.form-control:-moz-placeholder {
   color: #999999;
 }
-.form-control::-moz-placeholder, input:not([type="submit"])::-moz-placeholder, input[type="email"]::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+.form-control::-moz-placeholder {
   color: #999999;
 }
-.form-control:-ms-input-placeholder, input:-ms-input-placeholder:not([type="submit"]), input[type="email"]:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
+.form-control:-ms-input-placeholder {
   color: #999999;
 }
-.form-control::-webkit-input-placeholder, input:not([type="submit"])::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
+.form-control::-webkit-input-placeholder {
   color: #999999;
 }
-.form-control[disabled], input[disabled]:not([type="submit"]), input[disabled][type="email"], textarea[disabled], select[disabled], .form-control[readonly], input[readonly]:not([type="submit"]), input[readonly][type="email"], textarea[readonly], select[readonly], fieldset[disabled] .form-control, fieldset[disabled] input:not([type="submit"]), fieldset[disabled] input[type="email"], fieldset[disabled] textarea, fieldset[disabled] select {
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
   cursor: not-allowed;
   background-color: #eeeeee;
 }
 
-textarea.form-control, textarea {
+textarea.form-control {
   height: auto;
 }
 
@@ -2013,14 +2007,9 @@ input[type="checkbox"],
   cursor: not-allowed;
 }
 
-.input-sm, .input-group-sm > .form-control, .input-group-sm > input:not([type="submit"]), .input-group-sm > input[type="email"], .input-group-sm > textarea, .input-group-sm > select,
+.input-sm, .input-group-sm > .form-control,
 .input-group-sm > .input-group-addon,
-.input-group-sm > .input-group-btn > .btn,
-.tagcloud .input-group-sm > .input-group-btn > a,
-.input-group-sm > .input-group-btn > input[type="submit"],
-.woocommerce .site .woocommerce-breadcrumb .input-group-sm > .input-group-btn > a,
-.woocommerce .site #container .product .input-group-sm > .input-group-btn > a.button,
-#comments .comment-list .reply .input-group-sm > .input-group-btn > a {
+.input-group-sm > .input-group-btn > .btn {
   height: 30px;
   padding: 5px 10px;
   font-size: 12px;
@@ -2028,27 +2017,22 @@ input[type="checkbox"],
   border-radius: 3px;
 }
 
-select.input-sm, .input-group-sm > select,
+select.input-sm, .input-group-sm > select.form-control,
 .input-group-sm > select.input-group-addon,
 .input-group-sm > .input-group-btn > select.btn {
   height: 30px;
   line-height: 30px;
 }
 
-textarea.input-sm, .input-group-sm > textarea,
+textarea.input-sm, .input-group-sm > textarea.form-control,
 .input-group-sm > textarea.input-group-addon,
 .input-group-sm > .input-group-btn > textarea.btn {
   height: auto;
 }
 
-.input-lg, .input-group-lg > .form-control, .input-group-lg > input:not([type="submit"]), .input-group-lg > input[type="email"], .input-group-lg > textarea, .input-group-lg > select,
+.input-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
-.input-group-lg > .input-group-btn > .btn,
-.tagcloud .input-group-lg > .input-group-btn > a,
-.input-group-lg > .input-group-btn > input[type="submit"],
-.woocommerce .site .woocommerce-breadcrumb .input-group-lg > .input-group-btn > a,
-.woocommerce .site #container .product .input-group-lg > .input-group-btn > a.button,
-#comments .comment-list .reply .input-group-lg > .input-group-btn > a {
+.input-group-lg > .input-group-btn > .btn {
   height: 45px;
   padding: 10px 16px;
   font-size: 18px;
@@ -2056,14 +2040,14 @@ textarea.input-sm, .input-group-sm > textarea,
   border-radius: 6px;
 }
 
-select.input-lg, .input-group-lg > select,
+select.input-lg, .input-group-lg > select.form-control,
 .input-group-lg > select.input-group-addon,
 .input-group-lg > .input-group-btn > select.btn {
   height: 45px;
   line-height: 45px;
 }
 
-textarea.input-lg, .input-group-lg > textarea,
+textarea.input-lg, .input-group-lg > textarea.form-control,
 .input-group-lg > textarea.input-group-addon,
 .input-group-lg > .input-group-btn > textarea.btn {
   height: auto;
@@ -2071,19 +2055,18 @@ textarea.input-lg, .input-group-lg > textarea,
 
 .has-warning .help-block,
 .has-warning .control-label,
-.has-warning label,
 .has-warning .radio,
 .has-warning .checkbox,
 .has-warning .radio-inline,
 .has-warning .checkbox-inline {
   color: #c09853;
 }
-.has-warning .form-control, .has-warning input:not([type="submit"]), .has-warning input[type="email"], .has-warning textarea, .has-warning select {
+.has-warning .form-control {
   border-color: #c09853;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-.has-warning .form-control:focus, .has-warning input:focus:not([type="submit"]), .has-warning input[type="email"]:focus, .has-warning textarea:focus, .has-warning select:focus {
+.has-warning .form-control:focus {
   border-color: #a47e3c;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
@@ -2096,19 +2079,18 @@ textarea.input-lg, .input-group-lg > textarea,
 
 .has-error .help-block,
 .has-error .control-label,
-.has-error label,
 .has-error .radio,
 .has-error .checkbox,
 .has-error .radio-inline,
 .has-error .checkbox-inline {
   color: #b94a48;
 }
-.has-error .form-control, .has-error input:not([type="submit"]), .has-error input[type="email"], .has-error textarea, .has-error select {
+.has-error .form-control {
   border-color: #b94a48;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-.has-error .form-control:focus, .has-error input:focus:not([type="submit"]), .has-error input[type="email"]:focus, .has-error textarea:focus, .has-error select:focus {
+.has-error .form-control:focus {
   border-color: #953b39;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
@@ -2121,19 +2103,18 @@ textarea.input-lg, .input-group-lg > textarea,
 
 .has-success .help-block,
 .has-success .control-label,
-.has-success label,
 .has-success .radio,
 .has-success .checkbox,
 .has-success .radio-inline,
 .has-success .checkbox-inline {
   color: #468847;
 }
-.has-success .form-control, .has-success input:not([type="submit"]), .has-success input[type="email"], .has-success textarea, .has-success select {
+.has-success .form-control {
   border-color: #468847;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-.has-success .form-control:focus, .has-success input:focus:not([type="submit"]), .has-success input[type="email"]:focus, .has-success textarea:focus, .has-success select:focus {
+.has-success .form-control:focus {
   border-color: #356635;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
@@ -2161,7 +2142,7 @@ textarea.input-lg, .input-group-lg > textarea,
     margin-bottom: 0;
     vertical-align: middle;
   }
-  .form-inline .form-control, .navbar-form .form-control, .form-inline input:not([type="submit"]), .navbar-form input:not([type="submit"]), .form-inline input[type="email"], .navbar-form input[type="email"], .form-inline textarea, .navbar-form textarea, .form-inline select, .navbar-form select {
+  .form-inline .form-control, .navbar-form .form-control {
     display: inline-block;
   }
   .form-inline .radio, .navbar-form .radio,
@@ -2180,42 +2161,38 @@ textarea.input-lg, .input-group-lg > textarea,
   }
 }
 
-.form-horizontal .control-label, form .control-label, .form-horizontal label, form label,
+.form-horizontal .control-label,
 .form-horizontal .radio,
-form .radio,
 .form-horizontal .checkbox,
-form .checkbox,
 .form-horizontal .radio-inline,
-form .radio-inline,
-.form-horizontal .checkbox-inline,
-form .checkbox-inline {
+.form-horizontal .checkbox-inline {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 7px;
 }
-.form-horizontal .form-group, form .form-group {
+.form-horizontal .form-group {
   margin-left: -15px;
   margin-right: -15px;
 }
-.form-horizontal .form-group:before, form .form-group:before, .form-horizontal .form-group:after, form .form-group:after {
+.form-horizontal .form-group:before, .form-horizontal .form-group:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
-.form-horizontal .form-group:after, form .form-group:after {
+.form-horizontal .form-group:after {
   clear: both;
 }
-.form-horizontal .form-control-static, form .form-control-static {
+.form-horizontal .form-control-static {
   padding-top: 7px;
 }
 @media (min-width: 768px) {
-  .form-horizontal .control-label, form .control-label, .form-horizontal label, form label {
+  .form-horizontal .control-label {
     text-align: right;
   }
 }
 
-.btn, .tagcloud a, input[type="submit"], .woocommerce .site .woocommerce-breadcrumb a, .woocommerce .site #container .product a.button, #comments .comment-list .reply a {
+.btn {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -2235,22 +2212,22 @@ form .checkbox-inline {
   -o-user-select: none;
   user-select: none;
 }
-.btn:focus, .tagcloud a:focus, input[type="submit"]:focus, .woocommerce .site .woocommerce-breadcrumb a:focus, .woocommerce .site #container .product a.button:focus, #comments .comment-list .reply a:focus {
+.btn:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-.btn:hover, .tagcloud a:hover, input[type="submit"]:hover, .woocommerce .site .woocommerce-breadcrumb a:hover, .woocommerce .site #container .product a.button:hover, #comments .comment-list .reply a:hover, .btn:focus, .tagcloud a:focus, input[type="submit"]:focus, .woocommerce .site .woocommerce-breadcrumb a:focus, .woocommerce .site #container .product a.button:focus, #comments .comment-list .reply a:focus {
+.btn:hover, .btn:focus {
   color: #333333;
   text-decoration: none;
 }
-.btn:active, .tagcloud a:active, input[type="submit"]:active, .woocommerce .site .woocommerce-breadcrumb a:active, .woocommerce .site #container .product a.button:active, #comments .comment-list .reply a:active, .btn.active, .tagcloud a.active, input.active[type="submit"], .woocommerce .site .woocommerce-breadcrumb a.active, .woocommerce .site #container .product a.active.button, #comments .comment-list .reply a.active {
+.btn:active, .btn.active {
   outline: 0;
   background-image: none;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-.btn.disabled, .tagcloud a.disabled, input.disabled[type="submit"], .woocommerce .site .woocommerce-breadcrumb a.disabled, .woocommerce .site #container .product a.disabled.button, #comments .comment-list .reply a.disabled, .btn[disabled], .tagcloud a[disabled], input[disabled][type="submit"], .woocommerce .site .woocommerce-breadcrumb a[disabled], .woocommerce .site #container .product a[disabled].button, #comments .comment-list .reply a[disabled], fieldset[disabled] .btn, fieldset[disabled] .tagcloud a, .tagcloud fieldset[disabled] a, fieldset[disabled] input[type="submit"], fieldset[disabled] .woocommerce .site .woocommerce-breadcrumb a, .woocommerce .site .woocommerce-breadcrumb fieldset[disabled] a, fieldset[disabled] .woocommerce .site #container .product a.button, .woocommerce .site #container .product fieldset[disabled] a.button, fieldset[disabled] #comments .comment-list .reply a, #comments .comment-list .reply fieldset[disabled] a {
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -2259,54 +2236,54 @@ form .checkbox-inline {
   box-shadow: none;
 }
 
-.btn-default, .tagcloud a, .woocommerce .site .woocommerce-breadcrumb a {
+.btn-default {
   color: #333333;
   background-color: white;
   border-color: #cccccc;
 }
-.btn-default:hover, .tagcloud a:hover, .woocommerce .site .woocommerce-breadcrumb a:hover, .btn-default:focus, .tagcloud a:focus, .woocommerce .site .woocommerce-breadcrumb a:focus, .btn-default:active, .tagcloud a:active, .woocommerce .site .woocommerce-breadcrumb a:active, .btn-default.active, .tagcloud a.active, .woocommerce .site .woocommerce-breadcrumb a.active {
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
   color: #333333;
   background-color: #ebebeb;
   border-color: #adadad;
 }
-.open .btn-default.dropdown-toggle, .open .tagcloud a.dropdown-toggle, .tagcloud .open a.dropdown-toggle, .open .woocommerce .site .woocommerce-breadcrumb a.dropdown-toggle, .woocommerce .site .woocommerce-breadcrumb .open a.dropdown-toggle {
+.open .btn-default.dropdown-toggle {
   color: #333333;
   background-color: #ebebeb;
   border-color: #adadad;
 }
-.btn-default:active, .tagcloud a:active, .woocommerce .site .woocommerce-breadcrumb a:active, .btn-default.active, .tagcloud a.active, .woocommerce .site .woocommerce-breadcrumb a.active {
+.btn-default:active, .btn-default.active {
   background-image: none;
 }
-.open .btn-default.dropdown-toggle, .open .tagcloud a.dropdown-toggle, .tagcloud .open a.dropdown-toggle, .open .woocommerce .site .woocommerce-breadcrumb a.dropdown-toggle, .woocommerce .site .woocommerce-breadcrumb .open a.dropdown-toggle {
+.open .btn-default.dropdown-toggle {
   background-image: none;
 }
-.btn-default.disabled, .tagcloud a.disabled, .woocommerce .site .woocommerce-breadcrumb a.disabled, .btn-default.disabled:hover, .tagcloud a.disabled:hover, .woocommerce .site .woocommerce-breadcrumb a.disabled:hover, .btn-default.disabled:focus, .tagcloud a.disabled:focus, .woocommerce .site .woocommerce-breadcrumb a.disabled:focus, .btn-default.disabled:active, .tagcloud a.disabled:active, .woocommerce .site .woocommerce-breadcrumb a.disabled:active, .btn-default.disabled.active, .tagcloud a.disabled.active, .woocommerce .site .woocommerce-breadcrumb a.disabled.active, .btn-default[disabled], .tagcloud a[disabled], .woocommerce .site .woocommerce-breadcrumb a[disabled], .btn-default[disabled]:hover, .tagcloud a[disabled]:hover, .woocommerce .site .woocommerce-breadcrumb a[disabled]:hover, .btn-default[disabled]:focus, .tagcloud a[disabled]:focus, .woocommerce .site .woocommerce-breadcrumb a[disabled]:focus, .btn-default[disabled]:active, .tagcloud a[disabled]:active, .woocommerce .site .woocommerce-breadcrumb a[disabled]:active, .btn-default[disabled].active, .tagcloud a[disabled].active, .woocommerce .site .woocommerce-breadcrumb a[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .tagcloud a, .tagcloud fieldset[disabled] a, fieldset[disabled] .woocommerce .site .woocommerce-breadcrumb a, .woocommerce .site .woocommerce-breadcrumb fieldset[disabled] a, fieldset[disabled] .btn-default:hover, fieldset[disabled] .tagcloud a:hover, .tagcloud fieldset[disabled] a:hover, fieldset[disabled] .woocommerce .site .woocommerce-breadcrumb a:hover, .woocommerce .site .woocommerce-breadcrumb fieldset[disabled] a:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .tagcloud a:focus, .tagcloud fieldset[disabled] a:focus, fieldset[disabled] .woocommerce .site .woocommerce-breadcrumb a:focus, .woocommerce .site .woocommerce-breadcrumb fieldset[disabled] a:focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .tagcloud a:active, .tagcloud fieldset[disabled] a:active, fieldset[disabled] .woocommerce .site .woocommerce-breadcrumb a:active, .woocommerce .site .woocommerce-breadcrumb fieldset[disabled] a:active, fieldset[disabled] .btn-default.active, fieldset[disabled] .tagcloud a.active, .tagcloud fieldset[disabled] a.active, fieldset[disabled] .woocommerce .site .woocommerce-breadcrumb a.active, .woocommerce .site .woocommerce-breadcrumb fieldset[disabled] a.active {
+.btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
   background-color: white;
   border-color: #cccccc;
 }
 
-.btn-primary, input[type="submit"], .woocommerce .site #container .product a.button, #comments .comment-list .reply a {
+.btn-primary {
   color: white;
   background-color: #428bca;
   border-color: #357ebd;
 }
-.btn-primary:hover, input[type="submit"]:hover, .woocommerce .site #container .product a.button:hover, #comments .comment-list .reply a:hover, .btn-primary:focus, input[type="submit"]:focus, .woocommerce .site #container .product a.button:focus, #comments .comment-list .reply a:focus, .btn-primary:active, input[type="submit"]:active, .woocommerce .site #container .product a.button:active, #comments .comment-list .reply a:active, .btn-primary.active, input.active[type="submit"], .woocommerce .site #container .product a.active.button, #comments .comment-list .reply a.active {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
   color: white;
   background-color: #3276b1;
   border-color: #285e8e;
 }
-.open .btn-primary.dropdown-toggle, .open input.dropdown-toggle[type="submit"], .open .woocommerce .site #container .product a.dropdown-toggle.button, .woocommerce .site #container .product .open a.dropdown-toggle.button, .open #comments .comment-list .reply a.dropdown-toggle, #comments .comment-list .reply .open a.dropdown-toggle {
+.open .btn-primary.dropdown-toggle {
   color: white;
   background-color: #3276b1;
   border-color: #285e8e;
 }
-.btn-primary:active, input[type="submit"]:active, .woocommerce .site #container .product a.button:active, #comments .comment-list .reply a:active, .btn-primary.active, input.active[type="submit"], .woocommerce .site #container .product a.active.button, #comments .comment-list .reply a.active {
+.btn-primary:active, .btn-primary.active {
   background-image: none;
 }
-.open .btn-primary.dropdown-toggle, .open input.dropdown-toggle[type="submit"], .open .woocommerce .site #container .product a.dropdown-toggle.button, .woocommerce .site #container .product .open a.dropdown-toggle.button, .open #comments .comment-list .reply a.dropdown-toggle, #comments .comment-list .reply .open a.dropdown-toggle {
+.open .btn-primary.dropdown-toggle {
   background-image: none;
 }
-.btn-primary.disabled, input.disabled[type="submit"], .woocommerce .site #container .product a.disabled.button, #comments .comment-list .reply a.disabled, .btn-primary.disabled:hover, input.disabled[type="submit"]:hover, .woocommerce .site #container .product a.disabled.button:hover, #comments .comment-list .reply a.disabled:hover, .btn-primary.disabled:focus, input.disabled[type="submit"]:focus, .woocommerce .site #container .product a.disabled.button:focus, #comments .comment-list .reply a.disabled:focus, .btn-primary.disabled:active, input.disabled[type="submit"]:active, .woocommerce .site #container .product a.disabled.button:active, #comments .comment-list .reply a.disabled:active, .btn-primary.disabled.active, input.disabled.active[type="submit"], .woocommerce .site #container .product a.disabled.active.button, #comments .comment-list .reply a.disabled.active, .btn-primary[disabled], input[disabled][type="submit"], .woocommerce .site #container .product a[disabled].button, #comments .comment-list .reply a[disabled], .btn-primary[disabled]:hover, input[disabled][type="submit"]:hover, .woocommerce .site #container .product a[disabled].button:hover, #comments .comment-list .reply a[disabled]:hover, .btn-primary[disabled]:focus, input[disabled][type="submit"]:focus, .woocommerce .site #container .product a[disabled].button:focus, #comments .comment-list .reply a[disabled]:focus, .btn-primary[disabled]:active, input[disabled][type="submit"]:active, .woocommerce .site #container .product a[disabled].button:active, #comments .comment-list .reply a[disabled]:active, .btn-primary[disabled].active, input[disabled].active[type="submit"], .woocommerce .site #container .product a[disabled].active.button, #comments .comment-list .reply a[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] input[type="submit"], fieldset[disabled] .woocommerce .site #container .product a.button, .woocommerce .site #container .product fieldset[disabled] a.button, fieldset[disabled] #comments .comment-list .reply a, #comments .comment-list .reply fieldset[disabled] a, fieldset[disabled] .btn-primary:hover, fieldset[disabled] input[type="submit"]:hover, fieldset[disabled] .woocommerce .site #container .product a.button:hover, .woocommerce .site #container .product fieldset[disabled] a.button:hover, fieldset[disabled] #comments .comment-list .reply a:hover, #comments .comment-list .reply fieldset[disabled] a:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] input[type="submit"]:focus, fieldset[disabled] .woocommerce .site #container .product a.button:focus, .woocommerce .site #container .product fieldset[disabled] a.button:focus, fieldset[disabled] #comments .comment-list .reply a:focus, #comments .comment-list .reply fieldset[disabled] a:focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] input[type="submit"]:active, fieldset[disabled] .woocommerce .site #container .product a.button:active, .woocommerce .site #container .product fieldset[disabled] a.button:active, fieldset[disabled] #comments .comment-list .reply a:active, #comments .comment-list .reply fieldset[disabled] a:active, fieldset[disabled] .btn-primary.active, fieldset[disabled] input.active[type="submit"], fieldset[disabled] .woocommerce .site #container .product a.active.button, .woocommerce .site #container .product fieldset[disabled] a.active.button, fieldset[disabled] #comments .comment-list .reply a.active, #comments .comment-list .reply fieldset[disabled] a.active {
+.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
   background-color: #428bca;
   border-color: #357ebd;
 }
@@ -2439,28 +2416,23 @@ form .checkbox-inline {
   text-decoration: none;
 }
 
-.btn-lg, .btn-group-lg > .btn, .tagcloud .btn-group-lg > a, .btn-group-lg > input[type="submit"], .woocommerce .site .woocommerce-breadcrumb .btn-group-lg > a, .woocommerce .site #container .product .btn-group-lg > a.button, #comments .comment-list .reply .btn-group-lg > a {
+.btn-lg, .btn-group-lg > .btn {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
   border-radius: 6px;
 }
 
-.btn-sm, .btn-group-sm > .btn, .tagcloud .btn-group-sm > a, .btn-group-sm > input[type="submit"], .woocommerce .site .woocommerce-breadcrumb .btn-group-sm > a, .woocommerce .site #container .product .btn-group-sm > a.button, #comments .comment-list .reply .btn-group-sm > a,
+.btn-sm, .btn-group-sm > .btn,
 .btn-xs,
-.btn-group-xs > .btn,
-.tagcloud .btn-group-xs > a,
-.btn-group-xs > input[type="submit"],
-.woocommerce .site .woocommerce-breadcrumb .btn-group-xs > a,
-.woocommerce .site #container .product .btn-group-xs > a.button,
-#comments .comment-list .reply .btn-group-xs > a {
+.btn-group-xs > .btn {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
 }
 
-.btn-xs, .btn-group-xs > .btn, .tagcloud .btn-group-xs > a, .btn-group-xs > input[type="submit"], .woocommerce .site .woocommerce-breadcrumb .btn-group-xs > a, .woocommerce .site #container .product .btn-group-xs > a.button, #comments .comment-list .reply .btn-group-xs > a {
+.btn-xs, .btn-group-xs > .btn {
   padding: 1px 5px;
 }
 
@@ -2507,8 +2479,8 @@ input[type="button"].btn-block {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("bower_components/bootstrap-sass/dist/fonts/glyphicons-halflings-regular.eot");
-  src: url("bower_components/bootstrap-sass/dist/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("bower_components/bootstrap-sass/dist/fonts/glyphicons-halflings-regular.woff") format("woff"), url("bower_components/bootstrap-sass/dist/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("bower_components/bootstrap-sass/dist/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  src: url("node/bower_components/bootstrap-sass/dist/fonts/glyphicons-halflings-regular.eot");
+  src: url("node/bower_components/bootstrap-sass/dist/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("node/bower_components/bootstrap-sass/dist/fonts/glyphicons-halflings-regular.woff") format("woff"), url("node/bower_components/bootstrap-sass/dist/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("node/bower_components/bootstrap-sass/dist/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 
 .glyphicon {
@@ -3366,7 +3338,7 @@ input[type="button"].btn-block {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
 }
-.dropdown-menu.pull-right, .full:nth-child(even) article div.dropdown-menu:first-child {
+.dropdown-menu.pull-right {
   right: 0;
   left: auto;
 }
@@ -3435,7 +3407,7 @@ input[type="button"].btn-block {
   z-index: 990;
 }
 
-.pull-right > .dropdown-menu, .full:nth-child(even) article div:first-child > .dropdown-menu {
+.pull-right > .dropdown-menu {
   right: 0;
   left: auto;
 }
@@ -3459,17 +3431,17 @@ input[type="button"].btn-block {
     left: auto;
   }
 }
-.btn-default .caret, .tagcloud a .caret, .woocommerce .site .woocommerce-breadcrumb a .caret {
+.btn-default .caret {
   border-top-color: #333333;
 }
-.btn-primary .caret, input[type="submit"] .caret, .woocommerce .site #container .product a.button .caret, #comments .comment-list .reply a .caret, .btn-success .caret, .btn-warning .caret, .btn-danger .caret, .btn-info .caret {
+.btn-primary .caret, .btn-success .caret, .btn-warning .caret, .btn-danger .caret, .btn-info .caret {
   border-top-color: #fff;
 }
 
-.dropup .btn-default .caret, .dropup .tagcloud a .caret, .tagcloud .dropup a .caret, .dropup .woocommerce .site .woocommerce-breadcrumb a .caret, .woocommerce .site .woocommerce-breadcrumb .dropup a .caret {
+.dropup .btn-default .caret {
   border-bottom-color: #333333;
 }
-.dropup .btn-primary .caret, .dropup input[type="submit"] .caret, .dropup .woocommerce .site #container .product a.button .caret, .woocommerce .site #container .product .dropup a.button .caret, .dropup #comments .comment-list .reply a .caret, #comments .comment-list .reply .dropup a .caret,
+.dropup .btn-primary .caret,
 .dropup .btn-success .caret,
 .dropup .btn-warning .caret,
 .dropup .btn-danger .caret,
@@ -3483,74 +3455,26 @@ input[type="button"].btn-block {
   display: inline-block;
   vertical-align: middle;
 }
-.btn-group > .btn, .tagcloud .btn-group > a, .btn-group > input[type="submit"], .woocommerce .site .woocommerce-breadcrumb .btn-group > a, .woocommerce .site #container .product .btn-group > a.button, #comments .comment-list .reply .btn-group > a,
-.btn-group-vertical > .btn,
-.tagcloud .btn-group-vertical > a,
-.btn-group-vertical > input[type="submit"],
-.woocommerce .site .woocommerce-breadcrumb .btn-group-vertical > a,
-.woocommerce .site #container .product .btn-group-vertical > a.button,
-#comments .comment-list .reply .btn-group-vertical > a {
+.btn-group > .btn,
+.btn-group-vertical > .btn {
   position: relative;
   float: left;
 }
-.btn-group > .btn:hover, .tagcloud .btn-group > a:hover, .btn-group > input[type="submit"]:hover, .woocommerce .site .woocommerce-breadcrumb .btn-group > a:hover, .woocommerce .site #container .product .btn-group > a.button:hover, #comments .comment-list .reply .btn-group > a:hover, .btn-group > .btn:focus, .tagcloud .btn-group > a:focus, .btn-group > input[type="submit"]:focus, .woocommerce .site .woocommerce-breadcrumb .btn-group > a:focus, .woocommerce .site #container .product .btn-group > a.button:focus, #comments .comment-list .reply .btn-group > a:focus, .btn-group > .btn:active, .tagcloud .btn-group > a:active, .btn-group > input[type="submit"]:active, .woocommerce .site .woocommerce-breadcrumb .btn-group > a:active, .woocommerce .site #container .product .btn-group > a.button:active, #comments .comment-list .reply .btn-group > a:active, .btn-group > .btn.active, .tagcloud .btn-group > a.active, .btn-group > input.active[type="submit"], .woocommerce .site .woocommerce-breadcrumb .btn-group > a.active, .woocommerce .site #container .product .btn-group > a.active.button, #comments .comment-list .reply .btn-group > a.active,
+.btn-group > .btn:hover, .btn-group > .btn:focus, .btn-group > .btn:active, .btn-group > .btn.active,
 .btn-group-vertical > .btn:hover,
-.tagcloud .btn-group-vertical > a:hover,
-.btn-group-vertical > input[type="submit"]:hover,
-.woocommerce .site .woocommerce-breadcrumb .btn-group-vertical > a:hover,
-.woocommerce .site #container .product .btn-group-vertical > a.button:hover,
-#comments .comment-list .reply .btn-group-vertical > a:hover,
 .btn-group-vertical > .btn:focus,
-.tagcloud .btn-group-vertical > a:focus,
-.btn-group-vertical > input[type="submit"]:focus,
-.woocommerce .site .woocommerce-breadcrumb .btn-group-vertical > a:focus,
-.woocommerce .site #container .product .btn-group-vertical > a.button:focus,
-#comments .comment-list .reply .btn-group-vertical > a:focus,
 .btn-group-vertical > .btn:active,
-.tagcloud .btn-group-vertical > a:active,
-.btn-group-vertical > input[type="submit"]:active,
-.woocommerce .site .woocommerce-breadcrumb .btn-group-vertical > a:active,
-.woocommerce .site #container .product .btn-group-vertical > a.button:active,
-#comments .comment-list .reply .btn-group-vertical > a:active,
-.btn-group-vertical > .btn.active,
-.tagcloud .btn-group-vertical > a.active,
-.btn-group-vertical > input.active[type="submit"],
-.woocommerce .site .woocommerce-breadcrumb .btn-group-vertical > a.active,
-.woocommerce .site #container .product .btn-group-vertical > a.active.button,
-#comments .comment-list .reply .btn-group-vertical > a.active {
+.btn-group-vertical > .btn.active {
   z-index: 2;
 }
-.btn-group > .btn:focus, .tagcloud .btn-group > a:focus, .btn-group > input[type="submit"]:focus, .woocommerce .site .woocommerce-breadcrumb .btn-group > a:focus, .woocommerce .site #container .product .btn-group > a.button:focus, #comments .comment-list .reply .btn-group > a:focus,
-.btn-group-vertical > .btn:focus,
-.tagcloud .btn-group-vertical > a:focus,
-.btn-group-vertical > input[type="submit"]:focus,
-.woocommerce .site .woocommerce-breadcrumb .btn-group-vertical > a:focus,
-.woocommerce .site #container .product .btn-group-vertical > a.button:focus,
-#comments .comment-list .reply .btn-group-vertical > a:focus {
+.btn-group > .btn:focus,
+.btn-group-vertical > .btn:focus {
   outline: none;
 }
 
-.btn-group .btn + .btn, .btn-group .tagcloud a + .btn, .tagcloud .btn-group a + .btn, .btn-group input[type="submit"] + .btn, .btn-group .woocommerce .site .woocommerce-breadcrumb a + .btn, .woocommerce .site .woocommerce-breadcrumb .btn-group a + .btn, .btn-group .woocommerce .site #container .product a.button + .btn, .woocommerce .site #container .product .btn-group a.button + .btn, .btn-group #comments .comment-list .reply a + .btn, #comments .comment-list .reply .btn-group a + .btn, .btn-group .tagcloud .btn + a, .tagcloud .btn-group .btn + a, .btn-group .tagcloud a + a, .tagcloud .btn-group a + a, .btn-group .tagcloud input[type="submit"] + a, .tagcloud .btn-group input[type="submit"] + a, .btn-group .woocommerce .site #container .product .tagcloud a.button + a, .tagcloud .btn-group .woocommerce .site #container .product a.button + a, .woocommerce .site #container .product .btn-group .tagcloud a.button + a, .tagcloud .woocommerce .site #container .product .btn-group a.button + a, .btn-group .btn + input[type="submit"], .btn-group .tagcloud a + input[type="submit"], .tagcloud .btn-group a + input[type="submit"], .btn-group input[type="submit"] + input[type="submit"], .btn-group .woocommerce .site .woocommerce-breadcrumb a + input[type="submit"], .woocommerce .site .woocommerce-breadcrumb .btn-group a + input[type="submit"], .btn-group .woocommerce .site #container .product a.button + input[type="submit"], .woocommerce .site #container .product .btn-group a.button + input[type="submit"], .btn-group #comments .comment-list .reply a + input[type="submit"], #comments .comment-list .reply .btn-group a + input[type="submit"], .btn-group .woocommerce .site .woocommerce-breadcrumb .btn + a, .woocommerce .site .woocommerce-breadcrumb .btn-group .btn + a, .btn-group .woocommerce .site .woocommerce-breadcrumb input[type="submit"] + a, .woocommerce .site .woocommerce-breadcrumb .btn-group input[type="submit"] + a, .btn-group .woocommerce .site .woocommerce-breadcrumb a + a, .woocommerce .site .woocommerce-breadcrumb .btn-group a + a, .btn-group .woocommerce .site #container .product .woocommerce-breadcrumb a.button + a, .btn-group .woocommerce .site .woocommerce-breadcrumb #container .product a.button + a, .woocommerce .site #container .product .btn-group .woocommerce-breadcrumb a.button + a, .woocommerce .site .woocommerce-breadcrumb #container .product .btn-group a.button + a, .btn-group .woocommerce .site #container .product .btn + a.button, .woocommerce .site #container .product .btn-group .btn + a.button, .btn-group .tagcloud .woocommerce .site #container .product a + a.button, .woocommerce .site #container .product .btn-group .tagcloud a + a.button, .tagcloud .btn-group .woocommerce .site #container .product a + a.button, .woocommerce .site #container .product .tagcloud .btn-group a + a.button, .btn-group .woocommerce .site #container .product input[type="submit"] + a.button, .woocommerce .site #container .product .btn-group input[type="submit"] + a.button, .btn-group .woocommerce .site .woocommerce-breadcrumb #container .product a + a.button, .btn-group .woocommerce .site #container .product .woocommerce-breadcrumb a + a.button, .woocommerce .site .woocommerce-breadcrumb .btn-group #container .product a + a.button, .woocommerce .site #container .product .woocommerce-breadcrumb .btn-group a + a.button, .btn-group .woocommerce .site #container .product a.button + a.button, .woocommerce .site #container .product .btn-group a.button + a.button, .btn-group #comments .comment-list .reply .woocommerce .site #container .product a + a.button, .woocommerce .site #container .product .btn-group #comments .comment-list .reply a + a.button, #comments .comment-list .reply .btn-group .woocommerce .site #container .product a + a.button, .woocommerce .site #container .product #comments .comment-list .reply .btn-group a + a.button, .btn-group #comments .comment-list .reply .btn + a, #comments .comment-list .reply .btn-group .btn + a, .btn-group #comments .comment-list .reply input[type="submit"] + a, #comments .comment-list .reply .btn-group input[type="submit"] + a, .btn-group .woocommerce .site #container .product #comments .comment-list .reply a.button + a, #comments .comment-list .reply .btn-group .woocommerce .site #container .product a.button + a, .woocommerce .site #container .product .btn-group #comments .comment-list .reply a.button + a, #comments .comment-list .reply .woocommerce .site #container .product .btn-group a.button + a, .btn-group #comments .comment-list .reply a + a, #comments .comment-list .reply .btn-group a + a,
+.btn-group .btn + .btn,
 .btn-group .btn + .btn-group,
-.btn-group .tagcloud a + .btn-group,
-.tagcloud .btn-group a + .btn-group,
-.btn-group input[type="submit"] + .btn-group,
-.btn-group .woocommerce .site .woocommerce-breadcrumb a + .btn-group,
-.woocommerce .site .woocommerce-breadcrumb .btn-group a + .btn-group,
-.btn-group .woocommerce .site #container .product a.button + .btn-group,
-.woocommerce .site #container .product .btn-group a.button + .btn-group,
-.btn-group #comments .comment-list .reply a + .btn-group,
-#comments .comment-list .reply .btn-group a + .btn-group,
 .btn-group .btn-group + .btn,
-.btn-group .tagcloud .btn-group + a,
-.tagcloud .btn-group .btn-group + a,
-.btn-group .btn-group + input[type="submit"],
-.btn-group .woocommerce .site .woocommerce-breadcrumb .btn-group + a,
-.woocommerce .site .woocommerce-breadcrumb .btn-group .btn-group + a,
-.btn-group .woocommerce .site #container .product .btn-group + a.button,
-.woocommerce .site #container .product .btn-group .btn-group + a.button,
-.btn-group #comments .comment-list .reply .btn-group + a,
-#comments .comment-list .reply .btn-group .btn-group + a,
 .btn-group .btn-group + .btn-group {
   margin-left: -1px;
 }
@@ -3567,36 +3491,26 @@ input[type="button"].btn-block {
 .btn-toolbar .btn-group {
   float: left;
 }
-.btn-toolbar > .btn + .btn, .tagcloud .btn-toolbar > a + .btn, .btn-toolbar > input[type="submit"] + .btn, .woocommerce .site .woocommerce-breadcrumb .btn-toolbar > a + .btn, .woocommerce .site #container .product .btn-toolbar > a.button + .btn, #comments .comment-list .reply .btn-toolbar > a + .btn, .tagcloud .btn-toolbar > .btn + a, .tagcloud .btn-toolbar > a + a, .tagcloud .btn-toolbar > input[type="submit"] + a, .woocommerce .site #container .product .tagcloud .btn-toolbar > a.button + a, .tagcloud .woocommerce .site #container .product .btn-toolbar > a.button + a, .btn-toolbar > .btn + input[type="submit"], .tagcloud .btn-toolbar > a + input[type="submit"], .btn-toolbar > input[type="submit"] + input[type="submit"], .woocommerce .site .woocommerce-breadcrumb .btn-toolbar > a + input[type="submit"], .woocommerce .site #container .product .btn-toolbar > a.button + input[type="submit"], #comments .comment-list .reply .btn-toolbar > a + input[type="submit"], .woocommerce .site .woocommerce-breadcrumb .btn-toolbar > .btn + a, .woocommerce .site .woocommerce-breadcrumb .btn-toolbar > input[type="submit"] + a, .woocommerce .site .woocommerce-breadcrumb .btn-toolbar > a + a, .woocommerce .site #container .product .woocommerce-breadcrumb .btn-toolbar > a.button + a, .woocommerce .site .woocommerce-breadcrumb #container .product .btn-toolbar > a.button + a, .woocommerce .site #container .product .btn-toolbar > .btn + a.button, .tagcloud .woocommerce .site #container .product .btn-toolbar > a + a.button, .woocommerce .site #container .product .tagcloud .btn-toolbar > a + a.button, .woocommerce .site #container .product .btn-toolbar > input[type="submit"] + a.button, .woocommerce .site .woocommerce-breadcrumb #container .product .btn-toolbar > a + a.button, .woocommerce .site #container .product .woocommerce-breadcrumb .btn-toolbar > a + a.button, .woocommerce .site #container .product .btn-toolbar > a.button + a.button, #comments .comment-list .reply .woocommerce .site #container .product .btn-toolbar > a + a.button, .woocommerce .site #container .product #comments .comment-list .reply .btn-toolbar > a + a.button, #comments .comment-list .reply .btn-toolbar > .btn + a, #comments .comment-list .reply .btn-toolbar > input[type="submit"] + a, .woocommerce .site #container .product #comments .comment-list .reply .btn-toolbar > a.button + a, #comments .comment-list .reply .woocommerce .site #container .product .btn-toolbar > a.button + a, #comments .comment-list .reply .btn-toolbar > a + a,
+.btn-toolbar > .btn + .btn,
 .btn-toolbar > .btn + .btn-group,
-.tagcloud .btn-toolbar > a + .btn-group,
-.btn-toolbar > input[type="submit"] + .btn-group,
-.woocommerce .site .woocommerce-breadcrumb .btn-toolbar > a + .btn-group,
-.woocommerce .site #container .product .btn-toolbar > a.button + .btn-group,
-#comments .comment-list .reply .btn-toolbar > a + .btn-group,
 .btn-toolbar > .btn-group + .btn,
-.tagcloud .btn-toolbar > .btn-group + a,
-.btn-toolbar > .btn-group + input[type="submit"],
-.woocommerce .site .woocommerce-breadcrumb .btn-toolbar > .btn-group + a,
-.woocommerce .site #container .product .btn-toolbar > .btn-group + a.button,
-#comments .comment-list .reply .btn-toolbar > .btn-group + a,
 .btn-toolbar > .btn-group + .btn-group {
   margin-left: 5px;
 }
 
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .tagcloud .btn-group > a:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > input[type="submit"]:not(:first-child):not(:last-child):not(.dropdown-toggle), .woocommerce .site .woocommerce-breadcrumb .btn-group > a:not(:first-child):not(:last-child):not(.dropdown-toggle), .woocommerce .site #container .product .btn-group > a.button:not(:first-child):not(:last-child):not(.dropdown-toggle), #comments .comment-list .reply .btn-group > a:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0;
 }
 
-.btn-group > .btn:first-child, .tagcloud .btn-group > a:first-child, .btn-group > input[type="submit"]:first-child, .woocommerce .site .woocommerce-breadcrumb .btn-group > a:first-child, .woocommerce .site #container .product .btn-group > a.button:first-child, #comments .comment-list .reply .btn-group > a:first-child {
+.btn-group > .btn:first-child {
   margin-left: 0;
 }
-.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .tagcloud .btn-group > a:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > input[type="submit"]:first-child:not(:last-child):not(.dropdown-toggle), .woocommerce .site .woocommerce-breadcrumb .btn-group > a:first-child:not(:last-child):not(.dropdown-toggle), .woocommerce .site #container .product .btn-group > a.button:first-child:not(:last-child):not(.dropdown-toggle), #comments .comment-list .reply .btn-group > a:first-child:not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.btn-group > .btn:last-child:not(:first-child), .tagcloud .btn-group > a:last-child:not(:first-child), .btn-group > input[type="submit"]:last-child:not(:first-child), .woocommerce .site .woocommerce-breadcrumb .btn-group > a:last-child:not(:first-child), .woocommerce .site #container .product .btn-group > a.button:last-child:not(:first-child), #comments .comment-list .reply .btn-group > a:last-child:not(:first-child),
+.btn-group > .btn:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -3606,17 +3520,17 @@ input[type="button"].btn-block {
   float: left;
 }
 
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .tagcloud .btn-group > .btn-group:not(:first-child):not(:last-child) > a, .btn-group > .btn-group:not(:first-child):not(:last-child) > input[type="submit"], .woocommerce .site .woocommerce-breadcrumb .btn-group > .btn-group:not(:first-child):not(:last-child) > a, .woocommerce .site #container .product .btn-group > .btn-group:not(:first-child):not(:last-child) > a.button, #comments .comment-list .reply .btn-group > .btn-group:not(:first-child):not(:last-child) > a {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
   border-radius: 0;
 }
 
-.btn-group > .btn-group:first-child > .btn:last-child, .tagcloud .btn-group > .btn-group:first-child > a:last-child, .btn-group > .btn-group:first-child > input[type="submit"]:last-child, .woocommerce .site .woocommerce-breadcrumb .btn-group > .btn-group:first-child > a:last-child, .woocommerce .site #container .product .btn-group > .btn-group:first-child > a.button:last-child, #comments .comment-list .reply .btn-group > .btn-group:first-child > a:last-child,
+.btn-group > .btn-group:first-child > .btn:last-child,
 .btn-group > .btn-group:first-child > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.btn-group > .btn-group:last-child > .btn:first-child, .tagcloud .btn-group > .btn-group:last-child > a:first-child, .btn-group > .btn-group:last-child > input[type="submit"]:first-child, .woocommerce .site .woocommerce-breadcrumb .btn-group > .btn-group:last-child > a:first-child, .woocommerce .site #container .product .btn-group > .btn-group:last-child > a.button:first-child, #comments .comment-list .reply .btn-group > .btn-group:last-child > a:first-child {
+.btn-group > .btn-group:last-child > .btn:first-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -3626,12 +3540,12 @@ input[type="button"].btn-block {
   outline: 0;
 }
 
-.btn-group > .btn + .dropdown-toggle, .tagcloud .btn-group > a + .dropdown-toggle, .btn-group > input[type="submit"] + .dropdown-toggle, .woocommerce .site .woocommerce-breadcrumb .btn-group > a + .dropdown-toggle, .woocommerce .site #container .product .btn-group > a.button + .dropdown-toggle, #comments .comment-list .reply .btn-group > a + .dropdown-toggle {
+.btn-group > .btn + .dropdown-toggle {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, .tagcloud .btn-group-lg.btn-group > a + .dropdown-toggle, .btn-group-lg.btn-group > input[type="submit"] + .dropdown-toggle, .woocommerce .site .woocommerce-breadcrumb .btn-group-lg.btn-group > a + .dropdown-toggle, .woocommerce .site #container .product .btn-group-lg.btn-group > a.button + .dropdown-toggle, #comments .comment-list .reply .btn-group-lg.btn-group > a + .dropdown-toggle {
+.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle {
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -3645,20 +3559,20 @@ input[type="button"].btn-block {
   box-shadow: none;
 }
 
-.btn .caret, .tagcloud a .caret, input[type="submit"] .caret, .woocommerce .site .woocommerce-breadcrumb a .caret, .woocommerce .site #container .product a.button .caret, #comments .comment-list .reply a .caret {
+.btn .caret {
   margin-left: 0;
 }
 
-.btn-lg .caret, .btn-group-lg > .btn .caret, .tagcloud .btn-group-lg > a .caret, .btn-group-lg > input[type="submit"] .caret, .woocommerce .site .woocommerce-breadcrumb .btn-group-lg > a .caret, .woocommerce .site #container .product .btn-group-lg > a.button .caret, #comments .comment-list .reply .btn-group-lg > a .caret {
+.btn-lg .caret, .btn-group-lg > .btn .caret {
   border-width: 5px 5px 0;
   border-bottom-width: 0;
 }
 
-.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup .tagcloud .btn-group-lg > a .caret, .tagcloud .dropup .btn-group-lg > a .caret, .dropup .btn-group-lg > input[type="submit"] .caret, .dropup .woocommerce .site .woocommerce-breadcrumb .btn-group-lg > a .caret, .woocommerce .site .woocommerce-breadcrumb .dropup .btn-group-lg > a .caret, .dropup .woocommerce .site #container .product .btn-group-lg > a.button .caret, .woocommerce .site #container .product .dropup .btn-group-lg > a.button .caret, .dropup #comments .comment-list .reply .btn-group-lg > a .caret, #comments .comment-list .reply .dropup .btn-group-lg > a .caret {
+.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret {
   border-width: 0 5px 5px;
 }
 
-.btn-group-vertical > .btn, .tagcloud .btn-group-vertical > a, .btn-group-vertical > input[type="submit"], .woocommerce .site .woocommerce-breadcrumb .btn-group-vertical > a, .woocommerce .site #container .product .btn-group-vertical > a.button, #comments .comment-list .reply .btn-group-vertical > a,
+.btn-group-vertical > .btn,
 .btn-group-vertical > .btn-group {
   display: block;
   float: none;
@@ -3674,52 +3588,42 @@ input[type="button"].btn-block {
 .btn-group-vertical > .btn-group:after {
   clear: both;
 }
-.btn-group-vertical > .btn-group > .btn, .tagcloud .btn-group-vertical > .btn-group > a, .btn-group-vertical > .btn-group > input[type="submit"], .woocommerce .site .woocommerce-breadcrumb .btn-group-vertical > .btn-group > a, .woocommerce .site #container .product .btn-group-vertical > .btn-group > a.button, #comments .comment-list .reply .btn-group-vertical > .btn-group > a {
+.btn-group-vertical > .btn-group > .btn {
   float: none;
 }
-.btn-group-vertical > .btn + .btn, .tagcloud .btn-group-vertical > a + .btn, .btn-group-vertical > input[type="submit"] + .btn, .woocommerce .site .woocommerce-breadcrumb .btn-group-vertical > a + .btn, .woocommerce .site #container .product .btn-group-vertical > a.button + .btn, #comments .comment-list .reply .btn-group-vertical > a + .btn, .tagcloud .btn-group-vertical > .btn + a, .tagcloud .btn-group-vertical > a + a, .tagcloud .btn-group-vertical > input[type="submit"] + a, .woocommerce .site #container .product .tagcloud .btn-group-vertical > a.button + a, .tagcloud .woocommerce .site #container .product .btn-group-vertical > a.button + a, .btn-group-vertical > .btn + input[type="submit"], .tagcloud .btn-group-vertical > a + input[type="submit"], .btn-group-vertical > input[type="submit"] + input[type="submit"], .woocommerce .site .woocommerce-breadcrumb .btn-group-vertical > a + input[type="submit"], .woocommerce .site #container .product .btn-group-vertical > a.button + input[type="submit"], #comments .comment-list .reply .btn-group-vertical > a + input[type="submit"], .woocommerce .site .woocommerce-breadcrumb .btn-group-vertical > .btn + a, .woocommerce .site .woocommerce-breadcrumb .btn-group-vertical > input[type="submit"] + a, .woocommerce .site .woocommerce-breadcrumb .btn-group-vertical > a + a, .woocommerce .site #container .product .woocommerce-breadcrumb .btn-group-vertical > a.button + a, .woocommerce .site .woocommerce-breadcrumb #container .product .btn-group-vertical > a.button + a, .woocommerce .site #container .product .btn-group-vertical > .btn + a.button, .tagcloud .woocommerce .site #container .product .btn-group-vertical > a + a.button, .woocommerce .site #container .product .tagcloud .btn-group-vertical > a + a.button, .woocommerce .site #container .product .btn-group-vertical > input[type="submit"] + a.button, .woocommerce .site .woocommerce-breadcrumb #container .product .btn-group-vertical > a + a.button, .woocommerce .site #container .product .woocommerce-breadcrumb .btn-group-vertical > a + a.button, .woocommerce .site #container .product .btn-group-vertical > a.button + a.button, #comments .comment-list .reply .woocommerce .site #container .product .btn-group-vertical > a + a.button, .woocommerce .site #container .product #comments .comment-list .reply .btn-group-vertical > a + a.button, #comments .comment-list .reply .btn-group-vertical > .btn + a, #comments .comment-list .reply .btn-group-vertical > input[type="submit"] + a, .woocommerce .site #container .product #comments .comment-list .reply .btn-group-vertical > a.button + a, #comments .comment-list .reply .woocommerce .site #container .product .btn-group-vertical > a.button + a, #comments .comment-list .reply .btn-group-vertical > a + a,
+.btn-group-vertical > .btn + .btn,
 .btn-group-vertical > .btn + .btn-group,
-.tagcloud .btn-group-vertical > a + .btn-group,
-.btn-group-vertical > input[type="submit"] + .btn-group,
-.woocommerce .site .woocommerce-breadcrumb .btn-group-vertical > a + .btn-group,
-.woocommerce .site #container .product .btn-group-vertical > a.button + .btn-group,
-#comments .comment-list .reply .btn-group-vertical > a + .btn-group,
 .btn-group-vertical > .btn-group + .btn,
-.tagcloud .btn-group-vertical > .btn-group + a,
-.btn-group-vertical > .btn-group + input[type="submit"],
-.woocommerce .site .woocommerce-breadcrumb .btn-group-vertical > .btn-group + a,
-.woocommerce .site #container .product .btn-group-vertical > .btn-group + a.button,
-#comments .comment-list .reply .btn-group-vertical > .btn-group + a,
 .btn-group-vertical > .btn-group + .btn-group {
   margin-top: -1px;
   margin-left: 0;
 }
 
-.btn-group-vertical > .btn:not(:first-child):not(:last-child), .tagcloud .btn-group-vertical > a:not(:first-child):not(:last-child), .btn-group-vertical > input[type="submit"]:not(:first-child):not(:last-child), .woocommerce .site .woocommerce-breadcrumb .btn-group-vertical > a:not(:first-child):not(:last-child), .woocommerce .site #container .product .btn-group-vertical > a.button:not(:first-child):not(:last-child), #comments .comment-list .reply .btn-group-vertical > a:not(:first-child):not(:last-child) {
+.btn-group-vertical > .btn:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
-.btn-group-vertical > .btn:first-child:not(:last-child), .tagcloud .btn-group-vertical > a:first-child:not(:last-child), .btn-group-vertical > input[type="submit"]:first-child:not(:last-child), .woocommerce .site .woocommerce-breadcrumb .btn-group-vertical > a:first-child:not(:last-child), .woocommerce .site #container .product .btn-group-vertical > a.button:first-child:not(:last-child), #comments .comment-list .reply .btn-group-vertical > a:first-child:not(:last-child) {
+.btn-group-vertical > .btn:first-child:not(:last-child) {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group-vertical > .btn:last-child:not(:first-child), .tagcloud .btn-group-vertical > a:last-child:not(:first-child), .btn-group-vertical > input[type="submit"]:last-child:not(:first-child), .woocommerce .site .woocommerce-breadcrumb .btn-group-vertical > a:last-child:not(:first-child), .woocommerce .site #container .product .btn-group-vertical > a.button:last-child:not(:first-child), #comments .comment-list .reply .btn-group-vertical > a:last-child:not(:first-child) {
+.btn-group-vertical > .btn:last-child:not(:first-child) {
   border-bottom-left-radius: 4px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .tagcloud .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > input[type="submit"], .woocommerce .site .woocommerce-breadcrumb .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a, .woocommerce .site #container .product .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a.button, #comments .comment-list .reply .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a {
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {
   border-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:first-child > .btn:last-child, .tagcloud .btn-group-vertical > .btn-group:first-child > a:last-child, .btn-group-vertical > .btn-group:first-child > input[type="submit"]:last-child, .woocommerce .site .woocommerce-breadcrumb .btn-group-vertical > .btn-group:first-child > a:last-child, .woocommerce .site #container .product .btn-group-vertical > .btn-group:first-child > a.button:last-child, #comments .comment-list .reply .btn-group-vertical > .btn-group:first-child > a:last-child,
+.btn-group-vertical > .btn-group:first-child > .btn:last-child,
 .btn-group-vertical > .btn-group:first-child > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:last-child > .btn:first-child, .tagcloud .btn-group-vertical > .btn-group:last-child > a:first-child, .btn-group-vertical > .btn-group:last-child > input[type="submit"]:first-child, .woocommerce .site .woocommerce-breadcrumb .btn-group-vertical > .btn-group:last-child > a:first-child, .woocommerce .site #container .product .btn-group-vertical > .btn-group:last-child > a.button:first-child, #comments .comment-list .reply .btn-group-vertical > .btn-group:last-child > a:first-child {
+.btn-group-vertical > .btn-group:last-child > .btn:first-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
@@ -3730,19 +3634,14 @@ input[type="button"].btn-block {
   table-layout: fixed;
   border-collapse: separate;
 }
-.btn-group-justified .btn, .btn-group-justified .tagcloud a, .tagcloud .btn-group-justified a, .btn-group-justified input[type="submit"], .btn-group-justified .woocommerce .site .woocommerce-breadcrumb a, .woocommerce .site .woocommerce-breadcrumb .btn-group-justified a, .btn-group-justified .woocommerce .site #container .product a.button, .woocommerce .site #container .product .btn-group-justified a.button, .btn-group-justified #comments .comment-list .reply a, #comments .comment-list .reply .btn-group-justified a {
+.btn-group-justified .btn {
   float: none;
   display: table-cell;
   width: 1%;
 }
 
-[data-toggle="buttons"] > .btn > input[type="radio"], .tagcloud [data-toggle="buttons"] > a > input[type="radio"], [data-toggle="buttons"] > input[type="submit"] > input[type="radio"], .woocommerce .site .woocommerce-breadcrumb [data-toggle="buttons"] > a > input[type="radio"], .woocommerce .site #container .product [data-toggle="buttons"] > a.button > input[type="radio"], #comments .comment-list .reply [data-toggle="buttons"] > a > input[type="radio"],
-[data-toggle="buttons"] > .btn > input[type="checkbox"],
-.tagcloud [data-toggle="buttons"] > a > input[type="checkbox"],
-[data-toggle="buttons"] > input[type="submit"] > input[type="checkbox"],
-.woocommerce .site .woocommerce-breadcrumb [data-toggle="buttons"] > a > input[type="checkbox"],
-.woocommerce .site #container .product [data-toggle="buttons"] > a.button > input[type="checkbox"],
-#comments .comment-list .reply [data-toggle="buttons"] > a > input[type="checkbox"] {
+[data-toggle="buttons"] > .btn > input[type="radio"],
+[data-toggle="buttons"] > .btn > input[type="checkbox"] {
   display: none;
 }
 
@@ -3756,27 +3655,19 @@ input[type="button"].btn-block {
   padding-left: 0;
   padding-right: 0;
 }
-.input-group .form-control, .input-group input:not([type="submit"]), .input-group input[type="email"], .input-group textarea, .input-group select {
+.input-group .form-control {
   width: 100%;
   margin-bottom: 0;
 }
 
 .input-group-addon,
 .input-group-btn,
-.input-group .form-control,
-.input-group input:not([type="submit"]),
-.input-group input[type="email"],
-.input-group textarea,
-.input-group select {
+.input-group .form-control {
   display: table-cell;
 }
 .input-group-addon:not(:first-child):not(:last-child),
 .input-group-btn:not(:first-child):not(:last-child),
-.input-group .form-control:not(:first-child):not(:last-child),
-.input-group input:not(:first-child):not(:last-child):not([type="submit"]),
-.input-group input[type="email"]:not(:first-child):not(:last-child),
-.input-group textarea:not(:first-child):not(:last-child),
-.input-group select:not(:first-child):not(:last-child) {
+.input-group .form-control:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 
@@ -3800,24 +3691,14 @@ input[type="button"].btn-block {
 }
 .input-group-addon.input-sm,
 .input-group-sm > .input-group-addon,
-.input-group-sm > .input-group-btn > .input-group-addon.btn,
-.tagcloud .input-group-sm > .input-group-btn > a.input-group-addon,
-.input-group-sm > .input-group-btn > input.input-group-addon[type="submit"],
-.woocommerce .site .woocommerce-breadcrumb .input-group-sm > .input-group-btn > a.input-group-addon,
-.woocommerce .site #container .product .input-group-sm > .input-group-btn > a.input-group-addon.button,
-#comments .comment-list .reply .input-group-sm > .input-group-btn > a.input-group-addon {
+.input-group-sm > .input-group-btn > .input-group-addon.btn {
   padding: 5px 10px;
   font-size: 12px;
   border-radius: 3px;
 }
 .input-group-addon.input-lg,
 .input-group-lg > .input-group-addon,
-.input-group-lg > .input-group-btn > .input-group-addon.btn,
-.tagcloud .input-group-lg > .input-group-btn > a.input-group-addon,
-.input-group-lg > .input-group-btn > input.input-group-addon[type="submit"],
-.woocommerce .site .woocommerce-breadcrumb .input-group-lg > .input-group-btn > a.input-group-addon,
-.woocommerce .site #container .product .input-group-lg > .input-group-btn > a.input-group-addon.button,
-#comments .comment-list .reply .input-group-lg > .input-group-btn > a.input-group-addon {
+.input-group-lg > .input-group-btn > .input-group-addon.btn {
   padding: 10px 16px;
   font-size: 18px;
   border-radius: 6px;
@@ -3827,21 +3708,11 @@ input[type="button"].btn-block {
   margin-top: 0;
 }
 
-.input-group .form-control:first-child, .input-group input:first-child:not([type="submit"]), .input-group input[type="email"]:first-child, .input-group textarea:first-child, .input-group select:first-child,
+.input-group .form-control:first-child,
 .input-group-addon:first-child,
 .input-group-btn:first-child > .btn,
-.tagcloud .input-group-btn:first-child > a,
-.input-group-btn:first-child > input[type="submit"],
-.woocommerce .site .woocommerce-breadcrumb .input-group-btn:first-child > a,
-.woocommerce .site #container .product .input-group-btn:first-child > a.button,
-#comments .comment-list .reply .input-group-btn:first-child > a,
 .input-group-btn:first-child > .dropdown-toggle,
-.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
-.tagcloud .input-group-btn:last-child > a:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:last-child > input[type="submit"]:not(:last-child):not(.dropdown-toggle),
-.woocommerce .site .woocommerce-breadcrumb .input-group-btn:last-child > a:not(:last-child):not(.dropdown-toggle),
-.woocommerce .site #container .product .input-group-btn:last-child > a.button:not(:last-child):not(.dropdown-toggle),
-#comments .comment-list .reply .input-group-btn:last-child > a:not(:last-child):not(.dropdown-toggle) {
+.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
@@ -3850,21 +3721,11 @@ input[type="button"].btn-block {
   border-right: 0;
 }
 
-.input-group .form-control:last-child, .input-group input:last-child:not([type="submit"]), .input-group input[type="email"]:last-child, .input-group textarea:last-child, .input-group select:last-child,
+.input-group .form-control:last-child,
 .input-group-addon:last-child,
 .input-group-btn:last-child > .btn,
-.tagcloud .input-group-btn:last-child > a,
-.input-group-btn:last-child > input[type="submit"],
-.woocommerce .site .woocommerce-breadcrumb .input-group-btn:last-child > a,
-.woocommerce .site #container .product .input-group-btn:last-child > a.button,
-#comments .comment-list .reply .input-group-btn:last-child > a,
 .input-group-btn:last-child > .dropdown-toggle,
-.input-group-btn:first-child > .btn:not(:first-child),
-.tagcloud .input-group-btn:first-child > a:not(:first-child),
-.input-group-btn:first-child > input[type="submit"]:not(:first-child),
-.woocommerce .site .woocommerce-breadcrumb .input-group-btn:first-child > a:not(:first-child),
-.woocommerce .site #container .product .input-group-btn:first-child > a.button:not(:first-child),
-#comments .comment-list .reply .input-group-btn:first-child > a:not(:first-child) {
+.input-group-btn:first-child > .btn:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -3877,20 +3738,20 @@ input[type="button"].btn-block {
   position: relative;
   white-space: nowrap;
 }
-.input-group-btn:first-child > .btn, .tagcloud .input-group-btn:first-child > a, .input-group-btn:first-child > input[type="submit"], .woocommerce .site .woocommerce-breadcrumb .input-group-btn:first-child > a, .woocommerce .site #container .product .input-group-btn:first-child > a.button, #comments .comment-list .reply .input-group-btn:first-child > a {
+.input-group-btn:first-child > .btn {
   margin-right: -1px;
 }
-.input-group-btn:last-child > .btn, .tagcloud .input-group-btn:last-child > a, .input-group-btn:last-child > input[type="submit"], .woocommerce .site .woocommerce-breadcrumb .input-group-btn:last-child > a, .woocommerce .site #container .product .input-group-btn:last-child > a.button, #comments .comment-list .reply .input-group-btn:last-child > a {
+.input-group-btn:last-child > .btn {
   margin-left: -1px;
 }
 
-.input-group-btn > .btn, .tagcloud .input-group-btn > a, .input-group-btn > input[type="submit"], .woocommerce .site .woocommerce-breadcrumb .input-group-btn > a, .woocommerce .site #container .product .input-group-btn > a.button, #comments .comment-list .reply .input-group-btn > a {
+.input-group-btn > .btn {
   position: relative;
 }
-.input-group-btn > .btn + .btn, .tagcloud .input-group-btn > a + .btn, .input-group-btn > input[type="submit"] + .btn, .woocommerce .site .woocommerce-breadcrumb .input-group-btn > a + .btn, .woocommerce .site #container .product .input-group-btn > a.button + .btn, #comments .comment-list .reply .input-group-btn > a + .btn, .tagcloud .input-group-btn > .btn + a, .tagcloud .input-group-btn > a + a, .tagcloud .input-group-btn > input[type="submit"] + a, .woocommerce .site #container .product .tagcloud .input-group-btn > a.button + a, .tagcloud .woocommerce .site #container .product .input-group-btn > a.button + a, .input-group-btn > .btn + input[type="submit"], .tagcloud .input-group-btn > a + input[type="submit"], .input-group-btn > input[type="submit"] + input[type="submit"], .woocommerce .site .woocommerce-breadcrumb .input-group-btn > a + input[type="submit"], .woocommerce .site #container .product .input-group-btn > a.button + input[type="submit"], #comments .comment-list .reply .input-group-btn > a + input[type="submit"], .woocommerce .site .woocommerce-breadcrumb .input-group-btn > .btn + a, .woocommerce .site .woocommerce-breadcrumb .input-group-btn > input[type="submit"] + a, .woocommerce .site .woocommerce-breadcrumb .input-group-btn > a + a, .woocommerce .site #container .product .woocommerce-breadcrumb .input-group-btn > a.button + a, .woocommerce .site .woocommerce-breadcrumb #container .product .input-group-btn > a.button + a, .woocommerce .site #container .product .input-group-btn > .btn + a.button, .tagcloud .woocommerce .site #container .product .input-group-btn > a + a.button, .woocommerce .site #container .product .tagcloud .input-group-btn > a + a.button, .woocommerce .site #container .product .input-group-btn > input[type="submit"] + a.button, .woocommerce .site .woocommerce-breadcrumb #container .product .input-group-btn > a + a.button, .woocommerce .site #container .product .woocommerce-breadcrumb .input-group-btn > a + a.button, .woocommerce .site #container .product .input-group-btn > a.button + a.button, #comments .comment-list .reply .woocommerce .site #container .product .input-group-btn > a + a.button, .woocommerce .site #container .product #comments .comment-list .reply .input-group-btn > a + a.button, #comments .comment-list .reply .input-group-btn > .btn + a, #comments .comment-list .reply .input-group-btn > input[type="submit"] + a, .woocommerce .site #container .product #comments .comment-list .reply .input-group-btn > a.button + a, #comments .comment-list .reply .woocommerce .site #container .product .input-group-btn > a.button + a, #comments .comment-list .reply .input-group-btn > a + a {
+.input-group-btn > .btn + .btn {
   margin-left: -4px;
 }
-.input-group-btn > .btn:hover, .tagcloud .input-group-btn > a:hover, .input-group-btn > input[type="submit"]:hover, .woocommerce .site .woocommerce-breadcrumb .input-group-btn > a:hover, .woocommerce .site #container .product .input-group-btn > a.button:hover, #comments .comment-list .reply .input-group-btn > a:hover, .input-group-btn > .btn:active, .tagcloud .input-group-btn > a:active, .input-group-btn > input[type="submit"]:active, .woocommerce .site .woocommerce-breadcrumb .input-group-btn > a:active, .woocommerce .site #container .product .input-group-btn > a.button:active, #comments .comment-list .reply .input-group-btn > a:active {
+.input-group-btn > .btn:hover, .input-group-btn > .btn:active {
   z-index: 2;
 }
 
@@ -4179,7 +4040,7 @@ input[type="button"].btn-block {
   }
 }
 
-.navbar-fixed-top, .home .navbar,
+.navbar-fixed-top,
 .navbar-fixed-bottom {
   position: fixed;
   right: 0;
@@ -4187,13 +4048,13 @@ input[type="button"].btn-block {
   z-index: 1030;
 }
 @media (min-width: 768px) {
-  .navbar-fixed-top, .home .navbar,
+  .navbar-fixed-top,
   .navbar-fixed-bottom {
     border-radius: 0;
   }
 }
 
-.navbar-fixed-top, .home .navbar {
+.navbar-fixed-top {
   top: 0;
   border-width: 0 0 1px;
 }
@@ -4337,9 +4198,8 @@ input[type="button"].btn-block {
   border-bottom-left-radius: 0;
 }
 
-.navbar-nav.pull-right > li > .dropdown-menu, .full:nth-child(even) article div.navbar-nav:first-child > li > .dropdown-menu,
-.navbar-nav > li > .dropdown-menu.pull-right,
-.full:nth-child(even) article .navbar-nav > li > div.dropdown-menu:first-child {
+.navbar-nav.pull-right > li > .dropdown-menu,
+.navbar-nav > li > .dropdown-menu.pull-right {
   left: auto;
   right: 0;
 }
@@ -4361,88 +4221,86 @@ input[type="button"].btn-block {
   }
 }
 
-.navbar-default, .navbar {
+.navbar-default {
   background-color: #f8f8f8;
   border-color: #e7e7e7;
 }
-.navbar-default .navbar-brand, .navbar .navbar-brand {
+.navbar-default .navbar-brand {
   color: #777777;
 }
-.navbar-default .navbar-brand:hover, .navbar .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar .navbar-brand:focus {
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
   color: #5e5e5e;
   background-color: transparent;
 }
-.navbar-default .navbar-text, .navbar .navbar-text {
+.navbar-default .navbar-text {
   color: #777777;
 }
-.navbar-default .navbar-nav > li > a, .navbar .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a {
   color: #777777;
 }
-.navbar-default .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #333333;
   background-color: transparent;
 }
-.navbar-default .navbar-nav > .active > a, .navbar .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #555555;
   background-color: #e7e7e7;
 }
-.navbar-default .navbar-nav > .disabled > a, .navbar .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus, .navbar .navbar-nav > .disabled > a:focus {
+.navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
   color: #cccccc;
   background-color: transparent;
 }
-.navbar-default .navbar-toggle, .navbar .navbar-toggle {
+.navbar-default .navbar-toggle {
   border-color: #dddddd;
 }
-.navbar-default .navbar-toggle:hover, .navbar .navbar-toggle:hover, .navbar-default .navbar-toggle:focus, .navbar .navbar-toggle:focus {
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background-color: #dddddd;
 }
-.navbar-default .navbar-toggle .icon-bar, .navbar .navbar-toggle .icon-bar {
+.navbar-default .navbar-toggle .icon-bar {
   background-color: #cccccc;
 }
-.navbar-default .navbar-collapse, .navbar .navbar-collapse,
-.navbar-default .navbar-form,
-.navbar .navbar-form {
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
   border-color: #e7e7e7;
 }
-.navbar-default .navbar-nav > .dropdown > a:hover .caret, .navbar .navbar-nav > .dropdown > a:hover .caret,
-.navbar-default .navbar-nav > .dropdown > a:focus .caret,
-.navbar .navbar-nav > .dropdown > a:focus .caret {
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
   border-top-color: #333333;
   border-bottom-color: #333333;
 }
-.navbar-default .navbar-nav > .open > a, .navbar .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar .navbar-nav > .open > a:focus {
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   background-color: #e7e7e7;
   color: #555555;
 }
-.navbar-default .navbar-nav > .open > a .caret, .navbar .navbar-nav > .open > a .caret, .navbar-default .navbar-nav > .open > a:hover .caret, .navbar .navbar-nav > .open > a:hover .caret, .navbar-default .navbar-nav > .open > a:focus .caret, .navbar .navbar-nav > .open > a:focus .caret {
+.navbar-default .navbar-nav > .open > a .caret, .navbar-default .navbar-nav > .open > a:hover .caret, .navbar-default .navbar-nav > .open > a:focus .caret {
   border-top-color: #555555;
   border-bottom-color: #555555;
 }
-.navbar-default .navbar-nav > .dropdown > a .caret, .navbar .navbar-nav > .dropdown > a .caret {
+.navbar-default .navbar-nav > .dropdown > a .caret {
   border-top-color: #777777;
   border-bottom-color: #777777;
 }
 @media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a, .navbar .navbar-nav .open .dropdown-menu > li > a {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #777777;
   }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar .navbar-nav .open .dropdown-menu > li > a:focus {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #333333;
     background-color: transparent;
   }
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555555;
     background-color: #e7e7e7;
   }
-  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
     color: #cccccc;
     background-color: transparent;
   }
 }
-.navbar-default .navbar-link, .navbar .navbar-link {
+.navbar-default .navbar-link {
   color: #777777;
 }
-.navbar-default .navbar-link:hover, .navbar .navbar-link:hover {
+.navbar-default .navbar-link:hover {
   color: #333333;
 }
 
@@ -4688,7 +4546,7 @@ input[type="button"].btn-block {
   cursor: not-allowed;
 }
 
-.label, label {
+.label {
   display: inline;
   padding: .2em .6em .3em;
   font-size: 75%;
@@ -4700,19 +4558,19 @@ input[type="button"].btn-block {
   vertical-align: baseline;
   border-radius: .25em;
 }
-.label[href]:hover, label[href]:hover, .label[href]:focus, label[href]:focus {
+.label[href]:hover, .label[href]:focus {
   color: white;
   text-decoration: none;
   cursor: pointer;
 }
-.label:empty, label:empty {
+.label:empty {
   display: none;
 }
 
-.label-default, label {
+.label-default {
   background-color: #999999;
 }
-.label-default[href]:hover, label[href]:hover, .label-default[href]:focus, label[href]:focus {
+.label-default[href]:hover, .label-default[href]:focus {
   background-color: gray;
 }
 
@@ -4775,7 +4633,7 @@ a.badge:hover, a.badge:focus {
   cursor: pointer;
 }
 
-.btn .badge, .tagcloud a .badge, input[type="submit"] .badge, .woocommerce .site .woocommerce-breadcrumb a .badge, .woocommerce .site #container .product a.button .badge, #comments .comment-list .reply a .badge {
+.btn .badge {
   position: relative;
   top: -1px;
 }
@@ -4823,49 +4681,46 @@ a.list-group-item.active > .badge,
   }
 }
 
-.thumbnail, .wp-caption {
+.thumbnail {
   display: block;
   margin-bottom: 20px;
 }
-.thumbnail > img, .wp-caption > img {
+.thumbnail > img {
   display: block;
   max-width: 100%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
 }
-.thumbnail .caption, .wp-caption .caption {
+.thumbnail .caption {
   padding: 9px;
   color: #333333;
 }
 
-a.thumbnail:hover, a.wp-caption:hover,
+a.thumbnail:hover,
 a.thumbnail:focus,
-a.wp-caption:focus,
-a.thumbnail.active,
-a.active.wp-caption {
+a.thumbnail.active {
   border-color: #428bca;
 }
 
-.alert, #comments .comment-list .comment-awaiting-moderation {
+.alert {
   padding: 15px;
   margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 4px;
 }
-.alert h4, #comments .comment-list .comment-awaiting-moderation h4 {
+.alert h4 {
   margin-top: 0;
   color: inherit;
 }
-.alert .alert-link, #comments .comment-list .comment-awaiting-moderation .alert-link {
+.alert .alert-link {
   font-weight: bold;
 }
-.alert > p, #comments .comment-list .comment-awaiting-moderation > p,
-.alert > ul,
-#comments .comment-list .comment-awaiting-moderation > ul {
+.alert > p,
+.alert > ul {
   margin-bottom: 0;
 }
-.alert > p + p, #comments .comment-list .comment-awaiting-moderation > p + p {
+.alert > p + p {
   margin-top: 5px;
 }
 
@@ -4903,15 +4758,15 @@ a.active.wp-caption {
   color: #2d6987;
 }
 
-.alert-warning, #comments .comment-list .comment-awaiting-moderation {
+.alert-warning {
   background-color: #fcf8e3;
   border-color: #faebcc;
   color: #c09853;
 }
-.alert-warning hr, #comments .comment-list .comment-awaiting-moderation hr {
+.alert-warning hr {
   border-top-color: #f7e1b5;
 }
-.alert-warning .alert-link, #comments .comment-list .comment-awaiting-moderation .alert-link {
+.alert-warning .alert-link {
   color: #a47e3c;
 }
 
@@ -5071,7 +4926,7 @@ a.active.wp-caption {
 .media > .pull-left {
   margin-right: 10px;
 }
-.media > .pull-right, .full:nth-child(even) article .media > div:first-child {
+.media > .pull-right {
   margin-left: 10px;
 }
 
@@ -5080,12 +4935,12 @@ a.active.wp-caption {
   list-style: none;
 }
 
-.list-group, #sidebar .widget ul, .footer-widgets .widget ul, #comments .comment-list {
+.list-group {
   margin-bottom: 20px;
   padding-left: 0;
 }
 
-.list-group-item, #sidebar .widget ul li, .footer-widgets .widget ul li {
+.list-group-item {
   position: relative;
   display: block;
   padding: 10px 15px;
@@ -5093,19 +4948,19 @@ a.active.wp-caption {
   background-color: white;
   border: 1px solid #dddddd;
 }
-.list-group-item:first-child, #sidebar .widget ul li:first-child, .footer-widgets .widget ul li:first-child {
+.list-group-item:first-child {
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
 }
-.list-group-item:last-child, #sidebar .widget ul li:last-child, .footer-widgets .widget ul li:last-child {
+.list-group-item:last-child {
   margin-bottom: 0;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-.list-group-item > .badge, #sidebar .widget ul li > .badge, .footer-widgets .widget ul li > .badge {
+.list-group-item > .badge {
   float: right;
 }
-.list-group-item > .badge + .badge, #sidebar .widget ul li > .badge + .badge, .footer-widgets .widget ul li > .badge + .badge {
+.list-group-item > .badge + .badge {
   margin-right: 5px;
 }
 
@@ -5142,7 +4997,7 @@ a.list-group-item.active .list-group-item-text, a.list-group-item.active:hover .
   line-height: 1.3;
 }
 
-.panel, #sidebar .widget, .sticky:not(.item), #comments {
+.panel {
   margin-bottom: 20px;
   background-color: white;
   border: 1px solid transparent;
@@ -5151,213 +5006,98 @@ a.list-group-item.active .list-group-item-text, a.list-group-item.active:hover .
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-.panel-body, .sticky:not(.item) .post-content, #comments .comment-list {
+.panel-body {
   padding: 15px;
 }
-.panel-body:before, .sticky:not(.item) .post-content:before, #comments .comment-list:before, .panel-body:after, .sticky:not(.item) .post-content:after, #comments .comment-list:after {
+.panel-body:before, .panel-body:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
-.panel-body:after, .sticky:not(.item) .post-content:after, #comments .comment-list:after {
+.panel-body:after {
   clear: both;
 }
 
-.panel > .list-group, #sidebar .widget > .list-group, .sticky:not(.item) > .list-group, #comments > .list-group, #sidebar .widget .panel > ul, #sidebar .widget > ul, #sidebar .widget .sticky:not(.item) > ul, #sidebar .widget #comments > ul, .footer-widgets .widget .panel > ul, .footer-widgets .widget .sticky:not(.item) > ul, .footer-widgets .widget #comments > ul, #comments .panel > .comment-list, #sidebar #comments .widget > .comment-list, #comments #sidebar .widget > .comment-list, #comments .sticky:not(.item) > .comment-list, #comments > .comment-list {
+.panel > .list-group {
   margin-bottom: 0;
 }
-.panel > .list-group .list-group-item, #sidebar .widget > .list-group .list-group-item, .sticky:not(.item) > .list-group .list-group-item, #comments > .list-group .list-group-item, #sidebar .widget .panel > ul .list-group-item, #sidebar .widget > ul .list-group-item, #sidebar .widget .sticky:not(.item) > ul .list-group-item, #sidebar .widget #comments > ul .list-group-item, .footer-widgets .widget .panel > ul .list-group-item, .footer-widgets .widget .sticky:not(.item) > ul .list-group-item, .footer-widgets .widget #comments > ul .list-group-item, #comments .panel > .comment-list .list-group-item, #sidebar #comments .widget > .comment-list .list-group-item, #comments #sidebar .widget > .comment-list .list-group-item, #comments .sticky:not(.item) > .comment-list .list-group-item, #comments > .comment-list .list-group-item, .panel > .list-group #sidebar .widget ul li, #sidebar .widget ul .panel > .list-group li, #sidebar .widget > .list-group ul li, .sticky:not(.item) > .list-group #sidebar .widget ul li, #sidebar .widget ul .sticky:not(.item) > .list-group li, #comments > .list-group #sidebar .widget ul li, #sidebar .widget ul #comments > .list-group li, #sidebar .widget .panel > ul li, #sidebar .widget > ul ul li, #sidebar .widget .sticky:not(.item) > ul li, #sidebar .widget #comments > ul li, #comments .panel > .comment-list #sidebar .widget ul li, #sidebar .widget ul #comments .panel > .comment-list li, #sidebar #comments .widget > .comment-list ul li, #comments #sidebar .widget > .comment-list ul li, #comments .sticky:not(.item) > .comment-list #sidebar .widget ul li, #sidebar .widget ul #comments .sticky:not(.item) > .comment-list li, #comments > .comment-list #sidebar .widget ul li, #sidebar .widget ul #comments > .comment-list li, .panel > .list-group .footer-widgets .widget ul li, .footer-widgets .widget ul .panel > .list-group li, .sticky:not(.item) > .list-group .footer-widgets .widget ul li, .footer-widgets .widget ul .sticky:not(.item) > .list-group li, #comments > .list-group .footer-widgets .widget ul li, .footer-widgets .widget ul #comments > .list-group li, .footer-widgets .widget .panel > ul li, .footer-widgets .widget .sticky:not(.item) > ul li, .footer-widgets .widget #comments > ul li, #comments .panel > .comment-list .footer-widgets .widget ul li, .footer-widgets .widget ul #comments .panel > .comment-list li, #comments .sticky:not(.item) > .comment-list .footer-widgets .widget ul li, .footer-widgets .widget ul #comments .sticky:not(.item) > .comment-list li, #comments > .comment-list .footer-widgets .widget ul li, .footer-widgets .widget ul #comments > .comment-list li {
+.panel > .list-group .list-group-item {
   border-width: 1px 0;
 }
-.panel > .list-group .list-group-item:first-child, #sidebar .widget > .list-group .list-group-item:first-child, .sticky:not(.item) > .list-group .list-group-item:first-child, #comments > .list-group .list-group-item:first-child, #sidebar .widget .panel > ul .list-group-item:first-child, #sidebar .widget > ul .list-group-item:first-child, #sidebar .widget .sticky:not(.item) > ul .list-group-item:first-child, #sidebar .widget #comments > ul .list-group-item:first-child, .footer-widgets .widget .panel > ul .list-group-item:first-child, .footer-widgets .widget .sticky:not(.item) > ul .list-group-item:first-child, .footer-widgets .widget #comments > ul .list-group-item:first-child, #comments .panel > .comment-list .list-group-item:first-child, #sidebar #comments .widget > .comment-list .list-group-item:first-child, #comments #sidebar .widget > .comment-list .list-group-item:first-child, #comments .sticky:not(.item) > .comment-list .list-group-item:first-child, #comments > .comment-list .list-group-item:first-child, .panel > .list-group #sidebar .widget ul li:first-child, #sidebar .widget ul .panel > .list-group li:first-child, #sidebar .widget > .list-group ul li:first-child, .sticky:not(.item) > .list-group #sidebar .widget ul li:first-child, #sidebar .widget ul .sticky:not(.item) > .list-group li:first-child, #comments > .list-group #sidebar .widget ul li:first-child, #sidebar .widget ul #comments > .list-group li:first-child, #sidebar .widget .panel > ul li:first-child, #sidebar .widget > ul ul li:first-child, #sidebar .widget .sticky:not(.item) > ul li:first-child, #sidebar .widget #comments > ul li:first-child, #comments .panel > .comment-list #sidebar .widget ul li:first-child, #sidebar .widget ul #comments .panel > .comment-list li:first-child, #sidebar #comments .widget > .comment-list ul li:first-child, #comments #sidebar .widget > .comment-list ul li:first-child, #comments .sticky:not(.item) > .comment-list #sidebar .widget ul li:first-child, #sidebar .widget ul #comments .sticky:not(.item) > .comment-list li:first-child, #comments > .comment-list #sidebar .widget ul li:first-child, #sidebar .widget ul #comments > .comment-list li:first-child, .panel > .list-group .footer-widgets .widget ul li:first-child, .footer-widgets .widget ul .panel > .list-group li:first-child, .sticky:not(.item) > .list-group .footer-widgets .widget ul li:first-child, .footer-widgets .widget ul .sticky:not(.item) > .list-group li:first-child, #comments > .list-group .footer-widgets .widget ul li:first-child, .footer-widgets .widget ul #comments > .list-group li:first-child, .footer-widgets .widget .panel > ul li:first-child, .footer-widgets .widget .sticky:not(.item) > ul li:first-child, .footer-widgets .widget #comments > ul li:first-child, #comments .panel > .comment-list .footer-widgets .widget ul li:first-child, .footer-widgets .widget ul #comments .panel > .comment-list li:first-child, #comments .sticky:not(.item) > .comment-list .footer-widgets .widget ul li:first-child, .footer-widgets .widget ul #comments .sticky:not(.item) > .comment-list li:first-child, #comments > .comment-list .footer-widgets .widget ul li:first-child, .footer-widgets .widget ul #comments > .comment-list li:first-child {
+.panel > .list-group .list-group-item:first-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
-.panel > .list-group .list-group-item:last-child, #sidebar .widget > .list-group .list-group-item:last-child, .sticky:not(.item) > .list-group .list-group-item:last-child, #comments > .list-group .list-group-item:last-child, #sidebar .widget .panel > ul .list-group-item:last-child, #sidebar .widget > ul .list-group-item:last-child, #sidebar .widget .sticky:not(.item) > ul .list-group-item:last-child, #sidebar .widget #comments > ul .list-group-item:last-child, .footer-widgets .widget .panel > ul .list-group-item:last-child, .footer-widgets .widget .sticky:not(.item) > ul .list-group-item:last-child, .footer-widgets .widget #comments > ul .list-group-item:last-child, #comments .panel > .comment-list .list-group-item:last-child, #sidebar #comments .widget > .comment-list .list-group-item:last-child, #comments #sidebar .widget > .comment-list .list-group-item:last-child, #comments .sticky:not(.item) > .comment-list .list-group-item:last-child, #comments > .comment-list .list-group-item:last-child, .panel > .list-group #sidebar .widget ul li:last-child, #sidebar .widget ul .panel > .list-group li:last-child, #sidebar .widget > .list-group ul li:last-child, .sticky:not(.item) > .list-group #sidebar .widget ul li:last-child, #sidebar .widget ul .sticky:not(.item) > .list-group li:last-child, #comments > .list-group #sidebar .widget ul li:last-child, #sidebar .widget ul #comments > .list-group li:last-child, #sidebar .widget .panel > ul li:last-child, #sidebar .widget > ul ul li:last-child, #sidebar .widget .sticky:not(.item) > ul li:last-child, #sidebar .widget #comments > ul li:last-child, #comments .panel > .comment-list #sidebar .widget ul li:last-child, #sidebar .widget ul #comments .panel > .comment-list li:last-child, #sidebar #comments .widget > .comment-list ul li:last-child, #comments #sidebar .widget > .comment-list ul li:last-child, #comments .sticky:not(.item) > .comment-list #sidebar .widget ul li:last-child, #sidebar .widget ul #comments .sticky:not(.item) > .comment-list li:last-child, #comments > .comment-list #sidebar .widget ul li:last-child, #sidebar .widget ul #comments > .comment-list li:last-child, .panel > .list-group .footer-widgets .widget ul li:last-child, .footer-widgets .widget ul .panel > .list-group li:last-child, .sticky:not(.item) > .list-group .footer-widgets .widget ul li:last-child, .footer-widgets .widget ul .sticky:not(.item) > .list-group li:last-child, #comments > .list-group .footer-widgets .widget ul li:last-child, .footer-widgets .widget ul #comments > .list-group li:last-child, .footer-widgets .widget .panel > ul li:last-child, .footer-widgets .widget .sticky:not(.item) > ul li:last-child, .footer-widgets .widget #comments > ul li:last-child, #comments .panel > .comment-list .footer-widgets .widget ul li:last-child, .footer-widgets .widget ul #comments .panel > .comment-list li:last-child, #comments .sticky:not(.item) > .comment-list .footer-widgets .widget ul li:last-child, .footer-widgets .widget ul #comments .sticky:not(.item) > .comment-list li:last-child, #comments > .comment-list .footer-widgets .widget ul li:last-child, .footer-widgets .widget ul #comments > .comment-list li:last-child {
+.panel > .list-group .list-group-item:last-child {
   border-bottom: 0;
 }
 
-.panel-heading + .list-group .list-group-item:first-child, #sidebar .widget .widgettitle + .list-group .list-group-item:first-child, .sticky:not(.item) header + .list-group .list-group-item:first-child, #comments .comments-title + .list-group .list-group-item:first-child, #sidebar .widget .panel-heading + ul .list-group-item:first-child, #sidebar .widget .widgettitle + ul .list-group-item:first-child, .sticky:not(.item) #sidebar .widget header + ul .list-group-item:first-child, #sidebar .widget .sticky:not(.item) header + ul .list-group-item:first-child, #comments #sidebar .widget .comments-title + ul .list-group-item:first-child, #sidebar .widget #comments .comments-title + ul .list-group-item:first-child, .footer-widgets .widget .panel-heading + ul .list-group-item:first-child, .sticky:not(.item) .footer-widgets .widget header + ul .list-group-item:first-child, .footer-widgets .widget .sticky:not(.item) header + ul .list-group-item:first-child, #comments .footer-widgets .widget .comments-title + ul .list-group-item:first-child, .footer-widgets .widget #comments .comments-title + ul .list-group-item:first-child, #comments .panel-heading + .comment-list .list-group-item:first-child, #sidebar .widget #comments .widgettitle + .comment-list .list-group-item:first-child, #comments #sidebar .widget .widgettitle + .comment-list .list-group-item:first-child, .sticky:not(.item) #comments header + .comment-list .list-group-item:first-child, #comments .sticky:not(.item) header + .comment-list .list-group-item:first-child, #comments .comments-title + .comment-list .list-group-item:first-child, .panel-heading + .list-group #sidebar .widget ul li:first-child, #sidebar .widget ul .panel-heading + .list-group li:first-child, #sidebar .widget ul .widgettitle + .list-group li:first-child, .sticky:not(.item) header + .list-group #sidebar .widget ul li:first-child, #sidebar .widget ul .sticky:not(.item) header + .list-group li:first-child, #comments .comments-title + .list-group #sidebar .widget ul li:first-child, #sidebar .widget ul #comments .comments-title + .list-group li:first-child, #sidebar .widget .panel-heading + ul li:first-child, #sidebar .widget .widgettitle + ul li:first-child, .sticky:not(.item) #sidebar .widget header + ul li:first-child, #sidebar .widget .sticky:not(.item) header + ul li:first-child, #comments #sidebar .widget .comments-title + ul li:first-child, #sidebar .widget #comments .comments-title + ul li:first-child, #sidebar .sticky:not(.item) .footer-widgets .widget header + ul li:first-child, #comments .panel-heading + .comment-list #sidebar .widget ul li:first-child, #sidebar .widget ul #comments .panel-heading + .comment-list li:first-child, #sidebar .widget ul #comments .widgettitle + .comment-list li:first-child, #comments #sidebar .widget ul .widgettitle + .comment-list li:first-child, .sticky:not(.item) #comments header + .comment-list #sidebar .widget ul li:first-child, #sidebar .widget ul .sticky:not(.item) #comments header + .comment-list li:first-child, #comments .sticky:not(.item) header + .comment-list #sidebar .widget ul li:first-child, #sidebar .widget ul #comments .sticky:not(.item) header + .comment-list li:first-child, #comments .comments-title + .comment-list #sidebar .widget ul li:first-child, #sidebar .widget ul #comments .comments-title + .comment-list li:first-child, .panel-heading + .list-group .footer-widgets .widget ul li:first-child, .footer-widgets .widget ul .panel-heading + .list-group li:first-child, .sticky:not(.item) header + .list-group .footer-widgets .widget ul li:first-child, .footer-widgets .widget ul .sticky:not(.item) header + .list-group li:first-child, #comments .comments-title + .list-group .footer-widgets .widget ul li:first-child, .footer-widgets .widget ul #comments .comments-title + .list-group li:first-child, .footer-widgets .widget .panel-heading + ul li:first-child, .sticky:not(.item) .footer-widgets .widget header + ul li:first-child, .footer-widgets .widget .sticky:not(.item) header + ul li:first-child, #comments .footer-widgets .widget .comments-title + ul li:first-child, .footer-widgets .widget #comments .comments-title + ul li:first-child, #comments .panel-heading + .comment-list .footer-widgets .widget ul li:first-child, .footer-widgets .widget ul #comments .panel-heading + .comment-list li:first-child, .sticky:not(.item) #comments header + .comment-list .footer-widgets .widget ul li:first-child, .footer-widgets .widget ul .sticky:not(.item) #comments header + .comment-list li:first-child, #comments .sticky:not(.item) header + .comment-list .footer-widgets .widget ul li:first-child, .footer-widgets .widget ul #comments .sticky:not(.item) header + .comment-list li:first-child, #comments .comments-title + .comment-list .footer-widgets .widget ul li:first-child, .footer-widgets .widget ul #comments .comments-title + .comment-list li:first-child {
+.panel-heading + .list-group .list-group-item:first-child {
   border-top-width: 0;
 }
 
-.panel > .table, #sidebar .widget > .table, .sticky:not(.item) > .table, #comments > .table,
-.panel > .table-responsive,
-#sidebar .widget > .table-responsive,
-.sticky:not(.item) > .table-responsive,
-#comments > .table-responsive {
+.panel > .table,
+.panel > .table-responsive {
   margin-bottom: 0;
 }
-.panel > .panel-body + .table, #sidebar .widget > .panel-body + .table, .sticky:not(.item) > .panel-body + .table, #comments > .panel-body + .table, .sticky:not(.item) .panel > .post-content + .table, #sidebar .sticky:not(.item) .widget > .post-content + .table, .sticky:not(.item) #sidebar .widget > .post-content + .table, .sticky:not(.item) > .post-content + .table, .sticky:not(.item) #comments > .post-content + .table, #comments .panel > .comment-list + .table, #sidebar #comments .widget > .comment-list + .table, #comments #sidebar .widget > .comment-list + .table, #comments .sticky:not(.item) > .comment-list + .table, #comments > .comment-list + .table,
-.panel > .panel-body + .table-responsive,
-#sidebar .widget > .panel-body + .table-responsive,
-.sticky:not(.item) > .panel-body + .table-responsive,
-#comments > .panel-body + .table-responsive,
-.sticky:not(.item) .panel > .post-content + .table-responsive,
-#sidebar .sticky:not(.item) .widget > .post-content + .table-responsive,
-.sticky:not(.item) #sidebar .widget > .post-content + .table-responsive,
-.sticky:not(.item) > .post-content + .table-responsive,
-.sticky:not(.item) #comments > .post-content + .table-responsive,
-#comments .panel > .comment-list + .table-responsive,
-#sidebar #comments .widget > .comment-list + .table-responsive,
-#comments #sidebar .widget > .comment-list + .table-responsive,
-#comments .sticky:not(.item) > .comment-list + .table-responsive,
-#comments > .comment-list + .table-responsive {
+.panel > .panel-body + .table,
+.panel > .panel-body + .table-responsive {
   border-top: 1px solid #dddddd;
 }
-.panel > .table-bordered, #sidebar .widget > .table-bordered, .sticky:not(.item) > .table-bordered, #comments > .table-bordered,
-.panel > .table-responsive > .table-bordered,
-#sidebar .widget > .table-responsive > .table-bordered,
-.sticky:not(.item) > .table-responsive > .table-bordered,
-#comments > .table-responsive > .table-bordered {
+.panel > .table-bordered,
+.panel > .table-responsive > .table-bordered {
   border: 0;
 }
-.panel > .table-bordered > thead > tr > th:first-child, #sidebar .widget > .table-bordered > thead > tr > th:first-child, .sticky:not(.item) > .table-bordered > thead > tr > th:first-child, #comments > .table-bordered > thead > tr > th:first-child,
+.panel > .table-bordered > thead > tr > th:first-child,
 .panel > .table-bordered > thead > tr > td:first-child,
-#sidebar .widget > .table-bordered > thead > tr > td:first-child,
-.sticky:not(.item) > .table-bordered > thead > tr > td:first-child,
-#comments > .table-bordered > thead > tr > td:first-child,
 .panel > .table-bordered > tbody > tr > th:first-child,
-#sidebar .widget > .table-bordered > tbody > tr > th:first-child,
-.sticky:not(.item) > .table-bordered > tbody > tr > th:first-child,
-#comments > .table-bordered > tbody > tr > th:first-child,
 .panel > .table-bordered > tbody > tr > td:first-child,
-#sidebar .widget > .table-bordered > tbody > tr > td:first-child,
-.sticky:not(.item) > .table-bordered > tbody > tr > td:first-child,
-#comments > .table-bordered > tbody > tr > td:first-child,
 .panel > .table-bordered > tfoot > tr > th:first-child,
-#sidebar .widget > .table-bordered > tfoot > tr > th:first-child,
-.sticky:not(.item) > .table-bordered > tfoot > tr > th:first-child,
-#comments > .table-bordered > tfoot > tr > th:first-child,
 .panel > .table-bordered > tfoot > tr > td:first-child,
-#sidebar .widget > .table-bordered > tfoot > tr > td:first-child,
-.sticky:not(.item) > .table-bordered > tfoot > tr > td:first-child,
-#comments > .table-bordered > tfoot > tr > td:first-child,
 .panel > .table-responsive > .table-bordered > thead > tr > th:first-child,
-#sidebar .widget > .table-responsive > .table-bordered > thead > tr > th:first-child,
-.sticky:not(.item) > .table-responsive > .table-bordered > thead > tr > th:first-child,
-#comments > .table-responsive > .table-bordered > thead > tr > th:first-child,
 .panel > .table-responsive > .table-bordered > thead > tr > td:first-child,
-#sidebar .widget > .table-responsive > .table-bordered > thead > tr > td:first-child,
-.sticky:not(.item) > .table-responsive > .table-bordered > thead > tr > td:first-child,
-#comments > .table-responsive > .table-bordered > thead > tr > td:first-child,
 .panel > .table-responsive > .table-bordered > tbody > tr > th:first-child,
-#sidebar .widget > .table-responsive > .table-bordered > tbody > tr > th:first-child,
-.sticky:not(.item) > .table-responsive > .table-bordered > tbody > tr > th:first-child,
-#comments > .table-responsive > .table-bordered > tbody > tr > th:first-child,
 .panel > .table-responsive > .table-bordered > tbody > tr > td:first-child,
-#sidebar .widget > .table-responsive > .table-bordered > tbody > tr > td:first-child,
-.sticky:not(.item) > .table-responsive > .table-bordered > tbody > tr > td:first-child,
-#comments > .table-responsive > .table-bordered > tbody > tr > td:first-child,
 .panel > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
-#sidebar .widget > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
-.sticky:not(.item) > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
-#comments > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
-.panel > .table-responsive > .table-bordered > tfoot > tr > td:first-child,
-#sidebar .widget > .table-responsive > .table-bordered > tfoot > tr > td:first-child,
-.sticky:not(.item) > .table-responsive > .table-bordered > tfoot > tr > td:first-child,
-#comments > .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+.panel > .table-responsive > .table-bordered > tfoot > tr > td:first-child {
   border-left: 0;
 }
-.panel > .table-bordered > thead > tr > th:last-child, #sidebar .widget > .table-bordered > thead > tr > th:last-child, .sticky:not(.item) > .table-bordered > thead > tr > th:last-child, #comments > .table-bordered > thead > tr > th:last-child,
+.panel > .table-bordered > thead > tr > th:last-child,
 .panel > .table-bordered > thead > tr > td:last-child,
-#sidebar .widget > .table-bordered > thead > tr > td:last-child,
-.sticky:not(.item) > .table-bordered > thead > tr > td:last-child,
-#comments > .table-bordered > thead > tr > td:last-child,
 .panel > .table-bordered > tbody > tr > th:last-child,
-#sidebar .widget > .table-bordered > tbody > tr > th:last-child,
-.sticky:not(.item) > .table-bordered > tbody > tr > th:last-child,
-#comments > .table-bordered > tbody > tr > th:last-child,
 .panel > .table-bordered > tbody > tr > td:last-child,
-#sidebar .widget > .table-bordered > tbody > tr > td:last-child,
-.sticky:not(.item) > .table-bordered > tbody > tr > td:last-child,
-#comments > .table-bordered > tbody > tr > td:last-child,
 .panel > .table-bordered > tfoot > tr > th:last-child,
-#sidebar .widget > .table-bordered > tfoot > tr > th:last-child,
-.sticky:not(.item) > .table-bordered > tfoot > tr > th:last-child,
-#comments > .table-bordered > tfoot > tr > th:last-child,
 .panel > .table-bordered > tfoot > tr > td:last-child,
-#sidebar .widget > .table-bordered > tfoot > tr > td:last-child,
-.sticky:not(.item) > .table-bordered > tfoot > tr > td:last-child,
-#comments > .table-bordered > tfoot > tr > td:last-child,
 .panel > .table-responsive > .table-bordered > thead > tr > th:last-child,
-#sidebar .widget > .table-responsive > .table-bordered > thead > tr > th:last-child,
-.sticky:not(.item) > .table-responsive > .table-bordered > thead > tr > th:last-child,
-#comments > .table-responsive > .table-bordered > thead > tr > th:last-child,
 .panel > .table-responsive > .table-bordered > thead > tr > td:last-child,
-#sidebar .widget > .table-responsive > .table-bordered > thead > tr > td:last-child,
-.sticky:not(.item) > .table-responsive > .table-bordered > thead > tr > td:last-child,
-#comments > .table-responsive > .table-bordered > thead > tr > td:last-child,
 .panel > .table-responsive > .table-bordered > tbody > tr > th:last-child,
-#sidebar .widget > .table-responsive > .table-bordered > tbody > tr > th:last-child,
-.sticky:not(.item) > .table-responsive > .table-bordered > tbody > tr > th:last-child,
-#comments > .table-responsive > .table-bordered > tbody > tr > th:last-child,
 .panel > .table-responsive > .table-bordered > tbody > tr > td:last-child,
-#sidebar .widget > .table-responsive > .table-bordered > tbody > tr > td:last-child,
-.sticky:not(.item) > .table-responsive > .table-bordered > tbody > tr > td:last-child,
-#comments > .table-responsive > .table-bordered > tbody > tr > td:last-child,
 .panel > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
-#sidebar .widget > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
-.sticky:not(.item) > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
-#comments > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
-.panel > .table-responsive > .table-bordered > tfoot > tr > td:last-child,
-#sidebar .widget > .table-responsive > .table-bordered > tfoot > tr > td:last-child,
-.sticky:not(.item) > .table-responsive > .table-bordered > tfoot > tr > td:last-child,
-#comments > .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+.panel > .table-responsive > .table-bordered > tfoot > tr > td:last-child {
   border-right: 0;
 }
-.panel > .table-bordered > thead > tr:last-child > th, #sidebar .widget > .table-bordered > thead > tr:last-child > th, .sticky:not(.item) > .table-bordered > thead > tr:last-child > th, #comments > .table-bordered > thead > tr:last-child > th, .panel > .table-bordered > thead > tr:last-child > td, #sidebar .widget > .table-bordered > thead > tr:last-child > td, .sticky:not(.item) > .table-bordered > thead > tr:last-child > td, #comments > .table-bordered > thead > tr:last-child > td,
+.panel > .table-bordered > thead > tr:last-child > th, .panel > .table-bordered > thead > tr:last-child > td,
 .panel > .table-bordered > tbody > tr:last-child > th,
-#sidebar .widget > .table-bordered > tbody > tr:last-child > th,
-.sticky:not(.item) > .table-bordered > tbody > tr:last-child > th,
-#comments > .table-bordered > tbody > tr:last-child > th,
 .panel > .table-bordered > tbody > tr:last-child > td,
-#sidebar .widget > .table-bordered > tbody > tr:last-child > td,
-.sticky:not(.item) > .table-bordered > tbody > tr:last-child > td,
-#comments > .table-bordered > tbody > tr:last-child > td,
 .panel > .table-bordered > tfoot > tr:last-child > th,
-#sidebar .widget > .table-bordered > tfoot > tr:last-child > th,
-.sticky:not(.item) > .table-bordered > tfoot > tr:last-child > th,
-#comments > .table-bordered > tfoot > tr:last-child > th,
 .panel > .table-bordered > tfoot > tr:last-child > td,
-#sidebar .widget > .table-bordered > tfoot > tr:last-child > td,
-.sticky:not(.item) > .table-bordered > tfoot > tr:last-child > td,
-#comments > .table-bordered > tfoot > tr:last-child > td,
 .panel > .table-responsive > .table-bordered > thead > tr:last-child > th,
-#sidebar .widget > .table-responsive > .table-bordered > thead > tr:last-child > th,
-.sticky:not(.item) > .table-responsive > .table-bordered > thead > tr:last-child > th,
-#comments > .table-responsive > .table-bordered > thead > tr:last-child > th,
 .panel > .table-responsive > .table-bordered > thead > tr:last-child > td,
-#sidebar .widget > .table-responsive > .table-bordered > thead > tr:last-child > td,
-.sticky:not(.item) > .table-responsive > .table-bordered > thead > tr:last-child > td,
-#comments > .table-responsive > .table-bordered > thead > tr:last-child > td,
 .panel > .table-responsive > .table-bordered > tbody > tr:last-child > th,
-#sidebar .widget > .table-responsive > .table-bordered > tbody > tr:last-child > th,
-.sticky:not(.item) > .table-responsive > .table-bordered > tbody > tr:last-child > th,
-#comments > .table-responsive > .table-bordered > tbody > tr:last-child > th,
 .panel > .table-responsive > .table-bordered > tbody > tr:last-child > td,
-#sidebar .widget > .table-responsive > .table-bordered > tbody > tr:last-child > td,
-.sticky:not(.item) > .table-responsive > .table-bordered > tbody > tr:last-child > td,
-#comments > .table-responsive > .table-bordered > tbody > tr:last-child > td,
 .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
-#sidebar .widget > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
-.sticky:not(.item) > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
-#comments > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
-.panel > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
-#sidebar .widget > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
-.sticky:not(.item) > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
-#comments > .table-responsive > .table-bordered > tfoot > tr:last-child > td {
+.panel > .table-responsive > .table-bordered > tfoot > tr:last-child > td {
   border-bottom: 0;
 }
 
-.panel-heading, #sidebar .widget .widgettitle, .sticky:not(.item) header, #comments .comments-title {
+.panel-heading {
   padding: 10px 15px;
   border-bottom: 1px solid transparent;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
 }
-.panel-heading > .dropdown .dropdown-toggle, #sidebar .widget .widgettitle > .dropdown .dropdown-toggle, .sticky:not(.item) header > .dropdown .dropdown-toggle, #comments .comments-title > .dropdown .dropdown-toggle {
+.panel-heading > .dropdown .dropdown-toggle {
   color: inherit;
 }
 
@@ -5370,7 +5110,7 @@ a.list-group-item.active .list-group-item-text, a.list-group-item.active:hover .
   color: inherit;
 }
 
-.panel-footer, #comments .comment-respond {
+.panel-footer {
   padding: 10px 15px;
   background-color: whitesmoke;
   border-top: 1px solid #dddddd;
@@ -5378,136 +5118,136 @@ a.list-group-item.active .list-group-item-text, a.list-group-item.active:hover .
   border-bottom-left-radius: 3px;
 }
 
-.panel-group .panel, .panel-group #sidebar .widget, #sidebar .panel-group .widget, .panel-group .sticky:not(.item), .panel-group #comments {
+.panel-group .panel {
   margin-bottom: 0;
   border-radius: 4px;
   overflow: hidden;
 }
-.panel-group .panel + .panel, .panel-group #sidebar .widget + .panel, #sidebar .panel-group .widget + .panel, .panel-group .sticky:not(.item) + .panel, .panel-group #comments + .panel, .panel-group #sidebar .panel + .widget, #sidebar .panel-group .panel + .widget, .panel-group #sidebar .widget + .widget, #sidebar .panel-group .widget + .widget, .panel-group #sidebar .sticky:not(.item) + .widget, #sidebar .panel-group .sticky:not(.item) + .widget, .panel-group #sidebar #comments + .widget, #sidebar .panel-group #comments + .widget, .panel-group .panel + .sticky:not(.item), .panel-group #sidebar .widget + .sticky:not(.item), #sidebar .panel-group .widget + .sticky:not(.item), .panel-group .sticky:not(.item) + .sticky:not(.item), .panel-group #comments + .sticky:not(.item), .panel-group .panel + #comments, .panel-group #sidebar .widget + #comments, #sidebar .panel-group .widget + #comments, .panel-group .sticky:not(.item) + #comments, .panel-group #comments + #comments {
+.panel-group .panel + .panel {
   margin-top: 5px;
 }
-.panel-group .panel-heading, .panel-group #sidebar .widget .widgettitle, #sidebar .widget .panel-group .widgettitle, .panel-group .sticky:not(.item) header, .sticky:not(.item) .panel-group header, .panel-group #comments .comments-title, #comments .panel-group .comments-title {
+.panel-group .panel-heading {
   border-bottom: 0;
 }
-.panel-group .panel-heading + .panel-collapse .panel-body, .panel-group #sidebar .widget .widgettitle + .panel-collapse .panel-body, #sidebar .widget .panel-group .widgettitle + .panel-collapse .panel-body, .panel-group .sticky:not(.item) header + .panel-collapse .panel-body, .sticky:not(.item) .panel-group header + .panel-collapse .panel-body, .panel-group #comments .comments-title + .panel-collapse .panel-body, #comments .panel-group .comments-title + .panel-collapse .panel-body, .panel-group .panel-heading + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) .panel-group .panel-heading + .panel-collapse .post-content, .panel-group #sidebar .widget .widgettitle + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) .panel-group #sidebar .widget .widgettitle + .panel-collapse .post-content, #sidebar .widget .panel-group .widgettitle + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #sidebar .widget .panel-group .widgettitle + .panel-collapse .post-content, .panel-group .sticky:not(.item) header + .panel-collapse .post-content, .sticky:not(.item) .panel-group header + .panel-collapse .post-content, .panel-group #comments .comments-title + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) .panel-group #comments .comments-title + .panel-collapse .post-content, #comments .panel-group .comments-title + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #comments .panel-group .comments-title + .panel-collapse .post-content, .panel-group .panel-heading + .panel-collapse #comments .comment-list, #comments .panel-group .panel-heading + .panel-collapse .comment-list, .panel-group #sidebar .widget .widgettitle + .panel-collapse #comments .comment-list, #comments .panel-group #sidebar .widget .widgettitle + .panel-collapse .comment-list, #sidebar .widget .panel-group .widgettitle + .panel-collapse #comments .comment-list, #comments #sidebar .widget .panel-group .widgettitle + .panel-collapse .comment-list, .panel-group .sticky:not(.item) header + .panel-collapse #comments .comment-list, #comments .panel-group .sticky:not(.item) header + .panel-collapse .comment-list, .sticky:not(.item) .panel-group header + .panel-collapse #comments .comment-list, #comments .sticky:not(.item) .panel-group header + .panel-collapse .comment-list, .panel-group #comments .comments-title + .panel-collapse .comment-list, #comments .panel-group .comments-title + .panel-collapse .comment-list {
+.panel-group .panel-heading + .panel-collapse .panel-body {
   border-top: 1px solid #dddddd;
 }
-.panel-group .panel-footer, .panel-group #comments .comment-respond, #comments .panel-group .comment-respond {
+.panel-group .panel-footer {
   border-top: 0;
 }
-.panel-group .panel-footer + .panel-collapse .panel-body, .panel-group #comments .comment-respond + .panel-collapse .panel-body, #comments .panel-group .comment-respond + .panel-collapse .panel-body, .panel-group .panel-footer + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) .panel-group .panel-footer + .panel-collapse .post-content, .panel-group #comments .comment-respond + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) .panel-group #comments .comment-respond + .panel-collapse .post-content, #comments .panel-group .comment-respond + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #comments .panel-group .comment-respond + .panel-collapse .post-content, .panel-group .panel-footer + .panel-collapse #comments .comment-list, #comments .panel-group .panel-footer + .panel-collapse .comment-list, .panel-group #comments .comment-respond + .panel-collapse .comment-list, #comments .panel-group .comment-respond + .panel-collapse .comment-list {
+.panel-group .panel-footer + .panel-collapse .panel-body {
   border-bottom: 1px solid #dddddd;
 }
 
-.panel-default, #sidebar .widget, #comments {
+.panel-default {
   border-color: #dddddd;
 }
-.panel-default > .panel-heading, #sidebar .widget > .panel-heading, #comments > .panel-heading, #sidebar .widget .panel-default > .widgettitle, #sidebar .widget > .widgettitle, #sidebar .widget #comments > .widgettitle, .sticky:not(.item) .panel-default > header, #sidebar .sticky:not(.item) .widget > header, .sticky:not(.item) #sidebar .widget > header, .sticky:not(.item) #comments > header, #comments .panel-default > .comments-title, #sidebar #comments .widget > .comments-title, #comments #sidebar .widget > .comments-title, #comments > .comments-title {
+.panel-default > .panel-heading {
   color: #333333;
   background-color: whitesmoke;
   border-color: #dddddd;
 }
-.panel-default > .panel-heading + .panel-collapse .panel-body, #sidebar .widget > .panel-heading + .panel-collapse .panel-body, #comments > .panel-heading + .panel-collapse .panel-body, #sidebar .widget .panel-default > .widgettitle + .panel-collapse .panel-body, #sidebar .widget > .widgettitle + .panel-collapse .panel-body, #sidebar .widget #comments > .widgettitle + .panel-collapse .panel-body, .sticky:not(.item) .panel-default > header + .panel-collapse .panel-body, #sidebar .sticky:not(.item) .widget > header + .panel-collapse .panel-body, .sticky:not(.item) #sidebar .widget > header + .panel-collapse .panel-body, .sticky:not(.item) #comments > header + .panel-collapse .panel-body, #comments .panel-default > .comments-title + .panel-collapse .panel-body, #sidebar #comments .widget > .comments-title + .panel-collapse .panel-body, #comments #sidebar .widget > .comments-title + .panel-collapse .panel-body, #comments > .comments-title + .panel-collapse .panel-body, .panel-default > .panel-heading + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) .panel-default > .panel-heading + .panel-collapse .post-content, #sidebar .widget > .panel-heading + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #sidebar .widget > .panel-heading + .panel-collapse .post-content, #comments > .panel-heading + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #comments > .panel-heading + .panel-collapse .post-content, #sidebar .widget .panel-default > .widgettitle + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #sidebar .widget .panel-default > .widgettitle + .panel-collapse .post-content, #sidebar .widget > .widgettitle + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #sidebar .widget > .widgettitle + .panel-collapse .post-content, #sidebar .widget #comments > .widgettitle + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #sidebar .widget #comments > .widgettitle + .panel-collapse .post-content, .sticky:not(.item) .panel-default > header + .panel-collapse .post-content, #sidebar .sticky:not(.item) .widget > header + .panel-collapse .post-content, .sticky:not(.item) #sidebar .widget > header + .panel-collapse .post-content, .sticky:not(.item) #comments > header + .panel-collapse .post-content, #comments .panel-default > .comments-title + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #comments .panel-default > .comments-title + .panel-collapse .post-content, #sidebar #comments .widget > .comments-title + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #sidebar #comments .widget > .comments-title + .panel-collapse .post-content, #comments #sidebar .widget > .comments-title + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #comments #sidebar .widget > .comments-title + .panel-collapse .post-content, #comments > .comments-title + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #comments > .comments-title + .panel-collapse .post-content, .panel-default > .panel-heading + .panel-collapse #comments .comment-list, #comments .panel-default > .panel-heading + .panel-collapse .comment-list, #sidebar .widget > .panel-heading + .panel-collapse #comments .comment-list, #comments #sidebar .widget > .panel-heading + .panel-collapse .comment-list, #comments > .panel-heading + .panel-collapse .comment-list, #sidebar .widget .panel-default > .widgettitle + .panel-collapse #comments .comment-list, #comments #sidebar .widget .panel-default > .widgettitle + .panel-collapse .comment-list, #sidebar .widget > .widgettitle + .panel-collapse #comments .comment-list, #comments #sidebar .widget > .widgettitle + .panel-collapse .comment-list, #sidebar .widget #comments > .widgettitle + .panel-collapse .comment-list, .sticky:not(.item) .panel-default > header + .panel-collapse #comments .comment-list, #comments .sticky:not(.item) .panel-default > header + .panel-collapse .comment-list, #sidebar .sticky:not(.item) .widget > header + .panel-collapse #comments .comment-list, #comments #sidebar .sticky:not(.item) .widget > header + .panel-collapse .comment-list, .sticky:not(.item) #sidebar .widget > header + .panel-collapse #comments .comment-list, #comments .sticky:not(.item) #sidebar .widget > header + .panel-collapse .comment-list, .sticky:not(.item) #comments > header + .panel-collapse .comment-list, #comments .panel-default > .comments-title + .panel-collapse .comment-list, #sidebar #comments .widget > .comments-title + .panel-collapse .comment-list, #comments #sidebar .widget > .comments-title + .panel-collapse .comment-list, #comments > .comments-title + .panel-collapse .comment-list {
+.panel-default > .panel-heading + .panel-collapse .panel-body {
   border-top-color: #dddddd;
 }
-.panel-default > .panel-heading > .dropdown .caret, #sidebar .widget > .panel-heading > .dropdown .caret, #comments > .panel-heading > .dropdown .caret, #sidebar .widget .panel-default > .widgettitle > .dropdown .caret, #sidebar .widget > .widgettitle > .dropdown .caret, #sidebar .widget #comments > .widgettitle > .dropdown .caret, .sticky:not(.item) .panel-default > header > .dropdown .caret, #sidebar .sticky:not(.item) .widget > header > .dropdown .caret, .sticky:not(.item) #sidebar .widget > header > .dropdown .caret, .sticky:not(.item) #comments > header > .dropdown .caret, #comments .panel-default > .comments-title > .dropdown .caret, #sidebar #comments .widget > .comments-title > .dropdown .caret, #comments #sidebar .widget > .comments-title > .dropdown .caret, #comments > .comments-title > .dropdown .caret {
+.panel-default > .panel-heading > .dropdown .caret {
   border-color: #333333 transparent;
 }
-.panel-default > .panel-footer + .panel-collapse .panel-body, #sidebar .widget > .panel-footer + .panel-collapse .panel-body, #comments > .panel-footer + .panel-collapse .panel-body, #comments .panel-default > .comment-respond + .panel-collapse .panel-body, #sidebar #comments .widget > .comment-respond + .panel-collapse .panel-body, #comments #sidebar .widget > .comment-respond + .panel-collapse .panel-body, #comments > .comment-respond + .panel-collapse .panel-body, .panel-default > .panel-footer + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) .panel-default > .panel-footer + .panel-collapse .post-content, #sidebar .widget > .panel-footer + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #sidebar .widget > .panel-footer + .panel-collapse .post-content, #comments > .panel-footer + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #comments > .panel-footer + .panel-collapse .post-content, #comments .panel-default > .comment-respond + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #comments .panel-default > .comment-respond + .panel-collapse .post-content, #sidebar #comments .widget > .comment-respond + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #sidebar #comments .widget > .comment-respond + .panel-collapse .post-content, #comments #sidebar .widget > .comment-respond + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #comments #sidebar .widget > .comment-respond + .panel-collapse .post-content, #comments > .comment-respond + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #comments > .comment-respond + .panel-collapse .post-content, .panel-default > .panel-footer + .panel-collapse #comments .comment-list, #comments .panel-default > .panel-footer + .panel-collapse .comment-list, #sidebar .widget > .panel-footer + .panel-collapse #comments .comment-list, #comments #sidebar .widget > .panel-footer + .panel-collapse .comment-list, #comments > .panel-footer + .panel-collapse .comment-list, #comments .panel-default > .comment-respond + .panel-collapse .comment-list, #sidebar #comments .widget > .comment-respond + .panel-collapse .comment-list, #comments #sidebar .widget > .comment-respond + .panel-collapse .comment-list, #comments > .comment-respond + .panel-collapse .comment-list {
+.panel-default > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #dddddd;
 }
 
 .panel-primary {
   border-color: #428bca;
 }
-.panel-primary > .panel-heading, #sidebar .widget .panel-primary > .widgettitle, .sticky:not(.item) .panel-primary > header, #comments .panel-primary > .comments-title {
+.panel-primary > .panel-heading {
   color: white;
   background-color: #428bca;
   border-color: #428bca;
 }
-.panel-primary > .panel-heading + .panel-collapse .panel-body, #sidebar .widget .panel-primary > .widgettitle + .panel-collapse .panel-body, .sticky:not(.item) .panel-primary > header + .panel-collapse .panel-body, #comments .panel-primary > .comments-title + .panel-collapse .panel-body, .panel-primary > .panel-heading + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) .panel-primary > .panel-heading + .panel-collapse .post-content, #sidebar .widget .panel-primary > .widgettitle + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #sidebar .widget .panel-primary > .widgettitle + .panel-collapse .post-content, .sticky:not(.item) .panel-primary > header + .panel-collapse .post-content, #comments .panel-primary > .comments-title + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #comments .panel-primary > .comments-title + .panel-collapse .post-content, .panel-primary > .panel-heading + .panel-collapse #comments .comment-list, #comments .panel-primary > .panel-heading + .panel-collapse .comment-list, #sidebar .widget .panel-primary > .widgettitle + .panel-collapse #comments .comment-list, #comments #sidebar .widget .panel-primary > .widgettitle + .panel-collapse .comment-list, .sticky:not(.item) .panel-primary > header + .panel-collapse #comments .comment-list, #comments .sticky:not(.item) .panel-primary > header + .panel-collapse .comment-list, #comments .panel-primary > .comments-title + .panel-collapse .comment-list {
+.panel-primary > .panel-heading + .panel-collapse .panel-body {
   border-top-color: #428bca;
 }
-.panel-primary > .panel-heading > .dropdown .caret, #sidebar .widget .panel-primary > .widgettitle > .dropdown .caret, .sticky:not(.item) .panel-primary > header > .dropdown .caret, #comments .panel-primary > .comments-title > .dropdown .caret {
+.panel-primary > .panel-heading > .dropdown .caret {
   border-color: white transparent;
 }
-.panel-primary > .panel-footer + .panel-collapse .panel-body, #comments .panel-primary > .comment-respond + .panel-collapse .panel-body, .panel-primary > .panel-footer + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) .panel-primary > .panel-footer + .panel-collapse .post-content, #comments .panel-primary > .comment-respond + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #comments .panel-primary > .comment-respond + .panel-collapse .post-content, .panel-primary > .panel-footer + .panel-collapse #comments .comment-list, #comments .panel-primary > .panel-footer + .panel-collapse .comment-list, #comments .panel-primary > .comment-respond + .panel-collapse .comment-list {
+.panel-primary > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #428bca;
 }
 
 .panel-success {
   border-color: #d6e9c6;
 }
-.panel-success > .panel-heading, #sidebar .widget .panel-success > .widgettitle, .sticky:not(.item) .panel-success > header, #comments .panel-success > .comments-title {
+.panel-success > .panel-heading {
   color: #468847;
   background-color: #dff0d8;
   border-color: #d6e9c6;
 }
-.panel-success > .panel-heading + .panel-collapse .panel-body, #sidebar .widget .panel-success > .widgettitle + .panel-collapse .panel-body, .sticky:not(.item) .panel-success > header + .panel-collapse .panel-body, #comments .panel-success > .comments-title + .panel-collapse .panel-body, .panel-success > .panel-heading + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) .panel-success > .panel-heading + .panel-collapse .post-content, #sidebar .widget .panel-success > .widgettitle + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #sidebar .widget .panel-success > .widgettitle + .panel-collapse .post-content, .sticky:not(.item) .panel-success > header + .panel-collapse .post-content, #comments .panel-success > .comments-title + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #comments .panel-success > .comments-title + .panel-collapse .post-content, .panel-success > .panel-heading + .panel-collapse #comments .comment-list, #comments .panel-success > .panel-heading + .panel-collapse .comment-list, #sidebar .widget .panel-success > .widgettitle + .panel-collapse #comments .comment-list, #comments #sidebar .widget .panel-success > .widgettitle + .panel-collapse .comment-list, .sticky:not(.item) .panel-success > header + .panel-collapse #comments .comment-list, #comments .sticky:not(.item) .panel-success > header + .panel-collapse .comment-list, #comments .panel-success > .comments-title + .panel-collapse .comment-list {
+.panel-success > .panel-heading + .panel-collapse .panel-body {
   border-top-color: #d6e9c6;
 }
-.panel-success > .panel-heading > .dropdown .caret, #sidebar .widget .panel-success > .widgettitle > .dropdown .caret, .sticky:not(.item) .panel-success > header > .dropdown .caret, #comments .panel-success > .comments-title > .dropdown .caret {
+.panel-success > .panel-heading > .dropdown .caret {
   border-color: #468847 transparent;
 }
-.panel-success > .panel-footer + .panel-collapse .panel-body, #comments .panel-success > .comment-respond + .panel-collapse .panel-body, .panel-success > .panel-footer + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) .panel-success > .panel-footer + .panel-collapse .post-content, #comments .panel-success > .comment-respond + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #comments .panel-success > .comment-respond + .panel-collapse .post-content, .panel-success > .panel-footer + .panel-collapse #comments .comment-list, #comments .panel-success > .panel-footer + .panel-collapse .comment-list, #comments .panel-success > .comment-respond + .panel-collapse .comment-list {
+.panel-success > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #d6e9c6;
 }
 
 .panel-warning {
   border-color: #faebcc;
 }
-.panel-warning > .panel-heading, #sidebar .widget .panel-warning > .widgettitle, .sticky:not(.item) .panel-warning > header, #comments .panel-warning > .comments-title {
+.panel-warning > .panel-heading {
   color: #c09853;
   background-color: #fcf8e3;
   border-color: #faebcc;
 }
-.panel-warning > .panel-heading + .panel-collapse .panel-body, #sidebar .widget .panel-warning > .widgettitle + .panel-collapse .panel-body, .sticky:not(.item) .panel-warning > header + .panel-collapse .panel-body, #comments .panel-warning > .comments-title + .panel-collapse .panel-body, .panel-warning > .panel-heading + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) .panel-warning > .panel-heading + .panel-collapse .post-content, #sidebar .widget .panel-warning > .widgettitle + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #sidebar .widget .panel-warning > .widgettitle + .panel-collapse .post-content, .sticky:not(.item) .panel-warning > header + .panel-collapse .post-content, #comments .panel-warning > .comments-title + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #comments .panel-warning > .comments-title + .panel-collapse .post-content, .panel-warning > .panel-heading + .panel-collapse #comments .comment-list, #comments .panel-warning > .panel-heading + .panel-collapse .comment-list, #sidebar .widget .panel-warning > .widgettitle + .panel-collapse #comments .comment-list, #comments #sidebar .widget .panel-warning > .widgettitle + .panel-collapse .comment-list, .sticky:not(.item) .panel-warning > header + .panel-collapse #comments .comment-list, #comments .sticky:not(.item) .panel-warning > header + .panel-collapse .comment-list, #comments .panel-warning > .comments-title + .panel-collapse .comment-list {
+.panel-warning > .panel-heading + .panel-collapse .panel-body {
   border-top-color: #faebcc;
 }
-.panel-warning > .panel-heading > .dropdown .caret, #sidebar .widget .panel-warning > .widgettitle > .dropdown .caret, .sticky:not(.item) .panel-warning > header > .dropdown .caret, #comments .panel-warning > .comments-title > .dropdown .caret {
+.panel-warning > .panel-heading > .dropdown .caret {
   border-color: #c09853 transparent;
 }
-.panel-warning > .panel-footer + .panel-collapse .panel-body, #comments .panel-warning > .comment-respond + .panel-collapse .panel-body, .panel-warning > .panel-footer + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) .panel-warning > .panel-footer + .panel-collapse .post-content, #comments .panel-warning > .comment-respond + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #comments .panel-warning > .comment-respond + .panel-collapse .post-content, .panel-warning > .panel-footer + .panel-collapse #comments .comment-list, #comments .panel-warning > .panel-footer + .panel-collapse .comment-list, #comments .panel-warning > .comment-respond + .panel-collapse .comment-list {
+.panel-warning > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #faebcc;
 }
 
 .panel-danger {
   border-color: #ebccd1;
 }
-.panel-danger > .panel-heading, #sidebar .widget .panel-danger > .widgettitle, .sticky:not(.item) .panel-danger > header, #comments .panel-danger > .comments-title {
+.panel-danger > .panel-heading {
   color: #b94a48;
   background-color: #f2dede;
   border-color: #ebccd1;
 }
-.panel-danger > .panel-heading + .panel-collapse .panel-body, #sidebar .widget .panel-danger > .widgettitle + .panel-collapse .panel-body, .sticky:not(.item) .panel-danger > header + .panel-collapse .panel-body, #comments .panel-danger > .comments-title + .panel-collapse .panel-body, .panel-danger > .panel-heading + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) .panel-danger > .panel-heading + .panel-collapse .post-content, #sidebar .widget .panel-danger > .widgettitle + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #sidebar .widget .panel-danger > .widgettitle + .panel-collapse .post-content, .sticky:not(.item) .panel-danger > header + .panel-collapse .post-content, #comments .panel-danger > .comments-title + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #comments .panel-danger > .comments-title + .panel-collapse .post-content, .panel-danger > .panel-heading + .panel-collapse #comments .comment-list, #comments .panel-danger > .panel-heading + .panel-collapse .comment-list, #sidebar .widget .panel-danger > .widgettitle + .panel-collapse #comments .comment-list, #comments #sidebar .widget .panel-danger > .widgettitle + .panel-collapse .comment-list, .sticky:not(.item) .panel-danger > header + .panel-collapse #comments .comment-list, #comments .sticky:not(.item) .panel-danger > header + .panel-collapse .comment-list, #comments .panel-danger > .comments-title + .panel-collapse .comment-list {
+.panel-danger > .panel-heading + .panel-collapse .panel-body {
   border-top-color: #ebccd1;
 }
-.panel-danger > .panel-heading > .dropdown .caret, #sidebar .widget .panel-danger > .widgettitle > .dropdown .caret, .sticky:not(.item) .panel-danger > header > .dropdown .caret, #comments .panel-danger > .comments-title > .dropdown .caret {
+.panel-danger > .panel-heading > .dropdown .caret {
   border-color: #b94a48 transparent;
 }
-.panel-danger > .panel-footer + .panel-collapse .panel-body, #comments .panel-danger > .comment-respond + .panel-collapse .panel-body, .panel-danger > .panel-footer + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) .panel-danger > .panel-footer + .panel-collapse .post-content, #comments .panel-danger > .comment-respond + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #comments .panel-danger > .comment-respond + .panel-collapse .post-content, .panel-danger > .panel-footer + .panel-collapse #comments .comment-list, #comments .panel-danger > .panel-footer + .panel-collapse .comment-list, #comments .panel-danger > .comment-respond + .panel-collapse .comment-list {
+.panel-danger > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #ebccd1;
 }
 
-.panel-info, .sticky:not(.item) {
+.panel-info {
   border-color: #bce8f1;
 }
-.panel-info > .panel-heading, .sticky:not(.item) > .panel-heading, #sidebar .widget .panel-info > .widgettitle, #sidebar .widget .sticky:not(.item) > .widgettitle, .sticky:not(.item) .panel-info > header, .sticky:not(.item) > header, #comments .panel-info > .comments-title, #comments .sticky:not(.item) > .comments-title {
+.panel-info > .panel-heading {
   color: #3a87ad;
   background-color: #d9edf7;
   border-color: #bce8f1;
 }
-.panel-info > .panel-heading + .panel-collapse .panel-body, .sticky:not(.item) > .panel-heading + .panel-collapse .panel-body, #sidebar .widget .panel-info > .widgettitle + .panel-collapse .panel-body, #sidebar .widget .sticky:not(.item) > .widgettitle + .panel-collapse .panel-body, .sticky:not(.item) .panel-info > header + .panel-collapse .panel-body, .sticky:not(.item) > header + .panel-collapse .panel-body, #comments .panel-info > .comments-title + .panel-collapse .panel-body, #comments .sticky:not(.item) > .comments-title + .panel-collapse .panel-body, .panel-info > .panel-heading + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) .panel-info > .panel-heading + .panel-collapse .post-content, .sticky:not(.item) > .panel-heading + .panel-collapse .post-content, #sidebar .widget .panel-info > .widgettitle + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #sidebar .widget .panel-info > .widgettitle + .panel-collapse .post-content, #sidebar .widget .sticky:not(.item) > .widgettitle + .panel-collapse .post-content, .sticky:not(.item) .panel-info > header + .panel-collapse .post-content, .sticky:not(.item) > header + .panel-collapse .post-content, #comments .panel-info > .comments-title + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #comments .panel-info > .comments-title + .panel-collapse .post-content, #comments .sticky:not(.item) > .comments-title + .panel-collapse .post-content, .panel-info > .panel-heading + .panel-collapse #comments .comment-list, #comments .panel-info > .panel-heading + .panel-collapse .comment-list, .sticky:not(.item) > .panel-heading + .panel-collapse #comments .comment-list, #comments .sticky:not(.item) > .panel-heading + .panel-collapse .comment-list, #sidebar .widget .panel-info > .widgettitle + .panel-collapse #comments .comment-list, #comments #sidebar .widget .panel-info > .widgettitle + .panel-collapse .comment-list, #sidebar .widget .sticky:not(.item) > .widgettitle + .panel-collapse #comments .comment-list, #comments #sidebar .widget .sticky:not(.item) > .widgettitle + .panel-collapse .comment-list, .sticky:not(.item) .panel-info > header + .panel-collapse #comments .comment-list, #comments .sticky:not(.item) .panel-info > header + .panel-collapse .comment-list, .sticky:not(.item) > header + .panel-collapse #comments .comment-list, #comments .sticky:not(.item) > header + .panel-collapse .comment-list, #comments .panel-info > .comments-title + .panel-collapse .comment-list, #comments .sticky:not(.item) > .comments-title + .panel-collapse .comment-list {
+.panel-info > .panel-heading + .panel-collapse .panel-body {
   border-top-color: #bce8f1;
 }
-.panel-info > .panel-heading > .dropdown .caret, .sticky:not(.item) > .panel-heading > .dropdown .caret, #sidebar .widget .panel-info > .widgettitle > .dropdown .caret, #sidebar .widget .sticky:not(.item) > .widgettitle > .dropdown .caret, .sticky:not(.item) .panel-info > header > .dropdown .caret, .sticky:not(.item) > header > .dropdown .caret, #comments .panel-info > .comments-title > .dropdown .caret, #comments .sticky:not(.item) > .comments-title > .dropdown .caret {
+.panel-info > .panel-heading > .dropdown .caret {
   border-color: #3a87ad transparent;
 }
-.panel-info > .panel-footer + .panel-collapse .panel-body, .sticky:not(.item) > .panel-footer + .panel-collapse .panel-body, #comments .panel-info > .comment-respond + .panel-collapse .panel-body, #comments .sticky:not(.item) > .comment-respond + .panel-collapse .panel-body, .panel-info > .panel-footer + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) .panel-info > .panel-footer + .panel-collapse .post-content, .sticky:not(.item) > .panel-footer + .panel-collapse .post-content, #comments .panel-info > .comment-respond + .panel-collapse .sticky:not(.item) .post-content, .sticky:not(.item) #comments .panel-info > .comment-respond + .panel-collapse .post-content, #comments .sticky:not(.item) > .comment-respond + .panel-collapse .post-content, .panel-info > .panel-footer + .panel-collapse #comments .comment-list, #comments .panel-info > .panel-footer + .panel-collapse .comment-list, .sticky:not(.item) > .panel-footer + .panel-collapse #comments .comment-list, #comments .sticky:not(.item) > .panel-footer + .panel-collapse .comment-list, #comments .panel-info > .comment-respond + .panel-collapse .comment-list, #comments .sticky:not(.item) > .comment-respond + .panel-collapse .comment-list {
+.panel-info > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #bce8f1;
 }
 
-.well, .woocommerce .site .woocommerce-breadcrumb, .single article header, #comments .comment-list li .comment-body, #comments .comment-respond .logged-in-as {
+.well {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
@@ -5517,7 +5257,7 @@ a.list-group-item.active .list-group-item-text, a.list-group-item.active:hover .
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-.well blockquote, .woocommerce .site .woocommerce-breadcrumb blockquote, .single article header blockquote, #comments .comment-list li .comment-body blockquote, #comments .comment-respond .logged-in-as blockquote {
+.well blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
@@ -5662,11 +5402,11 @@ button.close {
 .modal-footer:after {
   clear: both;
 }
-.modal-footer .btn + .btn, .modal-footer .tagcloud a + .btn, .tagcloud .modal-footer a + .btn, .modal-footer input[type="submit"] + .btn, .modal-footer .woocommerce .site .woocommerce-breadcrumb a + .btn, .woocommerce .site .woocommerce-breadcrumb .modal-footer a + .btn, .modal-footer .woocommerce .site #container .product a.button + .btn, .woocommerce .site #container .product .modal-footer a.button + .btn, .modal-footer #comments .comment-list .reply a + .btn, #comments .comment-list .reply .modal-footer a + .btn, .modal-footer .tagcloud .btn + a, .tagcloud .modal-footer .btn + a, .modal-footer .tagcloud a + a, .tagcloud .modal-footer a + a, .modal-footer .tagcloud input[type="submit"] + a, .tagcloud .modal-footer input[type="submit"] + a, .modal-footer .woocommerce .site #container .product .tagcloud a.button + a, .tagcloud .modal-footer .woocommerce .site #container .product a.button + a, .woocommerce .site #container .product .modal-footer .tagcloud a.button + a, .tagcloud .woocommerce .site #container .product .modal-footer a.button + a, .modal-footer .btn + input[type="submit"], .modal-footer .tagcloud a + input[type="submit"], .tagcloud .modal-footer a + input[type="submit"], .modal-footer input[type="submit"] + input[type="submit"], .modal-footer .woocommerce .site .woocommerce-breadcrumb a + input[type="submit"], .woocommerce .site .woocommerce-breadcrumb .modal-footer a + input[type="submit"], .modal-footer .woocommerce .site #container .product a.button + input[type="submit"], .woocommerce .site #container .product .modal-footer a.button + input[type="submit"], .modal-footer #comments .comment-list .reply a + input[type="submit"], #comments .comment-list .reply .modal-footer a + input[type="submit"], .modal-footer .woocommerce .site .woocommerce-breadcrumb .btn + a, .woocommerce .site .woocommerce-breadcrumb .modal-footer .btn + a, .modal-footer .woocommerce .site .woocommerce-breadcrumb input[type="submit"] + a, .woocommerce .site .woocommerce-breadcrumb .modal-footer input[type="submit"] + a, .modal-footer .woocommerce .site .woocommerce-breadcrumb a + a, .woocommerce .site .woocommerce-breadcrumb .modal-footer a + a, .modal-footer .woocommerce .site #container .product .woocommerce-breadcrumb a.button + a, .modal-footer .woocommerce .site .woocommerce-breadcrumb #container .product a.button + a, .woocommerce .site #container .product .modal-footer .woocommerce-breadcrumb a.button + a, .woocommerce .site .woocommerce-breadcrumb #container .product .modal-footer a.button + a, .modal-footer .woocommerce .site #container .product .btn + a.button, .woocommerce .site #container .product .modal-footer .btn + a.button, .modal-footer .tagcloud .woocommerce .site #container .product a + a.button, .woocommerce .site #container .product .modal-footer .tagcloud a + a.button, .tagcloud .modal-footer .woocommerce .site #container .product a + a.button, .woocommerce .site #container .product .tagcloud .modal-footer a + a.button, .modal-footer .woocommerce .site #container .product input[type="submit"] + a.button, .woocommerce .site #container .product .modal-footer input[type="submit"] + a.button, .modal-footer .woocommerce .site .woocommerce-breadcrumb #container .product a + a.button, .modal-footer .woocommerce .site #container .product .woocommerce-breadcrumb a + a.button, .woocommerce .site .woocommerce-breadcrumb .modal-footer #container .product a + a.button, .woocommerce .site #container .product .woocommerce-breadcrumb .modal-footer a + a.button, .modal-footer .woocommerce .site #container .product a.button + a.button, .woocommerce .site #container .product .modal-footer a.button + a.button, .modal-footer #comments .comment-list .reply .woocommerce .site #container .product a + a.button, .woocommerce .site #container .product .modal-footer #comments .comment-list .reply a + a.button, #comments .comment-list .reply .modal-footer .woocommerce .site #container .product a + a.button, .woocommerce .site #container .product #comments .comment-list .reply .modal-footer a + a.button, .modal-footer #comments .comment-list .reply .btn + a, #comments .comment-list .reply .modal-footer .btn + a, .modal-footer #comments .comment-list .reply input[type="submit"] + a, #comments .comment-list .reply .modal-footer input[type="submit"] + a, .modal-footer .woocommerce .site #container .product #comments .comment-list .reply a.button + a, #comments .comment-list .reply .modal-footer .woocommerce .site #container .product a.button + a, .woocommerce .site #container .product .modal-footer #comments .comment-list .reply a.button + a, #comments .comment-list .reply .woocommerce .site #container .product .modal-footer a.button + a, .modal-footer #comments .comment-list .reply a + a, #comments .comment-list .reply .modal-footer a + a {
+.modal-footer .btn + .btn {
   margin-left: 5px;
   margin-bottom: 0;
 }
-.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .tagcloud a + .btn, .tagcloud .modal-footer .btn-group a + .btn, .modal-footer .btn-group input[type="submit"] + .btn, .modal-footer .btn-group .woocommerce .site .woocommerce-breadcrumb a + .btn, .woocommerce .site .woocommerce-breadcrumb .modal-footer .btn-group a + .btn, .modal-footer .btn-group .woocommerce .site #container .product a.button + .btn, .woocommerce .site #container .product .modal-footer .btn-group a.button + .btn, .modal-footer .btn-group #comments .comment-list .reply a + .btn, #comments .comment-list .reply .modal-footer .btn-group a + .btn, .modal-footer .btn-group .tagcloud .btn + a, .tagcloud .modal-footer .btn-group .btn + a, .modal-footer .btn-group .tagcloud a + a, .tagcloud .modal-footer .btn-group a + a, .modal-footer .btn-group .tagcloud input[type="submit"] + a, .tagcloud .modal-footer .btn-group input[type="submit"] + a, .modal-footer .btn-group .woocommerce .site #container .product .tagcloud a.button + a, .tagcloud .modal-footer .btn-group .woocommerce .site #container .product a.button + a, .woocommerce .site #container .product .modal-footer .btn-group .tagcloud a.button + a, .tagcloud .woocommerce .site #container .product .modal-footer .btn-group a.button + a, .modal-footer .btn-group .btn + input[type="submit"], .modal-footer .btn-group .tagcloud a + input[type="submit"], .tagcloud .modal-footer .btn-group a + input[type="submit"], .modal-footer .btn-group input[type="submit"] + input[type="submit"], .modal-footer .btn-group .woocommerce .site .woocommerce-breadcrumb a + input[type="submit"], .woocommerce .site .woocommerce-breadcrumb .modal-footer .btn-group a + input[type="submit"], .modal-footer .btn-group .woocommerce .site #container .product a.button + input[type="submit"], .woocommerce .site #container .product .modal-footer .btn-group a.button + input[type="submit"], .modal-footer .btn-group #comments .comment-list .reply a + input[type="submit"], #comments .comment-list .reply .modal-footer .btn-group a + input[type="submit"], .modal-footer .btn-group .woocommerce .site .woocommerce-breadcrumb .btn + a, .woocommerce .site .woocommerce-breadcrumb .modal-footer .btn-group .btn + a, .modal-footer .btn-group .woocommerce .site .woocommerce-breadcrumb input[type="submit"] + a, .woocommerce .site .woocommerce-breadcrumb .modal-footer .btn-group input[type="submit"] + a, .modal-footer .btn-group .woocommerce .site .woocommerce-breadcrumb a + a, .woocommerce .site .woocommerce-breadcrumb .modal-footer .btn-group a + a, .modal-footer .btn-group .woocommerce .site #container .product .woocommerce-breadcrumb a.button + a, .modal-footer .btn-group .woocommerce .site .woocommerce-breadcrumb #container .product a.button + a, .woocommerce .site #container .product .modal-footer .btn-group .woocommerce-breadcrumb a.button + a, .woocommerce .site .woocommerce-breadcrumb #container .product .modal-footer .btn-group a.button + a, .modal-footer .btn-group .woocommerce .site #container .product .btn + a.button, .woocommerce .site #container .product .modal-footer .btn-group .btn + a.button, .modal-footer .btn-group .tagcloud .woocommerce .site #container .product a + a.button, .woocommerce .site #container .product .modal-footer .btn-group .tagcloud a + a.button, .tagcloud .modal-footer .btn-group .woocommerce .site #container .product a + a.button, .woocommerce .site #container .product .tagcloud .modal-footer .btn-group a + a.button, .modal-footer .btn-group .woocommerce .site #container .product input[type="submit"] + a.button, .woocommerce .site #container .product .modal-footer .btn-group input[type="submit"] + a.button, .modal-footer .btn-group .woocommerce .site .woocommerce-breadcrumb #container .product a + a.button, .modal-footer .btn-group .woocommerce .site #container .product .woocommerce-breadcrumb a + a.button, .woocommerce .site .woocommerce-breadcrumb .modal-footer .btn-group #container .product a + a.button, .woocommerce .site #container .product .woocommerce-breadcrumb .modal-footer .btn-group a + a.button, .modal-footer .btn-group .woocommerce .site #container .product a.button + a.button, .woocommerce .site #container .product .modal-footer .btn-group a.button + a.button, .modal-footer .btn-group #comments .comment-list .reply .btn + a, #comments .comment-list .reply .modal-footer .btn-group .btn + a, .modal-footer .btn-group #comments .comment-list .reply input[type="submit"] + a, #comments .comment-list .reply .modal-footer .btn-group input[type="submit"] + a, .modal-footer .btn-group #comments .comment-list .reply a + a, #comments .comment-list .reply .modal-footer .btn-group a + a {
+.modal-footer .btn-group .btn + .btn {
   margin-left: -1px;
 }
 .modal-footer .btn-block + .btn-block {
@@ -6076,7 +5816,7 @@ button.close {
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
-.carousel-caption .btn, .carousel-caption .tagcloud a, .tagcloud .carousel-caption a, .carousel-caption input[type="submit"], .carousel-caption .woocommerce .site .woocommerce-breadcrumb a, .woocommerce .site .woocommerce-breadcrumb .carousel-caption a, .carousel-caption .woocommerce .site #container .product a.button, .woocommerce .site #container .product .carousel-caption a.button, .carousel-caption #comments .comment-list .reply a, #comments .comment-list .reply .carousel-caption a {
+.carousel-caption .btn {
   text-shadow: none;
 }
 
@@ -6102,13 +5842,13 @@ button.close {
     bottom: 20px;
   }
 }
-.clearfix:before, .woocommerce .site:before, .clearfix:after, .woocommerce .site:after {
+.clearfix:before, .clearfix:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
-.clearfix:after, .woocommerce .site:after {
+.clearfix:after {
   clear: both;
 }
 
@@ -6118,7 +5858,7 @@ button.close {
   margin-right: auto;
 }
 
-.pull-right, .full:nth-child(even) article div:first-child {
+.pull-right {
   float: right !important;
 }
 
@@ -6619,421 +6359,3 @@ td.visible-print {
     display: none !important;
   }
 }
-/**
- * Highlight: #FFDF05
- */
-/* --------------------------------------------------------------
-
-   Basic WordPress Blog Styles
-   Got this from:  http://your-wordpress-theme.googlecode.com/svn/trunk/styles/wp.css
--------------------------------------------------------------- */
-/* Images
--------------------------------------------------------------- */
-.entry-content img {
-  margin: 0 0 1.5em 0;
-}
-
-.alignleft,
-img.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5em;
-}
-
-.alignright,
-img.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5em;
-}
-
-.aligncenter,
-img.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.wp-caption {
-  text-align: center;
-  margin-bottom: 1.5em;
-}
-
-.wp-caption img {
-  border: 0 none;
-  margin: 0;
-  padding: 0;
-}
-
-.wp-caption p.wp-caption-text {
-  margin: 0;
-}
-
-.wp-smiley {
-  max-height: 1em;
-  margin: 0 !important;
-}
-
-.gallery dl {
-  margin: 0;
-}
-
-.gallery-caption {
-  margin: -1.5em 0 0 0;
-}
-
-/* Pullquotes
--------------------------------------------------------------- */
-blockquote.left {
-  float: left;
-  margin-left: 0;
-  margin-right: 20px;
-  text-align: right;
-  width: 33%;
-}
-
-blockquote.right {
-  float: right;
-  margin-left: 20px;
-  margin-right: 0;
-  text-align: left;
-  width: 33%;
-}
-
-li.widget, .widget ol, .widget ul, .widget li {
-  list-style: none;
-}
-
-/* Nick's Custom shiz
--------------------------------------------------------------- */
-/**
-Tag cloud
-*/
-.wp-caption {
-  max-width: 100%;
-}
-
-input[type="submit"] {
-  margin: 10px 0;
-}
-
-/**
- * Responsive navbar
- * On the front-page of a WordPress blog this will be transparent until scrolling past the hero.
- * 
- * 
- */
-body.home.admin-bar nav.navbar {
-  top: 28px !important;
-}
-
-nav.navbar.navbar-fixed-top.compact, .home nav.navbar.compact {
-  margin: auto;
-  background: #333;
-  transition: width 1s, background 200ms;
-}
-@media (min-width: 992px) {
-  nav.navbar.navbar-fixed-top.compact, .home nav.navbar.compact {
-    width: 970px;
-  }
-}
-@media (min-width: 992px) {
-  nav.navbar.navbar-fixed-top.compact .container, .home nav.navbar.compact .container {
-    width: 970px;
-  }
-}
-nav.navbar.navbar-fixed-top.compact .navbar-collapse a, .home nav.navbar.compact .navbar-collapse a {
-  padding: 15px 5px;
-}
-nav.navbar.navbar-fixed-top.compact #site-title, .home nav.navbar.compact #site-title {
-  margin-left: 15px;
-}
-nav.navbar.navbar-fixed-top.compact .navbar-right:last-child, .home nav.navbar.compact .navbar-right:last-child {
-  margin-right: 15px;
-}
-nav.navbar.navbar-fixed-top.compact .icon-bar, .home nav.navbar.compact .icon-bar {
-  background: #fff;
-}
-
-.home .navbar {
-  background-color: rgba(0, 0, 0, 0.32);
-  border-color: rgba(103, 103, 103, 0.43);
-  box-shadow: 0 0 33px rgba(0, 0, 0, 0.33) inset;
-}
-.home .navbar .navbar-brand,
-.home .navbar .navbar-nav > li > a {
-  color: #eee;
-}
-
-.navbar-nav > li > a:hover {
-  color: #FFF;
-  background-color: rgba(255, 223, 5, 0.84);
-}
-
-.navbar-default .navbar-nav > .active > a, .navbar .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar .navbar-nav > .active > a:focus {
-  color: #FFF;
-  background-color: rgba(255, 223, 5, 0.84);
-}
-
-/*
- * Woo Commerce!
- */
-.woocommerce .site .site-header {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-.woocommerce .site #container .product {
-  text-align: center;
-}
-.woocommerce .site #container .product .wp-post-image {
-  height: 150px;
-  width: 150px;
-  margin: auto;
-}
-.woocommerce .site #container .product .onsale {
-  top: 0;
-  right: 20%;
-  left: auto;
-  margin: 0;
-  width: 40px;
-}
-
-html, body {
-  height: 100%;
-  font-family: "Arial";
-}
-
-h1 {
-  font-family: Chango;
-}
-
-footer h1 {
-  color: #FFDF05;
-  font-family: "Architects Daughter";
-}
-
-a#site-title {
-  font-family: Playball;
-  font-size: 25px;
-  color: #FC613D;
-}
-
-iframe {
-  pointer-events: none;
-}
-
-.input-group-btn select {
-  border-color: #ccc;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 5px;
-}
-
-.tile {
-  text-align: center;
-}
-.tile img {
-  margin: auto;
-}
-
-.carousel-inner {
-  background: #333;
-}
-.carousel-inner .item {
-  height: 500px;
-}
-.carousel-inner .item .carousel-caption {
-  width: 400px;
-  top: 5%;
-  right: 10%;
-  left: initial;
-}
-.carousel-inner .item h1 {
-  color: #ffdf05;
-}
-.carousel-inner .item img {
-  opacity: .5;
-  width: 100%;
-}
-.carousel-inner .item .btn, .carousel-inner .item .tagcloud a, .tagcloud .carousel-inner .item a, .carousel-inner .item input[type="submit"], .carousel-inner .item .woocommerce .site .woocommerce-breadcrumb a, .woocommerce .site .woocommerce-breadcrumb .carousel-inner .item a, .carousel-inner .item .woocommerce .site #container .product a.button, .woocommerce .site #container .product .carousel-inner .item a.button, .carousel-inner .item #comments .comment-list .reply a, #comments .comment-list .reply .carousel-inner .item a {
-  margin-bottom: 20px;
-}
-
-footer#colophon {
-  background-color: #222;
-  color: #eee;
-}
-
-.full:nth-child(even) {
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.17) 0%, rgba(0, 0, 0, 0.09) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.17)), color-stop(100%, rgba(0, 0, 0, 0.09)));
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.17) 0%, rgba(0, 0, 0, 0.09) 100%);
-  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.17) 0%, rgba(0, 0, 0, 0.09) 100%);
-  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.17) 0%, rgba(0, 0, 0, 0.09) 100%);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.17) 0%, rgba(0, 0, 0, 0.09) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2bffffff', endColorstr='#17000000',GradientType=0 );
-}
-
-section.full {
-  border-bottom: 1px solid #efefef;
-  border-top: solid 1px #ddd;
-  padding: 20px;
-  text-align: center;
-}
-section.full article div {
-  margin-bottom: 40px;
-  margin-top: 20px;
-}
-section.full ul {
-  text-align: left;
-  padding-left: 30px;
-}
-
-.home-widgets {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-}
-.home-widgets ul {
-  padding: 0;
-}
-.home-widgets .widget {
-  border-bottom: 1px solid #ddd;
-  padding: 40px 10%;
-}
-.home-widgets .widget:nth-child(even) {
-  background-color: #fefefe;
-}
-
-section#map {
-  text-align: center;
-  background: #333;
-  width: 100%;
-  margin-top: 20px;
-  padding-bottom: 40px;
-  color: #efefef;
-  text-shadow: -1px -1px 0 #111;
-}
-section#map .embed-responsive {
-  width: 80%;
-  margin: auto;
-}
-section#map a {
-  color: #efefef;
-}
-
-/**
- * Widgets
- */
-.footer-widgets .widget {
-  text-align: center;
-}
-.footer-widgets .widget ul {
-  padding: 0;
-}
-
-/**
- *   Sidebar
- * Styles for widgets on the default pages.
- */
-#sidebar ul {
-  padding: 0;
-}
-#sidebar .widget {
-  padding-bottom: 10px;
-}
-#sidebar .widget .widgettitle {
-  margin-top: 0px;
-}
-#sidebar .widget > select {
-  width: 90%;
-  margin: auto;
-}
-#sidebar .widget ul {
-  padding: 0px;
-}
-
-/**
- *   Footer Widgets
- * Styles for widgets on the footer.
- */
-.footer-widgets {
-  padding: 0px;
-}
-.footer-widgets .widget > select {
-  width: 90%;
-  margin: auto;
-}
-.footer-widgets .widget ul {
-  padding: 0px;
-}
-.footer-widgets .widget ul li {
-  background-color: #333;
-  border-color: #4d4d4d;
-}
-
-/**
- * Action items
- * These are on the home page
- */
-article.action {
-  padding: 40px 0;
-  text-align: center;
-  padding: 10px;
-}
-
-/**
- * Single Post
- */
-.single article {
-  padding: 20px;
-  background: #fafafa;
-}
-.single article .post-content {
-  padding: 20px 0px;
-}
-.single article img {
-  width: 100%;
-  height: auto;
-}
-
-/**
- *   Sticky Post
- * Only if :not a slider .item
- */
-.sticky:not(.item) header h1 {
-  margin-top: 0px;
-}
-
-#comments .comments-title {
-  margin-top: 0px;
-}
-#comments .comment-list {
-  border-bottom: 2px solid #eee;
-}
-#comments .comment-list .odd {
-  background: #efefef;
-}
-#comments .comment-list .even {
-  background: #fefefe;
-}
-#comments .comment-list li {
-  list-style: none;
-  padding: 10px;
-}
-#comments .comment-list li .comment-heading img {
-  width: 100%;
-  height: auto;
-}
-#comments .comment-list li .comment-body {
-  padding: 10px;
-}
-#comments .children {
-  padding: 20px;
-  border-left: 1px solid #E2B77E;
-}
-
-/** Implimentation **/

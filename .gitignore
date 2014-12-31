@@ -3,3 +3,7 @@
 node_modules/
 bower_components/
 *.log
+.project
+.settings
+.metadata
+.idea

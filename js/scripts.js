@@ -3,9 +3,8 @@
  */
 
 jQuery(document).ready(function($) {
-
 	// $ Works here. Used for wordpress.
-
+ 
 	/**
 	 * Map scroll fixer from
 	 * http://jsfiddle.net/0u6v4jnp/

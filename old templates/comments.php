@@ -1,10 +1,10 @@
 <?php
 /**
- * mhc template for generating comments
+ * ncgbase template for generating comments
  *
  * @package WordPress
- * @subpackage mhc
- * @since mhc 1.0
+ * @subpackage ncgbase
+ * @since ncgbase 1.0
  */
 ?>
 
@@ -21,7 +21,7 @@
 		<h2 class="comments-title">
 			<?php
 				printf(
-					_n( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'mhc' ),
+					_n( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'ncgbase' ),
 					number_format_i18n( get_comments_number() ),
 					get_the_title()
 				);
@@ -30,9 +30,9 @@
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 		<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
-			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'mhc' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'mhc' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'mhc' ) ); ?></div>
+			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'ncgbase' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'ncgbase' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'ncgbase' ) ); ?></div>
 		</nav>
 		<?php endif; ?>
 
@@ -51,14 +51,14 @@
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 		<nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
-			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'mhc' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'mhc' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'mhc' ) ); ?></div>
+			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'ncgbase' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'ncgbase' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'ncgbase' ) ); ?></div>
 		</nav>
 		<?php endif; ?>
 
 		<?php if ( ! comments_open() ) : ?>
-		<p class="no-comments"><?php _e( 'Comments are closed.', 'mhc' ); ?></p>
+		<p class="no-comments"><?php _e( 'Comments are closed.', 'ncgbase' ); ?></p>
 		<?php endif; ?>
 
 	<?php endif; ?>

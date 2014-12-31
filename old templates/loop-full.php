@@ -1,10 +1,10 @@
 <?php
 /**
- * mhc template for displaying an full-width Loop
+ * ncgbase template for displaying an full-width Loop
  *
  * @package WordPress
- * @subpackage mhc
- * @since mhc 1.0
+ * @subpackage ncgbase
+ * @since ncgbase 1.0
  */
 ?>
 <section id="post-<?php the_ID();?>" <?php post_class('full'); ?>>

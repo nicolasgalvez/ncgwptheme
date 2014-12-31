@@ -1,10 +1,10 @@
 <?php
 /**
- * mhc template for the sidebar
+ * ncgbase template for the sidebar
  *
  * @package WordPress
- * @subpackage mhc
- * @since mhc 1.0
+ * @subpackage ncgbase
+ * @since ncgbase 1.0
  */
 ?>
 <?php if ( is_active_sidebar( 'Sidebar' ) ) : ?>

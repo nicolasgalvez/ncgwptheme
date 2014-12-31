@@ -1,10 +1,10 @@
 <?php
 /**
- * mhc template for displaying the Loop for the Link-Post-Format
+ * ncgbase template for displaying the Loop for the Link-Post-Format
  *
  * @package WordPress
- * @subpackage mhc
- * @since mhc 1.0
+ * @subpackage ncgbase
+ * @since ncgbase 1.0
  */
 ?>
 
