@@ -17,7 +17,7 @@ $icon-font-path: "node/bower_components/bootstrap-sass/dist/fonts/"; // A workar
 //@import 'bower_components/bootstrap-sass/lib/bootstrap.scss'; // Now the !default $icon-font-path will be replaced.
 // Core variables and mixins
 //@import "bower_components/bootstrap-sass/lib/variables";
-@import "ncg_variables"; 
+@import "1010/ncg_variables"; 
 @import "bower_components/bootstrap-sass/lib/mixins";
 
 // Reset
@@ -90,5 +90,4 @@ $icon-font-path: "node/bower_components/bootstrap-sass/dist/fonts/"; // A workar
 //@import "ncg_wp_navbar";
 //@import "woocommerce";
 //@import "styles";
-@import 'ncg_fonts_smash';
-@import "ncg_1010_theme"
+@import "1010/ncg_1010_theme"
