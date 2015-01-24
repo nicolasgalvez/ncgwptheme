@@ -64,3 +64,27 @@ li {
   margin-bottom: 7px;
 }
 }
+
+/*
+ * Gallery support
+ */
+.gallery {
+  @extend .row;
+  .gallery-item {
+    @extend .col-sm-6, .col-md-4;
+    height: 200px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    a {
+      display: block;
+      
+    }
+    figcaption {
+    /* display: block; */
+    position: relative;
+    /* clear: both; */
+    // top: 30px;
+    }
+  }
+}
