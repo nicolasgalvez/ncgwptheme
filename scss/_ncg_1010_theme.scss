@@ -1,0 +1,66 @@
+
+
+.page-content {
+background-color: #FFFDF8;
+background-image: url(images/seamlesspapertexture.jpg);
+margin-bottom: 20px;
+figure {
+min-height: 260px;
+}
+
+}
+.navbar-inverse {
+  border-right: 2px solid rgba(153, 153, 153, 0.14);
+}
+
+#header-image {
+  width: 100%;
+}
+
+/**
+ *   Post and page
+ */
+
+article header {
+border-bottom: 2px solid rgba(214, 98, 157, 0.42);
+}
+
+/**
+ *   Article Footer
+ */
+
+article.page, article.post {
+  border-bottom: 4px solid rgba(214, 98, 157, 0.42);
+}
+
+#colophon {
+  background-color: #222;
+  color: #efefef;
+  a {
+    color: #fff;
+  }
+}
+
+/**
+ *   Sidebar
+ *   move to a file why don't you?
+ */
+h2.widgettitle {
+font-family: roboto;
+font-size: 17px;
+margin: 16px 0 5px;
+text-transform: uppercase;
+}
+
+#sidebar > ul {
+  padding-left: 0;
+}
+.widget ul {
+padding-left: 0;
+ul {
+  padding-left: 10px;
+}
+li {
+  margin-bottom: 7px;
+}
+}

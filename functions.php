@@ -18,7 +18,7 @@
 	/**
 	 * Initiate a new instance of my template helper. I use the NCG namespace, hopefully that's ok with your version of php.
 	 * All this does is get a post query based on common criteria (like last 5) and display using a custom wrapper (like for a bootstrap slider)
-	 * I will probably be removing this and using the loop like God intended.
+	 * I will probably be removing this and start using the loop like God intended.
 	 */
 	$templ = new \NCG\Templ();
 
@@ -31,11 +31,10 @@
 		'link'
 	));
 	add_theme_support('post-thumbnails');
+	set_post_thumbnail_size( 900, 350, array( 'center', 'center')  ); // 50 pixels wide by 50 pixels tall, crop from the center
 	add_theme_support('automatic-feed-links');
 	// This is the custom header. By default it will use the image found in /images/logo.png, if any.
 	$custom_header_args = array(
-		'width' => 330,
-		'height' => 99,
 		'default-image' => get_template_directory_uri() . '/images/logo.png',
 	);
 	add_theme_support('custom-header', $custom_header_args);
@@ -149,9 +148,14 @@
 	 * @return void
 	 */
 	function ncgbase_post_meta() {
-		if (get_post_type() == 'post') {
-			echo sprintf(__('Posted %s in %s. by %s. %s', 'ncgbase'), '<i class = "glyphicon glyphicon-time"></i> ' . get_the_time(get_option('date_format')), get_the_category_list(', '), get_the_author_link(), get_the_tag_list('<br><i class = "glyphicon glyphicon-tags"></i> ', ', '));
+
+			echo '<i class = "glyphicon glyphicon-time"></i> ' . get_the_time(get_option('date_format')) . '.';
+
+		if(get_the_category_list(', ')) {
+			echo ' Posted in '. get_the_category_list(', ') . '.';
 		}
+		echo get_the_tag_list(' <i class = "glyphicon glyphicon-tags"></i> ', ', ');
+
 		edit_post_link(__(' (edit)', 'ncgbase'), '<br><span class="edit-link"><i class = "glyphicon glyphicon-pencil"></i> ', '</span>');
 	}
 
@@ -210,28 +214,6 @@
 
 	add_filter('wp_title', 'theme_name_wp_title', 10, 2);
 
-	/**
-	 * Remove cat base from stackoverflow
-	 * I used the plugin wp-no-category-base before, but I like having the links to have no category as well as the url.
-	 *
-	 */
-
-	add_filter('user_trailingslashit', 'remcat_function');
-	function remcat_function($link) {
-		return str_replace("/category/", "/", $link);
-	}
-
-	add_action('init', 'remcat_flush_rules');
-	function remcat_flush_rules() {
-		global $wp_rewrite;
-		$wp_rewrite -> flush_rules();
-	}
-
-	add_filter('generate_rewrite_rules', 'remcat_rewrite');
-	function remcat_rewrite($wp_rewrite) {
-		$new_rules = array('(.+)/page/(.+)/?' => 'index.php?category_name=' . $wp_rewrite -> preg_index(1) . '&paged=' . $wp_rewrite -> preg_index(2));
-		$wp_rewrite -> rules = $new_rules + $wp_rewrite -> rules;
-	}
 
 	/**
 	 * Customizer Controls
@@ -394,8 +376,37 @@
 		}
 
 		if (has_post_thumbnail()) {
-			ncg_get_thumb('full');
+			ncg_get_thumb();
 			return true;
 		} else
 			return false;
 	}
+	
+	add_filter( 'comment_form_default_fields', 'bootstrap3_comment_form_fields' );
+function bootstrap3_comment_form_fields( $fields ) {
+    $commenter = wp_get_current_commenter();
+    
+    $req      = get_option( 'require_name_email' );
+    $aria_req = ( $req ? " aria-required='true'" : '' );
+    $html5    = current_theme_supports( 'html5', 'comment-form' ) ? 1 : 0;
+    
+    $fields   =  array(
+        'author' => '<div class="form-group comment-form-author">' . '<label for="author">' . __( 'Name' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
+                    '<input class="form-control" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></div>',
+        'email'  => '<div class="form-group comment-form-email"><label for="email">' . __( 'Email' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
+                    '<input class="form-control" id="email" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></div>',
+        'url'    => '<div class="form-group comment-form-url"><label for="url">' . __( 'Website' ) . '</label> ' .
+                    '<input class="form-control" id="url" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></div>',
+    );
+    
+    return $fields;
+}
+
+add_filter( 'comment_form_defaults', 'bootstrap3_comment_form' );
+function bootstrap3_comment_form( $args ) {
+    $args['comment_field'] = '<div class="form-group comment-form-comment">
+            <label for="comment">' . _x( 'Comment', 'noun' ) . '</label> 
+            <textarea class="form-control" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
+        </div>';
+    return $args;
+}

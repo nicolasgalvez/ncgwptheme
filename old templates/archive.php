@@ -69,7 +69,7 @@ get_header(); ?>
 			remove_action('the_excerpt', 'ncgbase_shortcode');
 			add_action('the_excerpt', 'ncgbase_strip_shortcode');
 			while ( have_posts() ) : the_post();
-				get_template_part( 'loop', 'archive' );
+				get_template_part( 'content', 'archive' );
 			endwhile;
 
 		else :

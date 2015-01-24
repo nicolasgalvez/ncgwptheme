@@ -10,22 +10,85 @@
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
-//@import "../bower_components/bootstrap-sass/lib/bootstrap.scss";
-//@import "grid-settings";
-//@import "base";
-//@import "typography";
-//@import "components";
-//@import "wp-base";
-//@import "header";
-//@import "navigation";
-//@import "content";
-//@import "post-formats";
-//@import "footer";
+/**
+ *   Import bootstrap manually to allow modified includes. I don't want to use everythang.
+ */
 $icon-font-path: "node/bower_components/bootstrap-sass/dist/fonts/"; // A workaround for the asset pipe bug as of this version of bootstrap-sass
-@import 'bower_components/bootstrap-sass/lib/bootstrap.scss'; // Now the !default $icon-font-path will be replaced.
+//@import 'bower_components/bootstrap-sass/lib/bootstrap.scss'; // Now the !default $icon-font-path will be replaced.
+// Core variables and mixins
+//@import "bower_components/bootstrap-sass/lib/variables";
+@import "ncg_variables"; 
+@import "bower_components/bootstrap-sass/lib/mixins";
+
+// Reset
+@import "bower_components/bootstrap-sass/lib/normalize";
+@import "bower_components/bootstrap-sass/lib/print";
+
+// Core CSS
+@import "bower_components/bootstrap-sass/lib/scaffolding";
+//@import "bower_components/bootstrap-sass/lib/type";
+@import "bower_components/bootstrap-sass/lib/code";
+@import "bower_components/bootstrap-sass/lib/grid";
+@import "bower_components/bootstrap-sass/lib/tables";
+@import "bower_components/bootstrap-sass/lib/forms";
+@import "bower_components/bootstrap-sass/lib/buttons";
+
+// Components
+@import "bower_components/bootstrap-sass/lib/component-animations";
+@import "bower_components/bootstrap-sass/lib/glyphicons";
+@import "bower_components/bootstrap-sass/lib/dropdowns";
+@import "bower_components/bootstrap-sass/lib/button-groups";
+@import "bower_components/bootstrap-sass/lib/input-groups";
+@import "bower_components/bootstrap-sass/lib/navs";
+@import "bower_components/bootstrap-sass/lib/navbar";
+@import "bower_components/bootstrap-sass/lib/breadcrumbs";
+@import "bower_components/bootstrap-sass/lib/pagination";
+@import "bower_components/bootstrap-sass/lib/pager";
+@import "bower_components/bootstrap-sass/lib/labels";
+@import "bower_components/bootstrap-sass/lib/badges";
+@import "bower_components/bootstrap-sass/lib/jumbotron";
+@import "bower_components/bootstrap-sass/lib/thumbnails";
+@import "bower_components/bootstrap-sass/lib/alerts";
+@import "bower_components/bootstrap-sass/lib/progress-bars";
+@import "bower_components/bootstrap-sass/lib/media";
+@import "bower_components/bootstrap-sass/lib/list-group";
+@import "bower_components/bootstrap-sass/lib/panels";
+@import "bower_components/bootstrap-sass/lib/wells";
+@import "bower_components/bootstrap-sass/lib/close";
+
+// Components w/ JavaScript
+@import "bower_components/bootstrap-sass/lib/modals";
+@import "bower_components/bootstrap-sass/lib/tooltip";
+@import "bower_components/bootstrap-sass/lib/popovers";
+@import "bower_components/bootstrap-sass/lib/carousel";
+
+// Utility classes
+@import "bower_components/bootstrap-sass/lib/utilities";
+@import "bower_components/bootstrap-sass/lib/responsive-utilities";
+
+
+
+
+
+
+
+
+
+
+/**
+ *   Custom stuff.
+ *  Links: #973A31
+ */
+
+
+
+
+//@import 'ncg_theme.scss';
 //@import "ncg_variables";
-//@import "ncg_wp-styles";
+@import "ncg_wp-styles";
 //@import "ncg_wp_forms";
 //@import "ncg_wp_navbar";
 //@import "woocommerce";
 //@import "styles";
+@import 'ncg_fonts_smash';
+@import "ncg_1010_theme"

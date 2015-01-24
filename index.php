@@ -15,16 +15,15 @@ get_header(); ?>
 					if ( have_posts() ):
 						while ( have_posts() ) : the_post();
 							get_template_part( 'loop', get_post_format() );
+						 if ( comments_open() || get_comments_number() ) :
+							comments_template();
+						endif;
 						endwhile;
 					else :
 						get_template_part( 'loop', 'empty' );
 					endif;
 				?>
 				<?php get_template_part( 'template-part', 'pagination' ); ?>
-
-				<?php if (is_single()): ?>
-					  <?php comments_template(); ?>
-				<?php endif; ?>
 			</div>
 			<div id = "sidebar" class = "col-md-3">
 				<?php get_sidebar(); ?>

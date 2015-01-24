@@ -22,12 +22,13 @@
 
         endif; ?>
     </h2>
-    <small class="post-meta"><?php
-        ncgbase_post_meta(); ?>
-    </small>
+    <h3>By <?php the_author_link(); ?></h3>
 </header>
+    <p class="post-meta"><?php
+        ncgbase_post_meta(); ?>
+    </p>
 	<div class="post-content">
-		<?php if ( is_front_page() || is_category() || is_archive() || is_search() || !is_singular()) : ?>
+		<?php if ( is_category() || is_archive() || is_search() || !is_singular()) : ?>
             <?php
 
             if ( '' != get_the_post_thumbnail() ) : ?>
@@ -39,7 +40,12 @@
 		<?php else : ?>
 
 			<?php the_content( __( 'Continue reading &raquo', 'ncgbase' ) ); ?>
-
+			<?php if (has_tag()):?>
+				<div class = "post-footer-tags">
+					<?php echo get_the_tag_list(); ?>
+				</div>
+			<?php endif; ?>
+			
 		<?php endif; ?>
 
 		<?php

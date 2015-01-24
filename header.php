@@ -37,4 +37,15 @@
 		<div class="site">
 			<header class="site-header">
 			<?php get_template_part('templates/menu');?>
+			<?php if (get_header_image()) : ?>
+				<div class = "container">
+					<div class = "row">
+						<div class = "col-xs-12">
+							<img id = "header-image" class = "img-responsive" src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />		
+						</div>
+					</div>
+					
+				</div>
+				
+			<?php endif; ?>
 			</header>
